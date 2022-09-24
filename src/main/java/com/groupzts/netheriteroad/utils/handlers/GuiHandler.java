@@ -15,7 +15,7 @@ public enum GuiHandler implements IGuiHandler {
     @Override
     public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
         if(ID == GuiSmithing.GUI_ID){
-            return new ContainerSmithing(world, x, y, z, player);
+            return new ContainerSmithing(player.inventory, world, new BlockPos(x, y, z), player);
         }
         return null;
     }

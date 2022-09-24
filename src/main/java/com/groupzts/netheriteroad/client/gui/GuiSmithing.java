@@ -2,8 +2,10 @@ package com.groupzts.netheriteroad.client.gui;
 
 import com.groupzts.netheriteroad.client.container.ContainerSmithing;
 import net.minecraft.client.gui.inventory.GuiContainer;
+import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -19,7 +21,7 @@ public class GuiSmithing extends GuiContainer {
     private int x, y, z;
     private EntityPlayer entity;
     public GuiSmithing(World world, int x, int y, int z, EntityPlayer entity) {
-        super(new ContainerSmithing(world, x, y, z, entity));
+        super(new ContainerSmithing(entity.inventory,world,new BlockPos(x, y, z),entity));
         this.world = world;
         this.x = x;
         this.y = y;
@@ -63,6 +65,7 @@ public class GuiSmithing extends GuiContainer {
 
     @Override
     protected void drawGuiContainerForegroundLayer(int par1, int par2) {
+        this.fontRenderer.drawString(I18n.format("gui.netheriteroad.smithing"), 60, 18, 0);
     }
 
     @Override

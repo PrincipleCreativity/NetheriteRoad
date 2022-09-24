@@ -8,5 +8,36 @@
       "netheriteroad:equip_netherite3",
       "netheriteroad:equip_netherite4"
     ]
+  },
+  "smithing_table_sound": {
+    "category": "player",
+    "subtitle": "netheriteroad.sound.smithing_table_sound",
+    "sounds": [
+      "netheriteroad:smithing_table1",
+      "netheriteroad:smithing_table2",
+      "netheriteroad:smithing_table3"
+    ]
+  },
+  "break_netherite_block": {
+    "category": "block",
+    "subtitle": "netheriteroad.sound.break_netherite_block",
+    "sounds": [
+      "netheriteroad:nether/break1",
+      "netheriteroad:nether/break2",
+      "netheriteroad:nether/break3",
+      "netheriteroad:nether/break4"
+    ]
+  },
+  "step_netherite_block": {
+    "category": "player",
+    "subtitle": "netheriteroad.sound.step_netherite_block",
+    "sounds": [
+      "netheriteroad:nether/step1",
+      "netheriteroad:nether/step2",
+      "netheriteroad:nether/step3",
+      "netheriteroad:nether/step4",
+      "netheriteroad:nether/step5",
+      "netheriteroad:nether/step6"
+    ]
   }
 }

@@ -11,3 +11,6 @@ item.netheriteroad.netherite_leggings.name=下界合金护腿
 item.netheriteroad.netherite_boots.name=下界合金靴子
 netheriteroad.sound.netherite_armor_sound=下界合金盔甲：铿锵
 tile.netheriteroad.ancient_debris.name=远古残骸
+netheriteroad.sound.smithing_table_sound=锻造台：使用
+tile.netheriteroad.smithing_table.name=锻造台
+gui.netheriteroad.smithing=升级装备

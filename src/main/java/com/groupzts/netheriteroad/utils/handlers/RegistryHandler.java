@@ -27,7 +27,11 @@ public class RegistryHandler {
     }
     @SubscribeEvent
     public static void onSoundRegister(RegistryEvent.Register<SoundEvent> event){
-        event.getRegistry().registerAll(ModSounds.NETHERITE_ARMOR_SOUND.setRegistryName(Reference.MOD_ID, "netherite_armor_sound"));
+        event.getRegistry().registerAll(ModSounds.NETHERITE_ARMOR_SOUND.setRegistryName(Reference.MOD_ID, "netherite_armor_sound")
+        , ModSounds.SMITHING_TABLE_SOUND.setRegistryName(Reference.MOD_ID, "smithing_table_sound")
+                , ModSounds.BREAK_NETHERITE_BLOCK.setRegistryName(Reference.MOD_ID, "break_netherite_block")
+                , ModSounds.STEP_NETHERITE_BLOCK.setRegistryName(Reference.MOD_ID, "step_netherite_block")
+        );
     }
     @SubscribeEvent
     public static void onModelRegister( ModelRegistryEvent event )

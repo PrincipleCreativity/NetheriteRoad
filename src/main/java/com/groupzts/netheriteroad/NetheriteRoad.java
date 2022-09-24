@@ -1,9 +1,12 @@
 package com.groupzts.netheriteroad;
 
 import com.groupzts.netheriteroad.event.WorldOreGen;
+import com.groupzts.netheriteroad.init.ModBlocks;
+import com.groupzts.netheriteroad.init.ModItems;
 import com.groupzts.netheriteroad.proxy.ServerProxy;
 import com.groupzts.netheriteroad.utils.Reference;
 import com.groupzts.netheriteroad.utils.handlers.GuiHandler;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -30,5 +33,6 @@ public enum NetheriteRoad {
         proxy.init(event);
         NetworkRegistry.INSTANCE.registerGuiHandler(NetheriteRoad.getInstance(), GuiHandler.INSTANCE);
         GameRegistry.registerWorldGenerator(ORE_GEN, 5);
+        GameRegistry.addSmelting(ModBlocks.ANCIENT_DEBRIS , new ItemStack(ModItems.NETHERITE_SCRAP), 2F);
     }
 }
