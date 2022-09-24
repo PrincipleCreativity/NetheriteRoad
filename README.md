@@ -4,6 +4,6 @@ The restoration degree is over 80%, bringing the gospel to the players who want 
 
 This mod is dedicated to restoring the nether metal equipment, tools, and armor elements of version 1.16 and above in version 1.12.2, such as nether alloy swords, netherite armor sets, ancient wreckage, netherite ingots and fragments, etc. Not only that, but also the pursuit of meticulous perfection, the armor, blocks, sound effects and item textures are 100% restored to the vanilla version, allowing players to experience the vanilla feeling.
 
-Are you still worried that your craftsman's soul smelting furnace can't make the craftsman's soul's netherite alloy equipment without the nether alloy? The ontology of the Nether Road can do it! The Nether Road is also a craftsman's soul linkage module, which can be smelted with molten gold and molten ancient wreckage into molten netherite alloy, and then you can make various tools related to the netherite alloy of the craftsman's soul.
+Are you still worried that your TiC smelting furnace can't make the craftsman's soul's netherite alloy equipment without the nether alloy? The ontology of the Netherite Road can do it! The Nether Road is also a TiC linkage module, which can be smelted with molten gold and molten ancient wreckage into molten netherite alloy, and then you can make various tools related to the netherite alloy of the TiC.
 
 The NetheriterRoad is just an ontology, and we make various expansion packs to enrich the gameplay of the mod. If you have any suggestions, please give us feedback!
