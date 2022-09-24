@@ -58,7 +58,12 @@ public class ContainerSmithing extends Container
         this.world = worldIn;
         this.player = player;
         this.addSlotToContainer(new Slot(this.inputSlots, 0, 27, 47));
-        this.addSlotToContainer(new Slot(this.inputSlots, 1, 76, 47));
+        this.addSlotToContainer(new Slot(this.inputSlots, 1, 76, 47){
+            @Override
+            public boolean isItemValid(ItemStack stack) {
+                return stack.getItem() == ModItems.NETHERITE_INGOT;
+            }
+        });
         this.addSlotToContainer(new Slot(this.outputSlot, 2, 134, 47)
         {
             public boolean isItemValid(ItemStack stack)
@@ -68,58 +73,14 @@ public class ContainerSmithing extends Container
             public ItemStack onTake(EntityPlayer thePlayer, ItemStack stack)
             {
                 world.playSound(player, player.posX, player.posY, player.posZ, ModSounds.SMITHING_TABLE_SOUND, SoundCategory.PLAYERS, 1, 1);
+                if(!getSlot(0).getStack().isEmpty() && !getSlot(1).getStack().isEmpty()){
+                    getSlot(1).getStack().shrink(1);
+                    getSlot(0).getStack().shrink(1);
+                }
                 if (!thePlayer.capabilities.isCreativeMode)
                 {
                     thePlayer.addExperienceLevel(-ContainerSmithing.this.maximumCost);
                 }
-
-                float breakChance = net.minecraftforge.common.ForgeHooks.onAnvilRepair(thePlayer, stack, ContainerSmithing.this.inputSlots.getStackInSlot(0), ContainerSmithing.this.inputSlots.getStackInSlot(1));
-
-                ContainerSmithing.this.inputSlots.setInventorySlotContents(0, ItemStack.EMPTY);
-
-                if (ContainerSmithing.this.materialCost > 0)
-                {
-                    ItemStack itemstack = ContainerSmithing.this.inputSlots.getStackInSlot(1);
-
-                    if (!itemstack.isEmpty() && itemstack.getCount() > ContainerSmithing.this.materialCost)
-                    {
-                        itemstack.shrink(ContainerSmithing.this.materialCost);
-                        ContainerSmithing.this.inputSlots.setInventorySlotContents(1, itemstack);
-                    }
-                    else
-                    {
-                        ContainerSmithing.this.inputSlots.setInventorySlotContents(1, ItemStack.EMPTY);
-                    }
-                }
-                else
-                {
-                    ContainerSmithing.this.inputSlots.setInventorySlotContents(1, ItemStack.EMPTY);
-                }
-
-                ContainerSmithing.this.maximumCost = 0;
-                IBlockState iblockstate = worldIn.getBlockState(blockPosIn);
-
-                if (!thePlayer.capabilities.isCreativeMode && !worldIn.isRemote && iblockstate.getBlock() == ModBlocks.SMITHING_TABLE && thePlayer.getRNG().nextFloat() < breakChance)
-                {
-                    int l = iblockstate.getValue(BlockAnvil.DAMAGE);
-                    ++l;
-
-                    if (l > 2)
-                    {
-                        worldIn.setBlockToAir(blockPosIn);
-                        worldIn.playEvent(1029, blockPosIn, 0);
-                    }
-                    else
-                    {
-                        worldIn.setBlockState(blockPosIn, iblockstate.withProperty(BlockAnvil.DAMAGE, Integer.valueOf(l)), 2);
-                        worldIn.playEvent(1030, blockPosIn, 0);
-                    }
-                }
-                else if (!worldIn.isRemote)
-                {
-
-                }
-
                 return stack;
             }
         });
@@ -155,56 +116,38 @@ public class ContainerSmithing extends Container
         if (item1 == ModItems.NETHERITE_INGOT) {
             if (item2 == Items.DIAMOND_SWORD) {
 
-                    getSlot(1).getStack().shrink(1);
-                    getSlot(0).getStack().shrink(1);
                     getSlot(2).putStack(new ItemStack(ModItems.NETHERITE_SWORD));
             }
             else if (item2 == Items.DIAMOND_PICKAXE) {
 
-                getSlot(1).getStack().shrink(1);
-                getSlot(0).getStack().shrink(1);
                 getSlot(2).putStack(new ItemStack(ModItems.NETHERITE_PICKAXE));
             }
             else if (item2 == Items.DIAMOND_AXE) {
 
-                getSlot(1).getStack().shrink(1);
-                getSlot(0).getStack().shrink(1);
                 getSlot(2).putStack(new ItemStack(ModItems.NETHERITE_AXE));
             }
             else if (item2 == Items.DIAMOND_SHOVEL) {
 
-                getSlot(1).getStack().shrink(1);
-                getSlot(0).getStack().shrink(1);
                 getSlot(2).putStack(new ItemStack(ModItems.NETHERITE_SHOVEL));
             }
             else if (item2 == Items.DIAMOND_HOE) {
 
-                getSlot(1).getStack().shrink(1);
-                getSlot(0).getStack().shrink(1);
                 getSlot(2).putStack(new ItemStack(ModItems.NETHERITE_HOE));
             }
             else if (item2 == Items.DIAMOND_HELMET) {
 
-                getSlot(1).getStack().shrink(1);
-                getSlot(0).getStack().shrink(1);
                 getSlot(2).putStack(new ItemStack(ModItems.NETHERITE_HELMET));
             }
             else if (item2 == Items.DIAMOND_CHESTPLATE) {
 
-                getSlot(1).getStack().shrink(1);
-                getSlot(0).getStack().shrink(1);
                 getSlot(2).putStack(new ItemStack(ModItems.NETHERITE_CHESTPLATE));
             }
             else if (item2 == Items.DIAMOND_LEGGINGS) {
 
-                getSlot(1).getStack().shrink(1);
-                getSlot(0).getStack().shrink(1);
                 getSlot(2).putStack(new ItemStack(ModItems.NETHERITE_LEGGINGS));
             }
             else if (item2 == Items.DIAMOND_BOOTS) {
 
-                getSlot(1).getStack().shrink(1);
-                getSlot(0).getStack().shrink(1);
                 getSlot(2).putStack(new ItemStack(ModItems.NETHERITE_BOOTS));
             }
         }

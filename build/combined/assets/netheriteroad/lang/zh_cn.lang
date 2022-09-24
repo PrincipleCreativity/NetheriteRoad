@@ -14,3 +14,6 @@ tile.netheriteroad.ancient_debris.name=远古残骸
 netheriteroad.sound.smithing_table_sound=锻造台：使用
 tile.netheriteroad.smithing_table.name=锻造台
 gui.netheriteroad.smithing=升级装备
+tile.netheriteroad.netherite_block.name=下界合金块
+netheriteroad.sound.break_netherite_block=方块：被破坏
+netheriteroad.sound.step_netherite_block=脚步声

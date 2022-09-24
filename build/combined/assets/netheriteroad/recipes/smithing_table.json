@@ -8,7 +8,7 @@
     "BB"
   ],
   "key": {
-    "A": { "type": "forge:ore_dict", "ore": "ingotGold" },
+    "A": { "type": "forge:ore_dict", "ore": "ingotIron" },
     "B": { "type": "forge:ore_dict", "ore": "plankWood" }
   }
 }

@@ -13,6 +13,7 @@ netheriteroad.sound.netherite_armor_sound=Netherite Armor Clanks
 netheriteroad.sound.smithing_table_sound=Smithing Table Used
 tile.netheriteroad.ancient_debris.name=Ancient Debris
 tile.netheriteroad.smithing_table.name=Smithing Table
+tile.netheriteroad.netherite_block.name=Netherite Block
 gui.netheriteroad.smithing=Upgrade Equipment
 netheriteroad.sound.break_netherite_block=Block Break
 netheriteroad.sound.step_netherite_block= Footstep
