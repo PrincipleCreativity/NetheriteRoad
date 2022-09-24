@@ -1,0 +1,12 @@
+{
+  "netherite_armor_sound": {
+    "category": "player",
+    "subtitle": "netheriteroad.sound.netherite_armor_sound",
+    "sounds": [
+      "netheriteroad:equip_netherite1",
+      "netheriteroad:equip_netherite2",
+      "netheriteroad:equip_netherite3",
+      "netheriteroad:equip_netherite4"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "netheriteroad",
+  "name": "Netherite Road",
+  "description": "A Mod About Nether.",
+  "version": "0.1.0Beta",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["LEFT_Flamelight"],
+  "credits": "groupZTS",
+  "logoFile": "logo.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
