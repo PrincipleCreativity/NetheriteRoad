@@ -17,3 +17,7 @@ tile.netheriteroad.netherite_block.name=Netherite Block
 gui.netheriteroad.smithing=Upgrade Equipment
 netheriteroad.sound.break_netherite_block=Block Break
 netheriteroad.sound.step_netherite_block= Footstep
+material.netherite.name=Netherite
+modifier.superfortified.name=Super Fortified
+fluid.molten_netherite.name=Molten Netherite Alloy
+fluid.molten_ancient.name=Molten Ancient Debris

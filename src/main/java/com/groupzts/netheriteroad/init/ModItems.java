@@ -1,5 +1,6 @@
 package com.groupzts.netheriteroad.init;
 
+import com.groupzts.netheriteroad.blocks.BlockItemBase;
 import com.groupzts.netheriteroad.items.base.FireImmuneItemBase;
 import com.groupzts.netheriteroad.items.base.armorbase.ArmorBase;
 import com.groupzts.netheriteroad.items.base.toolbase.*;
@@ -7,9 +8,11 @@ import com.groupzts.netheriteroad.utils.ModMaterials;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class ModItems {
     public static final List<Item> ITEMS = new ArrayList<>();
@@ -24,4 +27,7 @@ public class ModItems {
     public static final Item NETHERITE_CHESTPLATE = new ArmorBase("netherite_chestplate", ModMaterials.ARMOR_NETHERITE_ALLOY, EntityEquipmentSlot.CHEST);
     public static final Item NETHERITE_LEGGINGS = new ArmorBase("netherite_leggings", ModMaterials.ARMOR_NETHERITE_ALLOY, EntityEquipmentSlot.LEGS);
     public static final Item NETHERITE_BOOTS = new ArmorBase("netherite_boots", ModMaterials.ARMOR_NETHERITE_ALLOY, EntityEquipmentSlot.FEET);
+
+    public static final Item NETHERITE_BLOCK_ITEM = new BlockItemBase(ModBlocks.NETHERITE_BLOCK);
+    public static final Item ANCIENT_DEBRIS_ITEM = new BlockItemBase(ModBlocks.ANCIENT_DEBRIS);
 }

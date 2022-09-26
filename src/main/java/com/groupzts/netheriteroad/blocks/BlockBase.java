@@ -16,9 +16,7 @@ import java.util.Objects;
 public class BlockBase extends Block implements IHasModel {
     public BlockBase(String name, CreativeTabs tab, Material material) {
         super(material);
-        setHardness(5.0F);
-        setResistance(10.0F);
-        setUnlocalizedName(Reference.MOD_ID + "." + name).setRegistryName(Reference.MOD_ID, name);
+        setTranslationKey(Reference.MOD_ID + "." + name).setRegistryName(Reference.MOD_ID, name);
         setCreativeTab(tab);
         ModBlocks.BLOCKS.add(this);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(Objects.requireNonNull(this.getRegistryName())));

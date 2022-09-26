@@ -18,7 +18,7 @@ public class ShovelBase extends ItemSpade implements IHasModel {
     public ShovelBase(String name, ToolMaterial material) {
         super(material);
         setRegistryName(Reference.MOD_ID, name);
-        setUnlocalizedName(Reference.MOD_ID + "." + name);
+        setTranslationKey(Reference.MOD_ID + "." + name);
         setCreativeTab(CreativeTabs.TOOLS);
         ModItems.ITEMS.add(this);
     }

@@ -1,16 +1,16 @@
 [
-{
-  "modid": "netheriteroad",
-  "name": "Netherite Road",
-  "description": "A Mod About Nether.",
-  "version": "0.1.1",
-  "mcversion": "1.12.2",
-  "url": "",
-  "updateUrl": "",
-  "authorList": ["LEFT_Flamelight"],
-  "credits": "groupZTS",
-  "logoFile": "logo.png",
-  "screenshots": [],
-  "dependencies": []
-}
+    {
+        "modid": "netheriteroad",
+        "name": "Netherite Road",
+        "description": "A Mod about Nether",
+        "version": "0.3.11",
+        "mcversion": "1.12.2",
+        "url": "",
+        "updateUrl": "",
+        "authorList": ["LEFT_Flamelight"],
+        "credits": "groupzts",
+        "logoFile": "logo.[ng",
+        "screenshots": [],
+        "dependencies": []
+    }
 ]

@@ -6,10 +6,13 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
+import java.util.Objects;
+
 public class ClientProxy extends ServerProxy {
 	@Override
 	public void preInit(FMLPreInitializationEvent event) {
 		super.preInit(event);
+
 	}
 	
 	@Override
@@ -17,8 +20,7 @@ public class ClientProxy extends ServerProxy {
 		super.init(event);
 	}
 
-	public void registerItemRenderer(Item item, int meta, String id )
-	{
-		ModelLoader.setCustomModelResourceLocation( item, meta, new ModelResourceLocation( item.getRegistryName(), id ) );
+	public void registerItemRenderer(Item item, int meta, String id ) {
+		ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(Objects.requireNonNull(item.getRegistryName()), id));
 	}
 }

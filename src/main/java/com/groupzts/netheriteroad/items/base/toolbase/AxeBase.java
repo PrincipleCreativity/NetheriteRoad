@@ -18,7 +18,7 @@ public class AxeBase extends ItemAxe implements IHasModel {
     public AxeBase(String name, ToolMaterial material) {
         super(material, 9F, -3F);
         setRegistryName(Reference.MOD_ID, name);
-        setUnlocalizedName(Reference.MOD_ID + "." + name);
+        setTranslationKey(Reference.MOD_ID + "." + name);
         setCreativeTab(CreativeTabs.TOOLS);
         ModItems.ITEMS.add(this);
     }

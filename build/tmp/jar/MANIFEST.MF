@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Title: NetheriteRoad-0.1
-Implementation-Version: 0.1.1
-Specification-Vendor: examplemodsareus
-Specification-Title: examplemod
-Implementation-Timestamp: 2022-09-25T03:32:42+0800
-Specification-Version: 1
-Implementation-Vendor: examplemodsareus
-

@@ -18,7 +18,7 @@ public class PickaxeBase extends ItemPickaxe implements IHasModel {
     public PickaxeBase(String name, ToolMaterial material){
         super(material);
         setRegistryName(Reference.MOD_ID, name);
-        setUnlocalizedName(Reference.MOD_ID + "." + name);
+        setTranslationKey(Reference.MOD_ID + "." + name);
         setCreativeTab(CreativeTabs.TOOLS);
         ModItems.ITEMS.add(this);
     }

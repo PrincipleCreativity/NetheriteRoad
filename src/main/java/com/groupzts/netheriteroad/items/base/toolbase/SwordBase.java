@@ -18,7 +18,7 @@ public class SwordBase extends ItemSword implements IHasModel {
     public SwordBase(String name, ToolMaterial material){
         super(material);
         setRegistryName(Reference.MOD_ID, name);
-        setUnlocalizedName(Reference.MOD_ID + "." + name);
+        setTranslationKey(Reference.MOD_ID + "." + name);
         setCreativeTab(CreativeTabs.COMBAT);
         ModItems.ITEMS.add(this);
     }

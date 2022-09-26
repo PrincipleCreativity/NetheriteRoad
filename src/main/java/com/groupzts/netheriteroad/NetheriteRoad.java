@@ -8,6 +8,7 @@ import com.groupzts.netheriteroad.utils.ItemOreRegister;
 import com.groupzts.netheriteroad.utils.Reference;
 import com.groupzts.netheriteroad.utils.handlers.GuiHandler;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -28,13 +29,16 @@ public enum NetheriteRoad {
     @Mod.EventHandler
     public static void preInit(FMLPreInitializationEvent event){
         proxy.preInit(event);
+        NetworkRegistry.INSTANCE.registerGuiHandler(NetheriteRoad.getInstance(), GuiHandler.INSTANCE);
+        GameRegistry.registerWorldGenerator(ORE_GEN, 5);
+        GameRegistry.addSmelting(ModBlocks.ANCIENT_DEBRIS , new ItemStack(ModItems.NETHERITE_SCRAP), 2F);
     }
     @Mod.EventHandler
     public static void init(FMLInitializationEvent event){
         proxy.init(event);
-        NetworkRegistry.INSTANCE.registerGuiHandler(NetheriteRoad.getInstance(), GuiHandler.INSTANCE);
-        GameRegistry.registerWorldGenerator(ORE_GEN, 5);
-        GameRegistry.addSmelting(ModBlocks.ANCIENT_DEBRIS , new ItemStack(ModItems.NETHERITE_SCRAP), 2F);
-        ItemOreRegister.register();
+
+    }
+    static {
+        FluidRegistry.enableUniversalBucket();
     }
 }

@@ -10,7 +10,7 @@ import net.minecraft.item.Item;
 public class CommonItemBase extends Item implements IHasModel {
     public CommonItemBase(String name, CreativeTabs tab){
         setRegistryName(Reference.MOD_ID, name);
-        setUnlocalizedName(Reference.MOD_ID + "." + name);
+        setTranslationKey(Reference.MOD_ID + "." + name);
         setCreativeTab(tab);
         ModItems.ITEMS.add(this);
     }
