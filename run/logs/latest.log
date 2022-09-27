@@ -1,0 +1,290 @@
+[21:39:47] [main/INFO] [GradleStart]: Extra: []
+[21:39:47] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/stars/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --accessToken{REDACTED}, --version, 1.12.2, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[21:39:47] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[21:39:47] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[21:39:47] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[21:39:47] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[21:39:47] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2847 for Minecraft 1.12.2 loading
+[21:39:47] [main/INFO] [FML]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_333, running on Windows 11:amd64:10.0, installed at C:\Program Files\Java\jdk1.8.0_333\jre
+[21:39:47] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
+[21:39:47] [main/ERROR] [FML]: Full: C:\Users\stars\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
+[21:39:47] [main/ERROR] [FML]: Trimmed: c:/users/stars/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
+[21:39:47] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[21:39:47] [main/INFO] [FML]: Detected deobfuscated environment, loading log configs for colored console logs.
+[21:39:47] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
+[21:39:47] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
+[21:39:47] [main/INFO] [FML]: Searching E:\NetheriteRoad-0.1\run\.\mods for mods
+[21:39:47] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[21:39:47] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
+[21:39:47] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[21:39:47] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[21:39:47] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[21:39:47] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[21:39:47] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[21:39:47] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[21:39:47] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[21:39:48] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
+[21:39:48] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[21:39:48] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[21:39:48] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[21:39:48] [main/INFO] [GradleStart]: Remapping AccessTransformer rules...
+[21:39:48] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[21:39:48] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[21:39:48] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[21:39:48] [Client thread/INFO] [net.minecraft.client.Minecraft]: Setting user: Player166
+[21:39:49] [Client thread/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[21:39:49] [Client thread/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
+[21:39:50] [Client thread/INFO] [FML]: -- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 1.8.0_333, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 232726008 bytes (221 MB) / 583532544 bytes (556 MB) up to 3752853504 bytes (3579 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: 
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 512.52' Renderer: 'NVIDIA GeForce RTX 3060/PCIe/SSE2'
+[21:39:50] [Client thread/INFO] [FML]: MinecraftForge v14.23.5.2847 Initialized
+[21:39:50] [Client thread/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[21:39:50] [Client thread/INFO] [FML]: Invalid recipe found with multiple oredict ingredients in the same ingredient...
+[21:39:50] [Client thread/INFO] [FML]: Replaced 1227 ore ingredients
+[21:39:50] [Client thread/INFO] [FML]: Searching E:\NetheriteRoad-0.1\run\.\mods for mods
+[21:39:51] [Client thread/INFO] [FML]: Forge Mod Loader has identified 7 mods to load
+[21:39:51] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, mantle, tconstruct, netheriteroad] at CLIENT
+[21:39:51] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, mantle, tconstruct, netheriteroad] at SERVER
+[21:39:52] [Client thread/INFO] [Pulsar-tconstruct]: Skipping Pulse chiselIntegration; missing dependency: chisel
+[21:39:52] [Client thread/INFO] [Pulsar-tconstruct]: Skipping Pulse chiselsandbitsIntegration; missing dependency: chiselsandbits
+[21:39:52] [Client thread/INFO] [Pulsar-tconstruct]: Skipping Pulse craftingtweaksIntegration; missing dependency: craftingtweaks
+[21:39:52] [Client thread/INFO] [Pulsar-tconstruct]: Skipping Pulse wailaIntegration; missing dependency: waila
+[21:39:52] [Client thread/INFO] [Pulsar-tconstruct]: Skipping Pulse theoneprobeIntegration; missing dependency: theoneprobe
+[21:39:52] [Client thread/INFO] [Pulsar-tconstruct]: Skipping Pulse quarkIntegration; missing dependency: quark
+[21:39:52] [Client thread/INFO] [tconstruct]: Preparing to take over the world
+[21:39:52] [Client thread/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Mantle, FMLFileResourcePack:Tinkers' Construct, FMLFileResourcePack:Netherite Road
+[21:39:52] [Client thread/INFO] [FML]: Processing ObjectHolder annotations
+[21:39:52] [Client thread/INFO] [FML]: Found 1169 ObjectHolder annotations
+[21:39:52] [Client thread/INFO] [FML]: Identifying ItemStackHolder annotations
+[21:39:52] [Client thread/INFO] [FML]: Found 0 ItemStackHolder annotations
+[21:39:52] [Client thread/INFO] [FML]: Configured a dormant chunk cache size of 0
+[21:39:52] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[21:39:52] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 86625000 nanos
+[21:39:52] [Client thread/WARN] [FML]: ****************************************
+[21:39:52] [Client thread/WARN] [FML]: * Invalid registration attempt for an Ore Dictionary item with name debrisAncient has occurred. The registration has been denied to prevent crashes. The mod responsible for the registration needs to correct this.
+[21:39:52] [Client thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:665)
+[21:39:52] [Client thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:651)
+[21:39:52] [Client thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:650)
+[21:39:52] [Client thread/WARN] [FML]: *  at com.groupzts.netheriteroad.blocks.common.AncientDebris.<init>(AncientDebris.java:19)
+[21:39:52] [Client thread/WARN] [FML]: *  at com.groupzts.netheriteroad.init.ModBlocks.<clinit>(ModBlocks.java:13)
+[21:39:52] [Client thread/WARN] [FML]: *  at com.groupzts.netheriteroad.init.ModItems.<clinit>(ModItems.java:29)...
+[21:39:52] [Client thread/WARN] [FML]: ****************************************
+[21:39:52] [Client thread/WARN] [FML]: ****************************************
+[21:39:52] [Client thread/WARN] [FML]: * Invalid registration attempt for an Ore Dictionary item with name oreNetherite has occurred. The registration has been denied to prevent crashes. The mod responsible for the registration needs to correct this.
+[21:39:52] [Client thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:665)
+[21:39:52] [Client thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:651)
+[21:39:52] [Client thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:650)
+[21:39:52] [Client thread/WARN] [FML]: *  at com.groupzts.netheriteroad.blocks.common.AncientDebris.<init>(AncientDebris.java:20)
+[21:39:52] [Client thread/WARN] [FML]: *  at com.groupzts.netheriteroad.init.ModBlocks.<clinit>(ModBlocks.java:13)
+[21:39:52] [Client thread/WARN] [FML]: *  at com.groupzts.netheriteroad.init.ModItems.<clinit>(ModItems.java:29)...
+[21:39:52] [Client thread/WARN] [FML]: ****************************************
+[21:39:52] [Client thread/WARN] [FML]: ****************************************
+[21:39:52] [Client thread/WARN] [FML]: * Invalid registration attempt for an Ore Dictionary item with name blockNetherite has occurred. The registration has been denied to prevent crashes. The mod responsible for the registration needs to correct this.
+[21:39:52] [Client thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:665)
+[21:39:52] [Client thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:651)
+[21:39:52] [Client thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:650)
+[21:39:52] [Client thread/WARN] [FML]: *  at com.groupzts.netheriteroad.blocks.common.NetheriteBlock.<init>(NetheriteBlock.java:22)
+[21:39:52] [Client thread/WARN] [FML]: *  at com.groupzts.netheriteroad.init.ModBlocks.<clinit>(ModBlocks.java:15)
+[21:39:52] [Client thread/WARN] [FML]: *  at com.groupzts.netheriteroad.init.ModItems.<clinit>(ModItems.java:29)...
+[21:39:52] [Client thread/WARN] [FML]: ****************************************
+[21:39:52] [Client thread/WARN] [tconstruct-API]: Itemstack 1xitem.netheriteroad.netherite_ingot@0 cannot represent material netherite since it is not associated with the material!
+[21:39:52] [Client thread/WARN] [FML]: ****************************************
+[21:39:52] [Client thread/WARN] [FML]: * A broken ore dictionary registration with name ingotNetherite has occurred. It adds an item (type: class com.groupzts.netheriteroad.items.base.FireImmuneItemBase) which is currently unknown to the game registry. This dictionary item can only support a single value when registered with ores like this, and NO I am not going to turn this spam off. Just register your ore dictionary entries after the GameRegistry.
+TO USERS: YES this is a BUG in the mod Netherite Road report it to them!
+[21:39:52] [Client thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:679)
+[21:39:52] [Client thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:651)
+[21:39:52] [Client thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:649)
+[21:39:52] [Client thread/WARN] [FML]: *  at com.groupzts.netheriteroad.utils.ItemOreRegister.register(ItemOreRegister.java:8)
+[21:39:52] [Client thread/WARN] [FML]: *  at com.groupzts.netheriteroad.proxy.ServerProxy.preInit(ServerProxy.java:15)
+[21:39:52] [Client thread/WARN] [FML]: *  at com.groupzts.netheriteroad.proxy.ClientProxy.preInit(ClientProxy.java:21)...
+[21:39:52] [Client thread/WARN] [FML]: ****************************************
+[21:39:52] [Client thread/WARN] [FML]: ****************************************
+[21:39:52] [Client thread/WARN] [FML]: * A broken ore dictionary registration with name NetheriteIngot has occurred. It adds an item (type: class com.groupzts.netheriteroad.items.base.FireImmuneItemBase) which is currently unknown to the game registry. This dictionary item can only support a single value when registered with ores like this, and NO I am not going to turn this spam off. Just register your ore dictionary entries after the GameRegistry.
+TO USERS: YES this is a BUG in the mod Netherite Road report it to them!
+[21:39:52] [Client thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:679)
+[21:39:52] [Client thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:651)
+[21:39:52] [Client thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:649)
+[21:39:52] [Client thread/WARN] [FML]: *  at com.groupzts.netheriteroad.utils.ItemOreRegister.register(ItemOreRegister.java:9)
+[21:39:52] [Client thread/WARN] [FML]: *  at com.groupzts.netheriteroad.proxy.ServerProxy.preInit(ServerProxy.java:15)
+[21:39:52] [Client thread/WARN] [FML]: *  at com.groupzts.netheriteroad.proxy.ClientProxy.preInit(ClientProxy.java:21)...
+[21:39:52] [Client thread/WARN] [FML]: ****************************************
+[21:39:52] [Client thread/WARN] [FML]: ****************************************
+[21:39:52] [Client thread/WARN] [FML]: * A broken ore dictionary registration with name scrapNetherite has occurred. It adds an item (type: class com.groupzts.netheriteroad.items.base.FireImmuneItemBase) which is currently unknown to the game registry. This dictionary item can only support a single value when registered with ores like this, and NO I am not going to turn this spam off. Just register your ore dictionary entries after the GameRegistry.
+TO USERS: YES this is a BUG in the mod Netherite Road report it to them!
+[21:39:52] [Client thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:679)
+[21:39:52] [Client thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:651)
+[21:39:52] [Client thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:649)
+[21:39:52] [Client thread/WARN] [FML]: *  at com.groupzts.netheriteroad.utils.ItemOreRegister.register(ItemOreRegister.java:10)
+[21:39:52] [Client thread/WARN] [FML]: *  at com.groupzts.netheriteroad.proxy.ServerProxy.preInit(ServerProxy.java:15)
+[21:39:52] [Client thread/WARN] [FML]: *  at com.groupzts.netheriteroad.proxy.ClientProxy.preInit(ClientProxy.java:21)...
+[21:39:52] [Client thread/WARN] [FML]: ****************************************
+[21:39:52] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `tconstruct.table`, expected `tconstruct`. This could be a intended override, but in most cases indicates a broken mod.
+[21:39:52] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `tconstruct.craftingstation`, expected `tconstruct`. This could be a intended override, but in most cases indicates a broken mod.
+[21:39:52] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `tconstruct.stenciltable`, expected `tconstruct`. This could be a intended override, but in most cases indicates a broken mod.
+[21:39:52] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `tconstruct.partbuilder`, expected `tconstruct`. This could be a intended override, but in most cases indicates a broken mod.
+[21:39:52] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `tconstruct.patternchest`, expected `tconstruct`. This could be a intended override, but in most cases indicates a broken mod.
+[21:39:52] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `tconstruct.partchest`, expected `tconstruct`. This could be a intended override, but in most cases indicates a broken mod.
+[21:39:52] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `tconstruct.toolstation`, expected `tconstruct`. This could be a intended override, but in most cases indicates a broken mod.
+[21:39:52] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `tconstruct.toolforge`, expected `tconstruct`. This could be a intended override, but in most cases indicates a broken mod.
+[21:39:52] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `tconstruct.smeltery_controller`, expected `tconstruct`. This could be a intended override, but in most cases indicates a broken mod.
+[21:39:52] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `tconstruct.smeltery_component`, expected `tconstruct`. This could be a intended override, but in most cases indicates a broken mod.
+[21:39:52] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `tconstruct.tank`, expected `tconstruct`. This could be a intended override, but in most cases indicates a broken mod.
+[21:39:52] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `tconstruct.faucet`, expected `tconstruct`. This could be a intended override, but in most cases indicates a broken mod.
+[21:39:52] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `tconstruct.channel`, expected `tconstruct`. This could be a intended override, but in most cases indicates a broken mod.
+[21:39:52] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `tconstruct.casting_table`, expected `tconstruct`. This could be a intended override, but in most cases indicates a broken mod.
+[21:39:52] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `tconstruct.casting_basin`, expected `tconstruct`. This could be a intended override, but in most cases indicates a broken mod.
+[21:39:52] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `tconstruct.smeltery_drain`, expected `tconstruct`. This could be a intended override, but in most cases indicates a broken mod.
+[21:39:52] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `tconstruct.seared_furnace`, expected `tconstruct`. This could be a intended override, but in most cases indicates a broken mod.
+[21:39:52] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `tconstruct.tinker_tank`, expected `tconstruct`. This could be a intended override, but in most cases indicates a broken mod.
+[21:39:53] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `tconstruct.item_rack`, expected `tconstruct`. This could be a intended override, but in most cases indicates a broken mod.
+[21:39:53] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `tconstruct.drying_rack`, expected `tconstruct`. This could be a intended override, but in most cases indicates a broken mod.
+[21:39:53] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `tconstruct.wooden_hopper`, expected `tconstruct`. This could be a intended override, but in most cases indicates a broken mod.
+[21:39:53] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `tconstruct.slime_channel`, expected `tconstruct`. This could be a intended override, but in most cases indicates a broken mod.
+[21:39:53] [Client thread/WARN] [FML]: ****************************************
+[21:39:53] [Client thread/WARN] [FML]: * Registry Block: The object Block{netheriteroad:molten_netherite} has been registered twice for the same name netheriteroad:molten_netherite.
+[21:39:53] [Client thread/WARN] [FML]: *  at net.minecraftforge.registries.ForgeRegistry.add(ForgeRegistry.java:307)
+[21:39:53] [Client thread/WARN] [FML]: *  at net.minecraftforge.registries.ForgeRegistry.add(ForgeRegistry.java:288)
+[21:39:53] [Client thread/WARN] [FML]: *  at net.minecraftforge.registries.ForgeRegistry.register(ForgeRegistry.java:120)
+[21:39:53] [Client thread/WARN] [FML]: *  at net.minecraftforge.registries.ForgeRegistry.registerAll(ForgeRegistry.java:161)
+[21:39:53] [Client thread/WARN] [FML]: *  at com.groupzts.netheriteroad.utils.handlers.RegistryHandler.onBlockRegister(RegistryHandler.java:30)
+[21:39:53] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_51_RegistryHandler_onBlockRegister_Register.invoke(.dynamic)...
+[21:39:53] [Client thread/WARN] [FML]: ****************************************
+[21:39:53] [Client thread/WARN] [FML]: ****************************************
+[21:39:53] [Client thread/WARN] [FML]: * Registry Block: The object Block{netheriteroad:molten_ancient} has been registered twice for the same name netheriteroad:molten_ancient.
+[21:39:53] [Client thread/WARN] [FML]: *  at net.minecraftforge.registries.ForgeRegistry.add(ForgeRegistry.java:307)
+[21:39:53] [Client thread/WARN] [FML]: *  at net.minecraftforge.registries.ForgeRegistry.add(ForgeRegistry.java:288)
+[21:39:53] [Client thread/WARN] [FML]: *  at net.minecraftforge.registries.ForgeRegistry.register(ForgeRegistry.java:120)
+[21:39:53] [Client thread/WARN] [FML]: *  at net.minecraftforge.registries.ForgeRegistry.registerAll(ForgeRegistry.java:161)
+[21:39:53] [Client thread/WARN] [FML]: *  at com.groupzts.netheriteroad.utils.handlers.RegistryHandler.onBlockRegister(RegistryHandler.java:30)
+[21:39:53] [Client thread/WARN] [FML]: *  at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_51_RegistryHandler_onBlockRegister_Register.invoke(.dynamic)...
+[21:39:53] [Client thread/WARN] [FML]: ****************************************
+[21:39:53] [Client thread/INFO] [FML]: Applying holder lookups
+[21:39:53] [Client thread/INFO] [FML]: Holder lookups applied
+[21:39:53] [Client thread/INFO] [FML]: Applying holder lookups
+[21:39:53] [Client thread/INFO] [FML]: Holder lookups applied
+[21:39:53] [Client thread/INFO] [FML]: Applying holder lookups
+[21:39:53] [Client thread/INFO] [FML]: Holder lookups applied
+[21:39:53] [Client thread/INFO] [FML]: Applying holder lookups
+[21:39:53] [Client thread/INFO] [FML]: Holder lookups applied
+[21:39:53] [Client thread/INFO] [FML]: Injecting itemstacks
+[21:39:53] [Client thread/INFO] [FML]: Itemstack injection complete
+[21:39:56] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...
+[21:39:56] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenAL
+[21:39:56] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[21:39:57] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.
+[21:39:57] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine started
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load multimodel tconstruct:tools/arrow.tcon#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/arrow_head.tmat#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/arrow_shaft.tmat#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/axe_head.tmat#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load multimodel tconstruct:tools/battlesign.tcon#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/binding.tmat#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load multimodel tconstruct:tools/bolt.tcon#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load multimodel tconstruct:parts/bolt_core.tcon#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/bow_limb.tmat#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/bow_string.tmat#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/broad_axe_head.tmat#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load multimodel tconstruct:tools/broadsword.tcon#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load multimodel tconstruct:tools/cleaver.tcon#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/cross_guard.tmat#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load multimodel tconstruct:tools/crossbow.tcon#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load multimodel tconstruct:tools/excavator.tcon#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/excavator_head.tmat#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/fletching.tmat#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load multimodel tconstruct:tools/frypan.tcon#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load multimodel tconstruct:tools/hammer.tcon#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/hammer_head.tmat#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/hand_guard.tmat#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load multimodel tconstruct:tools/hatchet.tcon#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load multimodel tconstruct:tools/kama.tcon#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/kama_head.tmat#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/knife_blade.tmat#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/large_plate.tmat#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/large_sword_blade.tmat#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load multimodel tconstruct:tools/longbow.tcon#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load multimodel tconstruct:tools/longsword.tcon#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load multimodel tconstruct:tools/lumberaxe.tcon#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load multimodel tconstruct:tools/mattock.tcon#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load multimodel tconstruct:moms_spaghetti.tcon#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/pan_head.tmat#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/pick_head.tmat#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load multimodel tconstruct:tools/pickaxe.tcon#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load multimodel tconstruct:tools/rapier.tcon#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load multimodel tconstruct:tools/scythe.tcon#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/scythe_head.tmat#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/shard.tmat#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/sharpening_kit.tmat#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load multimodel tconstruct:tools/shortbow.tcon#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load multimodel tconstruct:tools/shovel.tcon#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/shovel_head.tmat#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load multimodel tconstruct:tools/shuriken.tcon#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/sign_head.tmat#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/sword_blade.tmat#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/tool_rod.tmat#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/tough_binding.tmat#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/tough_tool_rod.tmat#inventory
+[21:40:00] [Client thread/ERROR] [tconstruct-API]: Could not load material model tconstruct:parts/wide_guard.tmat#inventory
+[21:40:00] [Client thread/INFO] [FML]: Max texture size: 16384
+[21:40:01] [Client thread/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 2048x1024 textures-atlas
+[21:40:02] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `slime`, expected `tconstruct`. This could be a intended override, but in most cases indicates a broken mod.
+[21:40:02] [Client thread/INFO] [FML]: Applying holder lookups
+[21:40:02] [Client thread/INFO] [FML]: Holder lookups applied
+[21:40:02] [Client thread/INFO] [FML]: Injecting itemstacks
+[21:40:02] [Client thread/INFO] [FML]: Itemstack injection complete
+[21:40:02] [Client thread/INFO] [tconstruct-TinkerSmeltery]: Started adding oredict melting recipes
+[21:40:02] [Client thread/INFO] [tconstruct-TinkerSmeltery]: Oredict melting recipes finished in 71.8017 ms
+[21:40:03] [Client thread/INFO] [FML]: Forge Mod Loader has successfully loaded 7 mods
+[21:40:03] [Client thread/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[21:40:03] [Client thread/INFO] [com.mojang.text2speech.NarratorWindows]: Narrator library for x64 successfully loaded
+[21:40:06] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient]: Could not authorize you against Realms server: Invalid session id
+[21:40:07] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: OUTDATED Target: 14.23.5.2859
+[21:40:46] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Starting integrated minecraft server version 1.12.2
+[21:40:46] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Generating keypair
+[21:40:46] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
+[21:40:46] [Server thread/INFO] [FML]: Applying holder lookups
+[21:40:46] [Server thread/INFO] [FML]: Holder lookups applied
+[21:40:47] [Server thread/INFO] [FML]: Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@5e21b481)
+[21:40:47] [Server thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 488 advancements
+[21:40:47] [Server thread/INFO] [FML]: Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@5e21b481)
+[21:40:47] [Server thread/INFO] [FML]: Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@5e21b481)
+[21:40:47] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for level 0
+[21:40:48] [Server thread/INFO] [FML]: Unloading dimension -1
+[21:40:48] [Server thread/INFO] [FML]: Unloading dimension 1
+[21:40:48] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Changing view distance to 12, from 10
+[21:40:50] [Netty Local Client IO #0/INFO] [FML]: Server protocol version 2
+[21:40:50] [Netty Server IO #1/INFO] [FML]: Client protocol version 2
+[21:40:50] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 7 mods : minecraft@1.12.2,tconstruct@1.12.2-2.13.0.183,FML@8.0.99.99,forge@14.23.5.2847,netheriteroad@0.3.14,mantle@1.12-1.3.3.55,mcp@9.42
+[21:40:50] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection established
+[21:40:50] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[21:40:50] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Player166[local:E:3ec541d0] logged in with entity id 271 at (0.9148098679915523, 65.77340570854747, 19.95640783077136)
+[21:40:50] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player166 joined the game
+[21:40:51] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[21:40:51] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[21:40:51] [Client thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 5 advancements
+[21:40:52] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[21:40:52] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[21:41:44] [Client thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 6 advancements
+[21:41:53] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[21:41:53] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[21:41:53] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
+[21:41:53] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving players
+[21:41:53] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Player166 lost connection: Disconnected
+[21:41:53] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player166 left the game
+[21:41:53] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Stopping singleplayer server as player logged out
+[21:41:53] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worlds
+[21:41:53] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[21:41:53] [Server thread/INFO] [FML]: Unloading dimension 0
+[21:41:54] [Server thread/INFO] [FML]: Applying holder lookups
+[21:41:54] [Server thread/INFO] [FML]: Holder lookups applied
+[21:41:55] [Client thread/INFO] [net.minecraft.client.Minecraft]: Stopping!
+[21:41:55] [Client thread/INFO] [net.minecraft.client.audio.SoundManager]: SoundSystem shutting down...
+[21:41:55] [Client thread/WARN] [net.minecraft.client.audio.SoundManager]: Author: Paul Lamb, www.paulscode.com

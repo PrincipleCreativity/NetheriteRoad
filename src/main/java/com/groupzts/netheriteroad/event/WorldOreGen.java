@@ -2,7 +2,6 @@ package com.groupzts.netheriteroad.event;
 
 import com.groupzts.netheriteroad.NetheriteRoad;
 import com.groupzts.netheriteroad.init.ModBlocks;
-import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;

@@ -1,6 +1,5 @@
 package com.groupzts.netheriteroad.blocks.common;
 
-import com.groupzts.netheriteroad.blocks.BlockBase;
 import com.groupzts.netheriteroad.init.ModBlocks;
 import com.groupzts.netheriteroad.utils.Reference;
 import net.minecraft.block.Block;

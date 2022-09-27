@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "netheriteroad:block/smithing_table_front",
+    "north": "netheriteroad:block/smithing_table_front",
+    "south": "netheriteroad:block/smithing_table_front",
+    "east": "netheriteroad:block/smithing_table_side",
+    "west": "netheriteroad:block/smithing_table_side",
+    "up": "netheriteroad:block/smithing_table_top",
+    "down": "netheriteroad:block/smithing_table_bottom"
+  }
+}

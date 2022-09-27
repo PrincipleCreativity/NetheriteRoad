@@ -1,6 +1,6 @@
 package com.groupzts.netheriteroad.proxy;
 
-import com.groupzts.netheriteroad.compat.tinkers.TiCConfig;
+import com.groupzts.netheriteroad.compat.tinkers.TiCConfig;;
 import com.groupzts.netheriteroad.utils.ItemOreRegister;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Loader;

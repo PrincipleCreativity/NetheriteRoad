@@ -1,17 +1,9 @@
 package com.groupzts.netheriteroad.client.container;
 
-import java.util.Map;
-
-import com.groupzts.netheriteroad.init.ModBlocks;
 import com.groupzts.netheriteroad.init.ModItems;
 import com.groupzts.netheriteroad.init.ModSounds;
-import net.minecraft.block.BlockAnvil;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.enchantment.Enchantment;
-import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.inventory.*;
 import net.minecraft.item.Item;

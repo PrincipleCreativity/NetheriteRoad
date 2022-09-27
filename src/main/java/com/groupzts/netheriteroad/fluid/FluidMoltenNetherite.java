@@ -3,6 +3,7 @@ package com.groupzts.netheriteroad.fluid;
 import slimeknights.tconstruct.library.fluid.FluidMolten;
 
 public class FluidMoltenNetherite extends FluidMolten {
+
     public FluidMoltenNetherite() {
         super("molten_netherite", 0x383333);
         this.setDensity(2000);

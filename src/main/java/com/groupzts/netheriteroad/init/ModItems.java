@@ -8,11 +8,9 @@ import com.groupzts.netheriteroad.utils.ModMaterials;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class ModItems {
     public static final List<Item> ITEMS = new ArrayList<>();
