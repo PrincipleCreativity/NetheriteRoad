@@ -21,3 +21,5 @@ material.netherite.name=下界合金
 modifier.superfortified.name=超级强化
 fluid.molten_netherite.name=熔融下界合金
 fluid.molten_ancient.name=熔融远古残骸
+advancements.nether.obtain_ancient_debris.title=深藏不露
+advancements.nether.obtain_ancient_debris.description=获得远古残骸

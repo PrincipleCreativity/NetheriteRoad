@@ -1,7 +1,7 @@
 Unsupposrted library path: E:\NetheriteRoad-0.1\build\classes\java\api
 Unsupposrted library path: E:\NetheriteRoad-0.1\build\resources\api
 Symbol range map extraction starting
-Processing 37 files
+Processing 40 files
 startProcessing "com/groupzts/netheriteroad/NetheriteRoad.java" md5: 840e23a9283437af15002b42bbd531f5
 @|com/groupzts/netheriteroad/NetheriteRoad.java|8|34|com.groupzts.netheriteroad|package|com.groupzts.netheriteroad|(file)
 Enum Start: com.groupzts.netheriteroad.NetheriteRoad
@@ -914,6 +914,276 @@ Class Start: com.groupzts.netheriteroad.client.gui.GuiSmithing
 Class End  : com.groupzts.netheriteroad.client.gui.GuiSmithing
 endProcessing "com/groupzts/netheriteroad/client/gui/GuiSmithing.java"
 
+startProcessing "com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java" md5: 7bb18492a0ff357a412c01e3607e0525
+@|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|8|45|com.groupzts.netheriteroad.compat.jei|package|com.groupzts.netheriteroad.compat.jei|(file)
+Class Start: com.groupzts.netheriteroad.compat.jei.ModSmithingMaker
+   @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|596|612|ModSmithingMaker|class|com.groupzts.netheriteroad.compat.jei.ModSmithingMaker|false
+   Method Start: ModSmithingMaker()V
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|628|644|ModSmithingMaker|method|com.groupzts.netheriteroad.compat.jei.ModSmithingMaker|ModSmithingMaker|()V
+   Method End: ModSmithingMaker()V
+   Method Start: getSmithingRecipes(Lmezz/jei/api/recipe/IVanillaRecipeFactory;Lmezz/jei/api/ingredients/IIngredientRegistry;)Ljava/util/List;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|739|759|vanillaRecipeFactory|param|com.groupzts.netheriteroad.compat.jei.ModSmithingMaker|getSmithingRecipes|(Lmezz/jei/api/recipe/IVanillaRecipeFactory;Lmezz/jei/api/ingredients/IIngredientRegistry;)Ljava/util/List;|vanillaRecipeFactory|0
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|781|799|ingredientRegistry|param|com.groupzts.netheriteroad.compat.jei.ModSmithingMaker|getSmithingRecipes|(Lmezz/jei/api/recipe/IVanillaRecipeFactory;Lmezz/jei/api/ingredients/IIngredientRegistry;)Ljava/util/List;|ingredientRegistry|1
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|677|681|List|class|java.util.List|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|682|696|IRecipeWrapper|class|mezz.jei.api.recipe.IRecipeWrapper|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|698|716|getSmithingRecipes|method|com.groupzts.netheriteroad.compat.jei.ModSmithingMaker|getSmithingRecipes|(Lmezz/jei/api/recipe/IVanillaRecipeFactory;Lmezz/jei/api/ingredients/IIngredientRegistry;)Ljava/util/List;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|717|738|IVanillaRecipeFactory|class|mezz.jei.api.recipe.IVanillaRecipeFactory|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|761|780|IIngredientRegistry|class|mezz.jei.api.ingredients.IIngredientRegistry|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|812|816|List|class|java.util.List|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|817|831|IRecipeWrapper|class|mezz.jei.api.recipe.IRecipeWrapper|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|847|856|ArrayList|class|java.util.ArrayList|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|871|880|Stopwatch|class|com.google.common.base.Stopwatch|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|886|895|Stopwatch|class|com.google.common.base.Stopwatch|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|896|909|createStarted|method|com.google.common.base.Stopwatch|createStarted|()Lcom/google/common/base/Stopwatch;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|941|951|getRecipes|method|com.groupzts.netheriteroad.compat.jei.ModSmithingMaker|getRecipes|(Ljava/util/List;Lmezz/jei/api/recipe/IVanillaRecipeFactory;)V
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|961|981|vanillaRecipeFactory|param|com.groupzts.netheriteroad.compat.jei.ModSmithingMaker|getSmithingRecipes|(Lmezz/jei/api/recipe/IVanillaRecipeFactory;Lmezz/jei/api/ingredients/IIngredientRegistry;)Ljava/util/List;|vanillaRecipeFactory|0
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1002|1018|RuntimeException|class|java.lang.RuntimeException|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1037|1040|Log|class|mezz.jei.util.Log|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1041|1044|get|method|mezz.jei.util.Log|get|()Lorg/apache/logging/log4j/Logger;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1047|1052|error|method|org.apache.logging.log4j.Logger|error|(Ljava/lang/String;Ljava/lang/Throwable;)V
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1116|1120|stop|method|com.google.common.base.Stopwatch|stop|()Lcom/google/common/base/Stopwatch;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1133|1136|Log|class|mezz.jei.util.Log|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1137|1140|get|method|mezz.jei.util.Log|get|()Lorg/apache/logging/log4j/Logger;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1143|1148|debug|method|org.apache.logging.log4j.Logger|debug|(Ljava/lang/String;Ljava/lang/Object;)V
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1209|1214|reset|method|com.google.common.base.Stopwatch|reset|()Lcom/google/common/base/Stopwatch;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1230|1235|start|method|com.google.common.base.Stopwatch|start|()Lcom/google/common/base/Stopwatch;
+   Method End: getSmithingRecipes(Lmezz/jei/api/recipe/IVanillaRecipeFactory;Lmezz/jei/api/ingredients/IIngredientRegistry;)Ljava/util/List;
+   Method Start: getRecipes(Ljava/util/List;Lmezz/jei/api/recipe/IVanillaRecipeFactory;)V
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1327|1334|recipes|param|com.groupzts.netheriteroad.compat.jei.ModSmithingMaker|getRecipes|(Ljava/util/List;Lmezz/jei/api/recipe/IVanillaRecipeFactory;)V|recipes|0
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1358|1378|vanillaRecipeFactory|param|com.groupzts.netheriteroad.compat.jei.ModSmithingMaker|getRecipes|(Ljava/util/List;Lmezz/jei/api/recipe/IVanillaRecipeFactory;)V|vanillaRecipeFactory|1
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1295|1305|getRecipes|method|com.groupzts.netheriteroad.compat.jei.ModSmithingMaker|getRecipes|(Ljava/util/List;Lmezz/jei/api/recipe/IVanillaRecipeFactory;)V
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1306|1310|List|class|java.util.List|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1311|1325|IRecipeWrapper|class|mezz.jei.api.recipe.IRecipeWrapper|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1336|1357|IVanillaRecipeFactory|class|mezz.jei.api.recipe.IVanillaRecipeFactory|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1390|1393|Map|class|java.util.Map|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1394|1398|List|class|java.util.List|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1399|1408|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1411|1420|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1430|1434|Maps|class|com.google.common.collect.Maps|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1435|1445|newHashMap|method|com.google.common.collect.Maps|newHashMap|()Ljava/util/HashMap;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1458|1467|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1484|1493|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1494|1502|ModItems|class|com.groupzts.netheriteroad.init.ModItems|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1503|1518|NETHERITE_INGOT|field|com.groupzts.netheriteroad.init.ModItems|NETHERITE_INGOT
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1539|1542|put|method|java.util.Map|put|(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1543|1548|Lists|class|com.google.common.collect.Lists|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1549|1561|newArrayList|method|com.google.common.collect.Lists|newArrayList|([Ljava/lang/Object;)Ljava/util/ArrayList;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1584|1593|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1594|1602|ModItems|class|com.groupzts.netheriteroad.init.ModItems|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1603|1618|NETHERITE_SWORD|field|com.groupzts.netheriteroad.init.ModItems|NETHERITE_SWORD
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1642|1651|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1652|1660|ModItems|class|com.groupzts.netheriteroad.init.ModItems|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1661|1678|NETHERITE_PICKAXE|field|com.groupzts.netheriteroad.init.ModItems|NETHERITE_PICKAXE
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1702|1711|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1712|1720|ModItems|class|com.groupzts.netheriteroad.init.ModItems|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1721|1734|NETHERITE_AXE|field|com.groupzts.netheriteroad.init.ModItems|NETHERITE_AXE
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1758|1767|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1768|1776|ModItems|class|com.groupzts.netheriteroad.init.ModItems|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1777|1793|NETHERITE_SHOVEL|field|com.groupzts.netheriteroad.init.ModItems|NETHERITE_SHOVEL
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1817|1826|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1827|1835|ModItems|class|com.groupzts.netheriteroad.init.ModItems|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1836|1849|NETHERITE_HOE|field|com.groupzts.netheriteroad.init.ModItems|NETHERITE_HOE
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1873|1882|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1883|1891|ModItems|class|com.groupzts.netheriteroad.init.ModItems|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1892|1908|NETHERITE_HELMET|field|com.groupzts.netheriteroad.init.ModItems|NETHERITE_HELMET
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1932|1941|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1942|1950|ModItems|class|com.groupzts.netheriteroad.init.ModItems|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1951|1971|NETHERITE_CHESTPLATE|field|com.groupzts.netheriteroad.init.ModItems|NETHERITE_CHESTPLATE
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|1995|2004|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2005|2013|ModItems|class|com.groupzts.netheriteroad.init.ModItems|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2014|2032|NETHERITE_LEGGINGS|field|com.groupzts.netheriteroad.init.ModItems|NETHERITE_LEGGINGS
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2056|2065|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2066|2074|ModItems|class|com.groupzts.netheriteroad.init.ModItems|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2075|2090|NETHERITE_BOOTS|field|com.groupzts.netheriteroad.init.ModItems|NETHERITE_BOOTS
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2129|2138|Map.Entry|class|java.util.Map.Entry|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2139|2143|List|class|java.util.List|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2144|2153|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2156|2165|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2181|2189|entrySet|method|java.util.Map|entrySet|()Ljava/util/Set;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2210|2219|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2243|2251|getValue|method|java.util.Map.Entry|getValue|()Ljava/lang/Object;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2275|2284|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2304|2310|getKey|method|java.util.Map.Entry|getKey|()Ljava/lang/Object;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2335|2344|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2367|2371|copy|method|net.minecraft.item.ItemStack|copy|()Lnet/minecraft/item/ItemStack;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2401|2414|setItemDamage|method|net.minecraft.item.ItemStack|setItemDamage|(I)V
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2424|2436|getMaxDamage|method|net.minecraft.item.ItemStack|getMaxDamage|()I
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2458|2467|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2490|2494|copy|method|net.minecraft.item.ItemStack|copy|()Lnet/minecraft/item/ItemStack;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2524|2537|setItemDamage|method|net.minecraft.item.ItemStack|setItemDamage|(I)V
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2547|2559|getMaxDamage|method|net.minecraft.item.ItemStack|getMaxDamage|()I
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2589|2598|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2621|2625|copy|method|net.minecraft.item.ItemStack|copy|()Lnet/minecraft/item/ItemStack;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2655|2668|setItemDamage|method|net.minecraft.item.ItemStack|setItemDamage|(I)V
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2678|2690|getMaxDamage|method|net.minecraft.item.ItemStack|getMaxDamage|()I
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2722|2736|IRecipeWrapper|class|mezz.jei.api.recipe.IRecipeWrapper|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2758|2778|vanillaRecipeFactory|param|com.groupzts.netheriteroad.compat.jei.ModSmithingMaker|getRecipes|(Ljava/util/List;Lmezz/jei/api/recipe/IVanillaRecipeFactory;)V|vanillaRecipeFactory|1
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2779|2796|createAnvilRecipe|method|mezz.jei.api.recipe.IVanillaRecipeFactory|createAnvilRecipe|(Lnet/minecraft/item/ItemStack;Ljava/util/List;Ljava/util/List;)Lmezz/jei/api/recipe/IRecipeWrapper;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2807|2818|Collections|class|java.util.Collections|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2819|2832|singletonList|method|java.util.Collections|singletonList|(Ljava/lang/Object;)Ljava/util/List;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2850|2861|Collections|class|java.util.Collections|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2862|2875|singletonList|method|java.util.Collections|singletonList|(Ljava/lang/Object;)Ljava/util/List;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2905|2919|IRecipeWrapper|class|mezz.jei.api.recipe.IRecipeWrapper|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2937|2957|vanillaRecipeFactory|param|com.groupzts.netheriteroad.compat.jei.ModSmithingMaker|getRecipes|(Ljava/util/List;Lmezz/jei/api/recipe/IVanillaRecipeFactory;)V|vanillaRecipeFactory|1
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2958|2975|createAnvilRecipe|method|mezz.jei.api.recipe.IVanillaRecipeFactory|createAnvilRecipe|(Lnet/minecraft/item/ItemStack;Ljava/util/List;Ljava/util/List;)Lmezz/jei/api/recipe/IRecipeWrapper;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2986|2997|Collections|class|java.util.Collections|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|2998|3011|singletonList|method|java.util.Collections|singletonList|(Ljava/lang/Object;)Ljava/util/List;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|3023|3034|Collections|class|java.util.Collections|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|3035|3048|singletonList|method|java.util.Collections|singletonList|(Ljava/lang/Object;)Ljava/util/List;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|3078|3085|recipes|param|com.groupzts.netheriteroad.compat.jei.ModSmithingMaker|getRecipes|(Ljava/util/List;Lmezz/jei/api/recipe/IVanillaRecipeFactory;)V|recipes|0
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|3086|3089|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|3128|3135|recipes|param|com.groupzts.netheriteroad.compat.jei.ModSmithingMaker|getRecipes|(Ljava/util/List;Lmezz/jei/api/recipe/IVanillaRecipeFactory;)V|recipes|0
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java|3136|3139|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+   Method End: getRecipes(Ljava/util/List;Lmezz/jei/api/recipe/IVanillaRecipeFactory;)V
+Class End  : com.groupzts.netheriteroad.compat.jei.ModSmithingMaker
+endProcessing "com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java"
+
+startProcessing "com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java" md5: b1c6dd9ca9749b7c1b60d9fa963b93e2
+@|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|8|45|com.groupzts.netheriteroad.compat.jei|package|com.groupzts.netheriteroad.compat.jei|(file)
+Class Start: com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory
+   @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|733|758|ModSmithingRecipeCategory|class|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|false
+   @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|770|785|IRecipeCategory|class|mezz.jei.api.recipe.IRecipeCategory|false
+   @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|786|804|AnvilRecipeWrapper|class|mezz.jei.plugins.vanilla.anvil.AnvilRecipeWrapper|false
+   @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|838|853|craftOutputSlot|field|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|craftOutputSlot|
+   @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|889|904|craftInputSlot1|field|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|craftInputSlot1|
+   @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|941|946|width|field|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|width|
+   @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|983|989|height|field|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|height|
+   @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1017|1026|IDrawable|class|mezz.jei.api.gui.IDrawable|false
+   @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1017|1026|IDrawable|class|mezz.jei.api.gui.IDrawable|false
+   @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1027|1037|background|field|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|background|
+   @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1058|1067|IDrawable|class|mezz.jei.api.gui.IDrawable|false
+   @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1058|1067|IDrawable|class|mezz.jei.api.gui.IDrawable|false
+   @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1068|1072|icon|field|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|icon|
+   @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1093|1099|String|class|java.lang.String|false
+   @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1093|1099|String|class|java.lang.String|false
+   @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1100|1113|localizedName|field|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|localizedName|
+   Method Start: ModSmithingRecipeCategory(Lmezz/jei/api/IGuiHelper;)V
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1166|1175|guiHelper|param|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|ModSmithingRecipeCategory|(Lmezz/jei/api/IGuiHelper;)V|guiHelper|0
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1129|1154|ModSmithingRecipeCategory|method|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|ModSmithingRecipeCategory|(Lmezz/jei/api/IGuiHelper;)V
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1155|1165|IGuiHelper|class|mezz.jei.api.IGuiHelper|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1188|1204|ResourceLocation|class|net.minecraft.util.ResourceLocation|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1216|1225|Constants|class|mezz.jei.config.Constants|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1226|1244|RECIPE_GUI_VANILLA|field|mezz.jei.config.Constants|RECIPE_GUI_VANILLA
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1255|1265|background|field|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|background
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1268|1277|guiHelper|param|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|ModSmithingRecipeCategory|(Lmezz/jei/api/IGuiHelper;)V|guiHelper|0
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1278|1292|createDrawable|method|mezz.jei.api.IGuiHelper|createDrawable|(Lnet/minecraft/util/ResourceLocation;IIII)Lmezz/jei/api/gui/IDrawableStatic;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1310|1315|width|field|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|width
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1317|1323|height|field|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|height
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1335|1339|icon|field|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|icon
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1342|1351|guiHelper|param|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|ModSmithingRecipeCategory|(Lmezz/jei/api/IGuiHelper;)V|guiHelper|0
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1352|1376|createDrawableIngredient|method|mezz.jei.api.IGuiHelper|createDrawableIngredient|(Ljava/lang/Object;)Lmezz/jei/api/gui/IDrawable;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1381|1390|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1391|1400|ModBlocks|class|com.groupzts.netheriteroad.init.ModBlocks|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1401|1415|SMITHING_TABLE|field|com.groupzts.netheriteroad.init.ModBlocks|SMITHING_TABLE
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1428|1441|localizedName|field|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|localizedName
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1444|1454|Translator|class|mezz.jei.util.Translator|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1455|1471|translateToLocal|method|mezz.jei.util.Translator|translateToLocal|(Ljava/lang/String;)Ljava/lang/String;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1517|1536|ICraftingGridHelper|class|mezz.jei.api.gui.ICraftingGridHelper|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1558|1567|guiHelper|param|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|ModSmithingRecipeCategory|(Lmezz/jei/api/IGuiHelper;)V|guiHelper|0
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1568|1592|createCraftingGridHelper|method|mezz.jei.api.IGuiHelper|createCraftingGridHelper|(II)Lmezz/jei/api/gui/ICraftingGridHelper;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1593|1608|craftInputSlot1|field|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|craftInputSlot1
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1610|1625|craftOutputSlot|field|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|craftOutputSlot
+   Method End: ModSmithingRecipeCategory(Lmezz/jei/api/IGuiHelper;)V
+   Method Start: getUid()Ljava/lang/String;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1641|1649|Override|class|java.lang.Override|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1662|1668|String|class|java.lang.String|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1669|1675|getUid|method|mezz.jei.api.recipe.IRecipeCategory|getUid|()Ljava/lang/String;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1696|1720|VanillaRecipeCategoryUid|class|mezz.jei.api.recipe.VanillaRecipeCategoryUid|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1721|1729|CRAFTING|field|mezz.jei.api.recipe.VanillaRecipeCategoryUid|CRAFTING
+   Method End: getUid()Ljava/lang/String;
+   Method Start: getTitle()Ljava/lang/String;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1746|1754|Override|class|java.lang.Override|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1767|1773|String|class|java.lang.String|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1774|1782|getTitle|method|mezz.jei.api.recipe.IRecipeCategory|getTitle|()Ljava/lang/String;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1803|1816|localizedName|field|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|localizedName
+   Method End: getTitle()Ljava/lang/String;
+   Method Start: getModName()Ljava/lang/String;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1833|1841|Override|class|java.lang.Override|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1854|1860|String|class|java.lang.String|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1861|1871|getModName|method|mezz.jei.api.recipe.IRecipeCategory|getModName|()Ljava/lang/String;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1892|1901|Constants|class|mezz.jei.config.Constants|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1902|1916|MINECRAFT_NAME|field|mezz.jei.config.Constants|MINECRAFT_NAME
+   Method End: getModName()Ljava/lang/String;
+   Method Start: getBackground()Lmezz/jei/api/gui/IDrawable;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1933|1941|Override|class|java.lang.Override|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1954|1963|IDrawable|class|mezz.jei.api.gui.IDrawable|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1964|1977|getBackground|method|mezz.jei.api.recipe.IRecipeCategory|getBackground|()Lmezz/jei/api/gui/IDrawable;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|1998|2008|background|field|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|background
+   Method End: getBackground()Lmezz/jei/api/gui/IDrawable;
+   Method Start: getIcon()Lmezz/jei/api/gui/IDrawable;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|2025|2033|Override|class|java.lang.Override|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|2046|2055|IDrawable|class|mezz.jei.api.gui.IDrawable|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|2056|2063|getIcon|method|mezz.jei.api.recipe.IRecipeCategory|getIcon|()Lmezz/jei/api/gui/IDrawable;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|2084|2088|icon|field|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|icon
+   Method End: getIcon()Lmezz/jei/api/gui/IDrawable;
+   Method Start: setRecipe(Lmezz/jei/api/gui/IRecipeLayout;Lmezz/jei/plugins/vanilla/anvil/AnvilRecipeWrapper;Lmezz/jei/api/ingredients/IIngredients;)V
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|2155|2167|recipeLayout|param|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|setRecipe|(Lmezz/jei/api/gui/IRecipeLayout;Lmezz/jei/plugins/vanilla/anvil/AnvilRecipeWrapper;Lmezz/jei/api/ingredients/IIngredients;)V|recipeLayout|0
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|2188|2201|recipeWrapper|param|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|setRecipe|(Lmezz/jei/api/gui/IRecipeLayout;Lmezz/jei/plugins/vanilla/anvil/AnvilRecipeWrapper;Lmezz/jei/api/ingredients/IIngredients;)V|recipeWrapper|1
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|2216|2227|ingredients|param|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|setRecipe|(Lmezz/jei/api/gui/IRecipeLayout;Lmezz/jei/plugins/vanilla/anvil/AnvilRecipeWrapper;Lmezz/jei/api/ingredients/IIngredients;)V|ingredients|2
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|2105|2113|Override|class|java.lang.Override|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|2131|2140|setRecipe|method|mezz.jei.api.recipe.IRecipeCategory|setRecipe|(Lmezz/jei/api/gui/IRecipeLayout;Lmezz/jei/api/recipe/IRecipeWrapper;Lmezz/jei/api/ingredients/IIngredients;)V
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|2141|2154|IRecipeLayout|class|mezz.jei.api.gui.IRecipeLayout|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|2169|2187|AnvilRecipeWrapper|class|mezz.jei.plugins.vanilla.anvil.AnvilRecipeWrapper|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|2203|2215|IIngredients|class|mezz.jei.api.ingredients.IIngredients|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|2240|2258|IGuiItemStackGroup|class|mezz.jei.api.gui.IGuiItemStackGroup|false
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|2275|2287|recipeLayout|param|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|setRecipe|(Lmezz/jei/api/gui/IRecipeLayout;Lmezz/jei/plugins/vanilla/anvil/AnvilRecipeWrapper;Lmezz/jei/api/ingredients/IIngredients;)V|recipeLayout|0
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|2288|2301|getItemStacks|method|mezz.jei.api.gui.IRecipeLayout|getItemStacks|()Lmezz/jei/api/gui/IGuiItemStackGroup;
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|2330|2334|init|method|mezz.jei.api.gui.IGuiIngredientGroup|init|(IZII)V
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|2374|2378|init|method|mezz.jei.api.gui.IGuiIngredientGroup|init|(IZII)V
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|2419|2423|init|method|mezz.jei.api.gui.IGuiIngredientGroup|init|(IZII)V
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|2468|2471|set|method|mezz.jei.api.gui.IGuiIngredientGroup|set|(Lmezz/jei/api/ingredients/IIngredients;)V
+      @|com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java|2472|2483|ingredients|param|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|setRecipe|(Lmezz/jei/api/gui/IRecipeLayout;Lmezz/jei/plugins/vanilla/anvil/AnvilRecipeWrapper;Lmezz/jei/api/ingredients/IIngredients;)V|ingredients|2
+   Method End: setRecipe(Lmezz/jei/api/gui/IRecipeLayout;Lmezz/jei/plugins/vanilla/anvil/AnvilRecipeWrapper;Lmezz/jei/api/ingredients/IIngredients;)V
+Class End  : com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory
+endProcessing "com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java"
+
+startProcessing "com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java" md5: 1a74c2257bee25175b299bbe7023fc87
+@|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|8|45|com.groupzts.netheriteroad.compat.jei|package|com.groupzts.netheriteroad.compat.jei|(file)
+Class Start: com.groupzts.netheriteroad.compat.jei.NetheriteRoadPlugin
+   @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|536|545|JEIPlugin|class|mezz.jei.api.JEIPlugin|false
+   @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|560|579|NetheriteRoadPlugin|class|com.groupzts.netheriteroad.compat.jei.NetheriteRoadPlugin|false
+   @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|591|601|IModPlugin|class|mezz.jei.api.IModPlugin|false
+   @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|632|657|ModSmithingRecipeCategory|class|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|false
+   @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|610|618|Nullable|class|javax.annotation.Nullable|false
+   @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|632|657|ModSmithingRecipeCategory|class|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|false
+   @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|658|672|recipeCategory|field|com.groupzts.netheriteroad.compat.jei.NetheriteRoadPlugin|recipeCategory|
+   Method Start: registerCategories(Lmezz/jei/api/recipe/IRecipeCategoryRegistration;)V
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|755|763|registry|param|com.groupzts.netheriteroad.compat.jei.NetheriteRoadPlugin|registerCategories|(Lmezz/jei/api/recipe/IRecipeCategoryRegistration;)V|registry|0
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|682|690|Override|class|java.lang.Override|false
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|708|726|registerCategories|method|mezz.jei.api.IModPlugin|registerCategories|(Lmezz/jei/api/recipe/IRecipeCategoryRegistration;)V
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|727|754|IRecipeCategoryRegistration|class|mezz.jei.api.recipe.IRecipeCategoryRegistration|false
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|776|786|JeiHelpers|class|mezz.jei.runtime.JeiHelpers|false
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|800|808|Internal|class|mezz.jei.Internal|false
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|809|819|getHelpers|method|mezz.jei.Internal|getHelpers|()Lmezz/jei/runtime/JeiHelpers;
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|832|841|GuiHelper|class|mezz.jei.gui.GuiHelper|false
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|865|877|getGuiHelper|method|mezz.jei.api.IJeiHelpers|getGuiHelper|()Lmezz/jei/api/IGuiHelper;
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|890|898|registry|param|com.groupzts.netheriteroad.compat.jei.NetheriteRoadPlugin|registerCategories|(Lmezz/jei/api/recipe/IRecipeCategoryRegistration;)V|registry|0
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|899|918|addRecipeCategories|method|mezz.jei.api.recipe.IRecipeCategoryRegistration|addRecipeCategories|([Lmezz/jei/api/recipe/IRecipeCategory;)V
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|923|948|ModSmithingRecipeCategory|class|com.groupzts.netheriteroad.compat.jei.ModSmithingRecipeCategory|false
+   Method End: registerCategories(Lmezz/jei/api/recipe/IRecipeCategoryRegistration;)V
+   Method Start: register(Lmezz/jei/api/IModRegistry;)V
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|1025|1033|registry|param|com.groupzts.netheriteroad.compat.jei.NetheriteRoadPlugin|register|(Lmezz/jei/api/IModRegistry;)V|registry|0
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|977|985|Override|class|java.lang.Override|false
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|1003|1011|register|method|mezz.jei.api.IModPlugin|register|(Lmezz/jei/api/IModRegistry;)V
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|1012|1024|IModRegistry|class|mezz.jei.api.IModRegistry|false
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|1046|1065|IIngredientRegistry|class|mezz.jei.api.ingredients.IIngredientRegistry|false
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|1087|1095|registry|param|com.groupzts.netheriteroad.compat.jei.NetheriteRoadPlugin|register|(Lmezz/jei/api/IModRegistry;)V|registry|0
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|1096|1117|getIngredientRegistry|method|mezz.jei.api.IModRegistry|getIngredientRegistry|()Lmezz/jei/api/ingredients/IIngredientRegistry;
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|1130|1141|IJeiHelpers|class|mezz.jei.api.IJeiHelpers|false
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|1155|1163|registry|param|com.groupzts.netheriteroad.compat.jei.NetheriteRoadPlugin|register|(Lmezz/jei/api/IModRegistry;)V|registry|0
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|1164|1177|getJeiHelpers|method|mezz.jei.api.IModRegistry|getJeiHelpers|()Lmezz/jei/api/IJeiHelpers;
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|1190|1211|IVanillaRecipeFactory|class|mezz.jei.api.recipe.IVanillaRecipeFactory|false
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|1246|1269|getVanillaRecipeFactory|method|mezz.jei.api.IJeiHelpers|getVanillaRecipeFactory|()Lmezz/jei/api/recipe/IVanillaRecipeFactory;
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|1282|1290|registry|param|com.groupzts.netheriteroad.compat.jei.NetheriteRoadPlugin|register|(Lmezz/jei/api/IModRegistry;)V|registry|0
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|1291|1301|addRecipes|method|mezz.jei.api.IModRegistry|addRecipes|(Ljava/util/Collection;Ljava/lang/String;)V
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|1302|1318|ModSmithingMaker|class|com.groupzts.netheriteroad.compat.jei.ModSmithingMaker|false
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|1319|1337|getSmithingRecipes|method|com.groupzts.netheriteroad.compat.jei.ModSmithingMaker|getSmithingRecipes|(Lmezz/jei/api/recipe/IVanillaRecipeFactory;Lmezz/jei/api/ingredients/IIngredientRegistry;)Ljava/util/List;
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|1381|1405|VanillaRecipeCategoryUid|class|mezz.jei.api.recipe.VanillaRecipeCategoryUid|false
+      @|com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java|1406|1411|ANVIL|field|mezz.jei.api.recipe.VanillaRecipeCategoryUid|ANVIL
+   Method End: register(Lmezz/jei/api/IModRegistry;)V
+Class End  : com.groupzts.netheriteroad.compat.jei.NetheriteRoadPlugin
+endProcessing "com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java"
+
 startProcessing "com/groupzts/netheriteroad/compat/tinkers/RegistryEvent.java" md5: 4bd2ba23194e221489e7014491bfce30
 @|com/groupzts/netheriteroad/compat/tinkers/RegistryEvent.java|8|49|com.groupzts.netheriteroad.compat.tinkers|package|com.groupzts.netheriteroad.compat.tinkers|(file)
 Class Start: com.groupzts.netheriteroad.compat.tinkers.RegistryEvent
@@ -952,273 +1222,285 @@ Class Start: com.groupzts.netheriteroad.compat.tinkers.TiCConfig
 Class End  : com.groupzts.netheriteroad.compat.tinkers.TiCConfig
 endProcessing "com/groupzts/netheriteroad/compat/tinkers/TiCConfig.java"
 
-startProcessing "com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java" md5: 77c4ad3b872d7b887cde1932d354e3ce
+startProcessing "com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java" md5: d11736878810d12048ec1885ef9ca373
 @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|8|49|com.groupzts.netheriteroad.compat.tinkers|package|com.groupzts.netheriteroad.compat.tinkers|(file)
 Class Start: com.groupzts.netheriteroad.compat.tinkers.TiCRegister
-   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|1796|1807|TiCRegister|class|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|false
-   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|1829|1834|Fluid|class|net.minecraftforge.fluids.Fluid|false
-   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|1829|1834|Fluid|class|net.minecraftforge.fluids.Fluid|false
-   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|1835|1850|moltenNetherite|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|moltenNetherite|
-   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|1871|1876|Fluid|class|net.minecraftforge.fluids.Fluid|false
-   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|1871|1876|Fluid|class|net.minecraftforge.fluids.Fluid|false
-   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|1877|1890|moltenAncient|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|moltenAncient|
-   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|1922|1930|Material|class|slimeknights.tconstruct.library.materials.Material|false
-   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|1917|1921|List|class|java.util.List|false
-   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|1917|1921|List|class|java.util.List|false
-   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|1922|1930|Material|class|slimeknights.tconstruct.library.materials.Material|false
-   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|1932|1941|materials|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|materials|
-   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|1944|1949|Lists|class|com.google.common.collect.Lists|false
-   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|1950|1962|newArrayList|method|com.google.common.collect.Lists|newArrayList|()Ljava/util/ArrayList;
-   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|1985|1993|Material|class|slimeknights.tconstruct.library.materials.Material|false
-   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|1985|1993|Material|class|slimeknights.tconstruct.library.materials.Material|false
-   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|1994|2003|netherite|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|netherite|
-   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2006|2009|mat|method|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|mat|()Lslimeknights/tconstruct/library/materials/Material;
+   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|1895|1906|TiCRegister|class|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|false
+   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|1928|1933|Fluid|class|net.minecraftforge.fluids.Fluid|false
+   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|1928|1933|Fluid|class|net.minecraftforge.fluids.Fluid|false
+   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|1934|1949|moltenNetherite|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|moltenNetherite|
+   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|1970|1975|Fluid|class|net.minecraftforge.fluids.Fluid|false
+   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|1970|1975|Fluid|class|net.minecraftforge.fluids.Fluid|false
+   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|1976|1989|moltenAncient|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|moltenAncient|
+   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2021|2029|Material|class|slimeknights.tconstruct.library.materials.Material|false
+   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2016|2020|List|class|java.util.List|false
+   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2016|2020|List|class|java.util.List|false
+   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2021|2029|Material|class|slimeknights.tconstruct.library.materials.Material|false
+   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2031|2040|materials|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|materials|
+   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2043|2048|Lists|class|com.google.common.collect.Lists|false
+   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2049|2061|newArrayList|method|com.google.common.collect.Lists|newArrayList|()Ljava/util/ArrayList;
+   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2084|2092|Material|class|slimeknights.tconstruct.library.materials.Material|false
+   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2084|2092|Material|class|slimeknights.tconstruct.library.materials.Material|false
+   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2093|2102|netherite|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|netherite|
+   @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2105|2108|mat|method|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|mat|()Lslimeknights/tconstruct/library/materials/Material;
    Method Start: mat()Lslimeknights/tconstruct/library/materials/Material;
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2033|2041|Material|class|slimeknights.tconstruct.library.materials.Material|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2042|2045|mat|method|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|mat|()Lslimeknights/tconstruct/library/materials/Material;
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2063|2077|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2078|2089|getMaterial|method|slimeknights.tconstruct.library.TinkerRegistry|getMaterial|(Ljava/lang/String;)Lslimeknights/tconstruct/library/materials/Material;
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2106|2120|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2121|2132|getMaterial|method|slimeknights.tconstruct.library.TinkerRegistry|getMaterial|(Ljava/lang/String;)Lslimeknights/tconstruct/library/materials/Material;
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2159|2167|Material|class|slimeknights.tconstruct.library.materials.Material|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2178|2186|Material|class|slimeknights.tconstruct.library.materials.Material|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2223|2232|materials|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|materials
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2233|2236|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2295|2309|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2310|2321|getMaterial|method|slimeknights.tconstruct.library.TinkerRegistry|getMaterial|(Ljava/lang/String;)Lslimeknights/tconstruct/library/materials/Material;
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2132|2140|Material|class|slimeknights.tconstruct.library.materials.Material|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2141|2144|mat|method|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|mat|()Lslimeknights/tconstruct/library/materials/Material;
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2162|2176|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2177|2188|getMaterial|method|slimeknights.tconstruct.library.TinkerRegistry|getMaterial|(Ljava/lang/String;)Lslimeknights/tconstruct/library/materials/Material;
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2205|2219|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2220|2231|getMaterial|method|slimeknights.tconstruct.library.TinkerRegistry|getMaterial|(Ljava/lang/String;)Lslimeknights/tconstruct/library/materials/Material;
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2258|2266|Material|class|slimeknights.tconstruct.library.materials.Material|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2277|2285|Material|class|slimeknights.tconstruct.library.materials.Material|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2322|2331|materials|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|materials
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2332|2335|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2394|2408|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2409|2420|getMaterial|method|slimeknights.tconstruct.library.TinkerRegistry|getMaterial|(Ljava/lang/String;)Lslimeknights/tconstruct/library/materials/Material;
    Method End: mat()Lslimeknights/tconstruct/library/materials/Material;
    Method Start: registerTiC()V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2367|2378|registerTiC|method|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|registerTiC|()V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2393|2398|Fluid|class|net.minecraftforge.fluids.Fluid|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2428|2448|FluidMoltenNetherite|class|com.groupzts.netheriteroad.fluid.FluidMoltenNetherite|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2461|2466|Fluid|class|net.minecraftforge.fluids.Fluid|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2488|2507|MoltenAncientDebris|class|com.groupzts.netheriteroad.fluid.MoltenAncientDebris|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2520|2533|moltenAncient|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|moltenAncient
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2561|2576|moltenNetherite|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|moltenNetherite
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2612|2625|FluidRegistry|class|net.minecraftforge.fluids.FluidRegistry|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2626|2639|registerFluid|method|net.minecraftforge.fluids.FluidRegistry|registerFluid|(Lnet/minecraftforge/fluids/Fluid;)Z
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2674|2687|FluidRegistry|class|net.minecraftforge.fluids.FluidRegistry|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2688|2705|addBucketForFluid|method|net.minecraftforge.fluids.FluidRegistry|addBucketForFluid|(Lnet/minecraftforge/fluids/Fluid;)Z
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2740|2754|NBTTagCompound|class|net.minecraft.nbt.NBTTagCompound|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2765|2779|NBTTagCompound|class|net.minecraft.nbt.NBTTagCompound|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2796|2805|setString|method|net.minecraft.nbt.NBTTagCompound|setString|(Ljava/lang/String;Ljava/lang/String;)V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2849|2856|getName|method|net.minecraftforge.fluids.Fluid|getName|()Ljava/lang/String;
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2874|2883|setString|method|net.minecraft.nbt.NBTTagCompound|setString|(Ljava/lang/String;Ljava/lang/String;)V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2925|2935|setBoolean|method|net.minecraft.nbt.NBTTagCompound|setBoolean|(Ljava/lang/String;Z)V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2965|2981|FMLInterModComms|class|net.minecraftforge.fml.common.event.FMLInterModComms|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2982|2993|sendMessage|method|net.minecraftforge.fml.common.event.FMLInterModComms|sendMessage|(Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/nbt/NBTTagCompound;)Z
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3046|3059|FluidRegistry|class|net.minecraftforge.fluids.FluidRegistry|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3060|3073|registerFluid|method|net.minecraftforge.fluids.FluidRegistry|registerFluid|(Lnet/minecraftforge/fluids/Fluid;)Z
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3100|3113|FluidRegistry|class|net.minecraftforge.fluids.FluidRegistry|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3114|3131|addBucketForFluid|method|net.minecraftforge.fluids.FluidRegistry|addBucketForFluid|(Lnet/minecraftforge/fluids/Fluid;)Z
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3158|3172|NBTTagCompound|class|net.minecraft.nbt.NBTTagCompound|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3184|3198|NBTTagCompound|class|net.minecraft.nbt.NBTTagCompound|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3215|3224|setString|method|net.minecraft.nbt.NBTTagCompound|setString|(Ljava/lang/String;Ljava/lang/String;)V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3266|3273|getName|method|net.minecraftforge.fluids.Fluid|getName|()Ljava/lang/String;
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3291|3300|setString|method|net.minecraft.nbt.NBTTagCompound|setString|(Ljava/lang/String;Ljava/lang/String;)V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3340|3350|setBoolean|method|net.minecraft.nbt.NBTTagCompound|setBoolean|(Ljava/lang/String;Z)V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3380|3396|FMLInterModComms|class|net.minecraftforge.fml.common.event.FMLInterModComms|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3397|3408|sendMessage|method|net.minecraftforge.fml.common.event.FMLInterModComms|sendMessage|(Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/nbt/NBTTagCompound;)Z
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3462|3476|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3477|3492|registerMelting|method|slimeknights.tconstruct.library.TinkerRegistry|registerMelting|(Lslimeknights/tconstruct/library/smeltery/MeltingRecipe;)V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3497|3510|MeltingRecipe|class|slimeknights.tconstruct.library.smeltery.MeltingRecipe|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3511|3522|RecipeMatch|class|slimeknights.mantle.util.RecipeMatch|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3523|3525|of|method|slimeknights.mantle.util.RecipeMatch|of|(Lnet/minecraft/item/Item;I)Lslimeknights/mantle/util/RecipeMatch;
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3526|3534|ModItems|class|com.groupzts.netheriteroad.init.ModItems|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3535|3555|NETHERITE_BLOCK_ITEM|field|com.groupzts.netheriteroad.init.ModItems|NETHERITE_BLOCK_ITEM
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3557|3565|Material|class|slimeknights.tconstruct.library.materials.Material|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3566|3577|VALUE_Block|field|slimeknights.tconstruct.library.materials.Material|VALUE_Block
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3619|3633|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3634|3649|registerMelting|method|slimeknights.tconstruct.library.TinkerRegistry|registerMelting|(Lslimeknights/tconstruct/library/smeltery/MeltingRecipe;)V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3654|3667|MeltingRecipe|class|slimeknights.tconstruct.library.smeltery.MeltingRecipe|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3668|3679|RecipeMatch|class|slimeknights.mantle.util.RecipeMatch|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3680|3682|of|method|slimeknights.mantle.util.RecipeMatch|of|(Lnet/minecraft/item/Item;I)Lslimeknights/mantle/util/RecipeMatch;
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3683|3691|ModItems|class|com.groupzts.netheriteroad.init.ModItems|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3692|3711|ANCIENT_DEBRIS_ITEM|field|com.groupzts.netheriteroad.init.ModItems|ANCIENT_DEBRIS_ITEM
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3713|3721|Material|class|slimeknights.tconstruct.library.materials.Material|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3722|3731|VALUE_Ore|method|slimeknights.tconstruct.library.materials.Material|VALUE_Ore|()I
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3766|3779|HarvestLevels|class|slimeknights.tconstruct.library.utils.HarvestLevels|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3780|3797|harvestLevelNames|field|slimeknights.tconstruct.library.utils.HarvestLevels|harvestLevelNames
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3798|3801|put|method|java.util.Map|put|(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3806|3820|TextFormatting|class|net.minecraft.util.text.TextFormatting|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3821|3825|GRAY|field|net.minecraft.util.text.TextFormatting|GRAY
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3851|3860|netherite|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|netherite
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3861|3873|addItemIngot|method|slimeknights.tconstruct.library.materials.Material|addItemIngot|(Ljava/lang/String;)V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3902|3911|netherite|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|netherite
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3912|3933|setRepresentativeItem|method|slimeknights.tconstruct.library.materials.Material|setRepresentativeItem|(Lnet/minecraft/item/Item;)V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3934|3942|ModItems|class|com.groupzts.netheriteroad.init.ModItems|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3943|3958|NETHERITE_INGOT|field|com.groupzts.netheriteroad.init.ModItems|NETHERITE_INGOT
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3970|3979|netherite|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|netherite
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3980|3991|setCastable|method|slimeknights.tconstruct.library.materials.Material|setCastable|(Z)Lslimeknights/tconstruct/library/materials/Material;
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4008|4017|netherite|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|netherite
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4018|4026|setFluid|method|slimeknights.tconstruct.library.materials.Material|setFluid|(Lnet/minecraftforge/fluids/Fluid;)Lslimeknights/tconstruct/library/materials/Material;
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4061|4070|netherite|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|netherite
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4071|4083|setCraftable|method|slimeknights.tconstruct.library.materials.Material|setCraftable|(Z)Lslimeknights/tconstruct/library/materials/Material;
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4102|4111|netherite|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|netherite
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4112|4120|addTrait|method|slimeknights.tconstruct.library.materials.Material|addTrait|(Lslimeknights/tconstruct/library/traits/ITrait;)Lslimeknights/tconstruct/library/materials/Material;
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4125|4138|AbstractTrait|class|slimeknights.tconstruct.library.traits.AbstractTrait|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4157|4171|TextFormatting|class|net.minecraft.util.text.TextFormatting|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4172|4181|DARK_GRAY|field|net.minecraft.util.text.TextFormatting|DARK_GRAY
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2466|2477|registerTiC|method|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|registerTiC|()V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2492|2497|Fluid|class|net.minecraftforge.fluids.Fluid|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2527|2547|FluidMoltenNetherite|class|com.groupzts.netheriteroad.fluid.FluidMoltenNetherite|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2560|2565|Fluid|class|net.minecraftforge.fluids.Fluid|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2587|2606|MoltenAncientDebris|class|com.groupzts.netheriteroad.fluid.MoltenAncientDebris|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2619|2632|moltenAncient|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|moltenAncient
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2660|2675|moltenNetherite|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|moltenNetherite
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2711|2724|FluidRegistry|class|net.minecraftforge.fluids.FluidRegistry|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2725|2738|registerFluid|method|net.minecraftforge.fluids.FluidRegistry|registerFluid|(Lnet/minecraftforge/fluids/Fluid;)Z
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2773|2786|FluidRegistry|class|net.minecraftforge.fluids.FluidRegistry|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2787|2804|addBucketForFluid|method|net.minecraftforge.fluids.FluidRegistry|addBucketForFluid|(Lnet/minecraftforge/fluids/Fluid;)Z
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2839|2853|NBTTagCompound|class|net.minecraft.nbt.NBTTagCompound|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2864|2878|NBTTagCompound|class|net.minecraft.nbt.NBTTagCompound|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2895|2904|setString|method|net.minecraft.nbt.NBTTagCompound|setString|(Ljava/lang/String;Ljava/lang/String;)V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2948|2955|getName|method|net.minecraftforge.fluids.Fluid|getName|()Ljava/lang/String;
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|2973|2982|setString|method|net.minecraft.nbt.NBTTagCompound|setString|(Ljava/lang/String;Ljava/lang/String;)V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3024|3034|setBoolean|method|net.minecraft.nbt.NBTTagCompound|setBoolean|(Ljava/lang/String;Z)V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3064|3080|FMLInterModComms|class|net.minecraftforge.fml.common.event.FMLInterModComms|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3081|3092|sendMessage|method|net.minecraftforge.fml.common.event.FMLInterModComms|sendMessage|(Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/nbt/NBTTagCompound;)Z
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3145|3158|FluidRegistry|class|net.minecraftforge.fluids.FluidRegistry|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3159|3172|registerFluid|method|net.minecraftforge.fluids.FluidRegistry|registerFluid|(Lnet/minecraftforge/fluids/Fluid;)Z
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3199|3212|FluidRegistry|class|net.minecraftforge.fluids.FluidRegistry|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3213|3230|addBucketForFluid|method|net.minecraftforge.fluids.FluidRegistry|addBucketForFluid|(Lnet/minecraftforge/fluids/Fluid;)Z
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3257|3271|NBTTagCompound|class|net.minecraft.nbt.NBTTagCompound|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3283|3297|NBTTagCompound|class|net.minecraft.nbt.NBTTagCompound|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3314|3323|setString|method|net.minecraft.nbt.NBTTagCompound|setString|(Ljava/lang/String;Ljava/lang/String;)V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3365|3372|getName|method|net.minecraftforge.fluids.Fluid|getName|()Ljava/lang/String;
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3390|3399|setString|method|net.minecraft.nbt.NBTTagCompound|setString|(Ljava/lang/String;Ljava/lang/String;)V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3439|3449|setBoolean|method|net.minecraft.nbt.NBTTagCompound|setBoolean|(Ljava/lang/String;Z)V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3479|3495|FMLInterModComms|class|net.minecraftforge.fml.common.event.FMLInterModComms|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3496|3507|sendMessage|method|net.minecraftforge.fml.common.event.FMLInterModComms|sendMessage|(Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/nbt/NBTTagCompound;)Z
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3561|3575|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3576|3591|registerMelting|method|slimeknights.tconstruct.library.TinkerRegistry|registerMelting|(Lslimeknights/tconstruct/library/smeltery/MeltingRecipe;)V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3596|3609|MeltingRecipe|class|slimeknights.tconstruct.library.smeltery.MeltingRecipe|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3610|3621|RecipeMatch|class|slimeknights.mantle.util.RecipeMatch|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3622|3624|of|method|slimeknights.mantle.util.RecipeMatch|of|(Lnet/minecraft/item/Item;I)Lslimeknights/mantle/util/RecipeMatch;
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3625|3633|ModItems|class|com.groupzts.netheriteroad.init.ModItems|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3634|3654|NETHERITE_BLOCK_ITEM|field|com.groupzts.netheriteroad.init.ModItems|NETHERITE_BLOCK_ITEM
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3656|3664|Material|class|slimeknights.tconstruct.library.materials.Material|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3665|3676|VALUE_Block|field|slimeknights.tconstruct.library.materials.Material|VALUE_Block
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3718|3732|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3733|3748|registerMelting|method|slimeknights.tconstruct.library.TinkerRegistry|registerMelting|(Lslimeknights/tconstruct/library/smeltery/MeltingRecipe;)V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3753|3766|MeltingRecipe|class|slimeknights.tconstruct.library.smeltery.MeltingRecipe|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3767|3778|RecipeMatch|class|slimeknights.mantle.util.RecipeMatch|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3779|3781|of|method|slimeknights.mantle.util.RecipeMatch|of|(Lnet/minecraft/item/Item;I)Lslimeknights/mantle/util/RecipeMatch;
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3782|3790|ModItems|class|com.groupzts.netheriteroad.init.ModItems|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3791|3810|ANCIENT_DEBRIS_ITEM|field|com.groupzts.netheriteroad.init.ModItems|ANCIENT_DEBRIS_ITEM
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3812|3820|Material|class|slimeknights.tconstruct.library.materials.Material|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3821|3830|VALUE_Ore|method|slimeknights.tconstruct.library.materials.Material|VALUE_Ore|()I
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3865|3878|HarvestLevels|class|slimeknights.tconstruct.library.utils.HarvestLevels|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3879|3896|harvestLevelNames|field|slimeknights.tconstruct.library.utils.HarvestLevels|harvestLevelNames
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3897|3900|put|method|java.util.Map|put|(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3905|3919|TextFormatting|class|net.minecraft.util.text.TextFormatting|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3920|3924|GRAY|field|net.minecraft.util.text.TextFormatting|GRAY
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3950|3959|netherite|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|netherite
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|3960|3972|addItemIngot|method|slimeknights.tconstruct.library.materials.Material|addItemIngot|(Ljava/lang/String;)V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4001|4010|netherite|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|netherite
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4011|4032|setRepresentativeItem|method|slimeknights.tconstruct.library.materials.Material|setRepresentativeItem|(Lnet/minecraft/item/Item;)V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4033|4041|ModItems|class|com.groupzts.netheriteroad.init.ModItems|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4042|4057|NETHERITE_INGOT|field|com.groupzts.netheriteroad.init.ModItems|NETHERITE_INGOT
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4069|4078|netherite|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|netherite
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4079|4090|setCastable|method|slimeknights.tconstruct.library.materials.Material|setCastable|(Z)Lslimeknights/tconstruct/library/materials/Material;
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4107|4116|netherite|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|netherite
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4117|4125|setFluid|method|slimeknights.tconstruct.library.materials.Material|setFluid|(Lnet/minecraftforge/fluids/Fluid;)Lslimeknights/tconstruct/library/materials/Material;
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4160|4169|netherite|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|netherite
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4170|4182|setCraftable|method|slimeknights.tconstruct.library.materials.Material|setCraftable|(Z)Lslimeknights/tconstruct/library/materials/Material;
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4201|4210|netherite|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|netherite
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4211|4219|addTrait|method|slimeknights.tconstruct.library.materials.Material|addTrait|(Lslimeknights/tconstruct/library/traits/ITrait;)Lslimeknights/tconstruct/library/materials/Material;
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4224|4237|AbstractTrait|class|slimeknights.tconstruct.library.traits.AbstractTrait|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4256|4270|TextFormatting|class|net.minecraft.util.text.TextFormatting|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4271|4280|DARK_GRAY|field|net.minecraft.util.text.TextFormatting|DARK_GRAY
       Anon Class Start: com.groupzts.netheriteroad.compat.tinkers.TiCRegister$1
          Method Start: onArmorTick(Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;)V
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4255|4259|tool|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister$1|onArmorTick|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;)V|tool|0
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4267|4272|world|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister$1|onArmorTick|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;)V|world|1
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4287|4293|player|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister$1|onArmorTick|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;)V|player|2
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4199|4207|Override|class|java.lang.Override|false
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4233|4244|onArmorTick|method|slimeknights.tconstruct.library.traits.ITrait|onArmorTick|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;)V
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4245|4254|ItemStack|class|net.minecraft.item.ItemStack|false
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4261|4266|World|class|net.minecraft.world.World|false
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4274|4286|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4354|4358|tool|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister$1|onArmorTick|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;)V|tool|0
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4366|4371|world|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister$1|onArmorTick|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;)V|world|1
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4386|4392|player|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister$1|onArmorTick|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;)V|player|2
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4298|4306|Override|class|java.lang.Override|false
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4332|4343|onArmorTick|method|slimeknights.tconstruct.library.traits.ITrait|onArmorTick|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;)V
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4344|4353|ItemStack|class|net.minecraft.item.ItemStack|false
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4360|4365|World|class|net.minecraft.world.World|false
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4373|4385|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
          Method End: onArmorTick(Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;)V
          Method Start: damage(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/entity/EntityLivingBase;FFZ)F
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4380|4384|tool|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister$1|damage|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/entity/EntityLivingBase;FFZ)F|tool|0
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4403|4409|player|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister$1|damage|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/entity/EntityLivingBase;FFZ)F|player|1
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4428|4434|target|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister$1|damage|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/entity/EntityLivingBase;FFZ)F|target|2
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4442|4448|damage|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister$1|damage|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/entity/EntityLivingBase;FFZ)F|damage|3
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4456|4465|newDamage|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister$1|damage|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/entity/EntityLivingBase;FFZ)F|newDamage|4
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4475|4485|isCritical|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister$1|damage|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/entity/EntityLivingBase;FFZ)F|isCritical|5
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4328|4336|Override|class|java.lang.Override|false
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4363|4369|damage|method|slimeknights.tconstruct.library.traits.ITrait|damage|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/entity/EntityLivingBase;FFZ)F
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4370|4379|ItemStack|class|net.minecraft.item.ItemStack|false
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4386|4402|EntityLivingBase|class|net.minecraft.entity.EntityLivingBase|false
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4411|4427|EntityLivingBase|class|net.minecraft.entity.EntityLivingBase|false
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4479|4483|tool|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister$1|damage|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/entity/EntityLivingBase;FFZ)F|tool|0
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4502|4508|player|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister$1|damage|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/entity/EntityLivingBase;FFZ)F|player|1
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4527|4533|target|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister$1|damage|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/entity/EntityLivingBase;FFZ)F|target|2
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4541|4547|damage|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister$1|damage|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/entity/EntityLivingBase;FFZ)F|damage|3
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4555|4564|newDamage|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister$1|damage|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/entity/EntityLivingBase;FFZ)F|newDamage|4
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4574|4584|isCritical|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister$1|damage|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/entity/EntityLivingBase;FFZ)F|isCritical|5
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4427|4435|Override|class|java.lang.Override|false
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4462|4468|damage|method|slimeknights.tconstruct.library.traits.ITrait|damage|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/entity/EntityLivingBase;FFZ)F
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4469|4478|ItemStack|class|net.minecraft.item.ItemStack|false
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4485|4501|EntityLivingBase|class|net.minecraft.entity.EntityLivingBase|false
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4510|4526|EntityLivingBase|class|net.minecraft.entity.EntityLivingBase|false
          Method End: damage(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/entity/EntityLivingBase;FFZ)F
          Method Start: applyEffect(Lnet/minecraft/nbt/NBTTagCompound;Lnet/minecraft/nbt/NBTTagCompound;)V
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4608|4620|rootCompound|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister$1|applyEffect|(Lnet/minecraft/nbt/NBTTagCompound;Lnet/minecraft/nbt/NBTTagCompound;)V|rootCompound|0
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4637|4648|modifierTag|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister$1|applyEffect|(Lnet/minecraft/nbt/NBTTagCompound;Lnet/minecraft/nbt/NBTTagCompound;)V|modifierTag|1
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4547|4555|Override|class|java.lang.Override|false
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4581|4592|applyEffect|method|slimeknights.tconstruct.library.modifiers.IModifier|applyEffect|(Lnet/minecraft/nbt/NBTTagCompound;Lnet/minecraft/nbt/NBTTagCompound;)V
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4593|4607|NBTTagCompound|class|net.minecraft.nbt.NBTTagCompound|false
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4622|4636|NBTTagCompound|class|net.minecraft.nbt.NBTTagCompound|false
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4669|4683|NBTTagCompound|class|net.minecraft.nbt.NBTTagCompound|false
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4694|4701|TagUtil|class|slimeknights.tconstruct.library.utils.TagUtil|false
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4702|4712|getToolTag|method|slimeknights.tconstruct.library.utils.TagUtil|getToolTag|(Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4713|4725|rootCompound|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister$1|applyEffect|(Lnet/minecraft/nbt/NBTTagCompound;Lnet/minecraft/nbt/NBTTagCompound;)V|rootCompound|0
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4768|4778|getInteger|method|net.minecraft.nbt.NBTTagCompound|getInteger|(Ljava/lang/String;)I
-            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4822|4832|setInteger|method|net.minecraft.nbt.NBTTagCompound|setInteger|(Ljava/lang/String;I)V
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4707|4719|rootCompound|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister$1|applyEffect|(Lnet/minecraft/nbt/NBTTagCompound;Lnet/minecraft/nbt/NBTTagCompound;)V|rootCompound|0
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4736|4747|modifierTag|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister$1|applyEffect|(Lnet/minecraft/nbt/NBTTagCompound;Lnet/minecraft/nbt/NBTTagCompound;)V|modifierTag|1
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4646|4654|Override|class|java.lang.Override|false
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4680|4691|applyEffect|method|slimeknights.tconstruct.library.modifiers.IModifier|applyEffect|(Lnet/minecraft/nbt/NBTTagCompound;Lnet/minecraft/nbt/NBTTagCompound;)V
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4692|4706|NBTTagCompound|class|net.minecraft.nbt.NBTTagCompound|false
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4721|4735|NBTTagCompound|class|net.minecraft.nbt.NBTTagCompound|false
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4768|4782|NBTTagCompound|class|net.minecraft.nbt.NBTTagCompound|false
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4793|4800|TagUtil|class|slimeknights.tconstruct.library.utils.TagUtil|false
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4801|4811|getToolTag|method|slimeknights.tconstruct.library.utils.TagUtil|getToolTag|(Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4812|4824|rootCompound|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister$1|applyEffect|(Lnet/minecraft/nbt/NBTTagCompound;Lnet/minecraft/nbt/NBTTagCompound;)V|rootCompound|0
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4867|4877|getInteger|method|net.minecraft.nbt.NBTTagCompound|getInteger|(Ljava/lang/String;)I
+            @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4921|4931|setInteger|method|net.minecraft.nbt.NBTTagCompound|setInteger|(Ljava/lang/String;I)V
          Method End: applyEffect(Lnet/minecraft/nbt/NBTTagCompound;Lnet/minecraft/nbt/NBTTagCompound;)V
       Anon Class End: com.groupzts.netheriteroad.compat.tinkers.TiCRegister$1
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4903|4917|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4918|4934|addMaterialStats|method|slimeknights.tconstruct.library.TinkerRegistry|addMaterialStats|(Lslimeknights/tconstruct/library/materials/Material;Lslimeknights/tconstruct/library/materials/IMaterialStats;[Lslimeknights/tconstruct/library/materials/IMaterialStats;)V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4935|4944|netherite|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|netherite
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|4967|4984|HeadMaterialStats|class|slimeknights.tconstruct.library.materials.HeadMaterialStats|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5027|5046|HandleMaterialStats|class|slimeknights.tconstruct.library.materials.HandleMaterialStats|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5082|5100|ExtraMaterialStats|class|slimeknights.tconstruct.library.materials.ExtraMaterialStats|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5122|5138|BowMaterialStats|class|slimeknights.tconstruct.library.materials.BowMaterialStats|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5167|5181|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5182|5195|registerAlloy|method|slimeknights.tconstruct.library.TinkerRegistry|registerAlloy|(Lslimeknights/tconstruct/library/smeltery/AlloyRecipe;)V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5200|5211|AlloyRecipe|class|slimeknights.tconstruct.library.smeltery.AlloyRecipe|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5216|5226|FluidStack|class|net.minecraftforge.fluids.FluidStack|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5251|5259|Material|class|slimeknights.tconstruct.library.materials.Material|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5260|5271|VALUE_Ingot|field|slimeknights.tconstruct.library.materials.Material|VALUE_Ingot
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5277|5287|FluidStack|class|net.minecraftforge.fluids.FluidStack|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5304|5312|Material|class|slimeknights.tconstruct.library.materials.Material|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5313|5324|VALUE_Ingot|field|slimeknights.tconstruct.library.materials.Material|VALUE_Ingot
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5330|5340|FluidStack|class|net.minecraftforge.fluids.FluidStack|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5341|5353|TinkerFluids|class|slimeknights.tconstruct.shared.TinkerFluids|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5354|5358|gold|field|slimeknights.tconstruct.shared.TinkerFluids|gold
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5360|5368|Material|class|slimeknights.tconstruct.library.materials.Material|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5369|5380|VALUE_Ingot|field|slimeknights.tconstruct.library.materials.Material|VALUE_Ingot
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5396|5410|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5411|5426|registerMelting|method|slimeknights.tconstruct.library.TinkerRegistry|registerMelting|(Lslimeknights/tconstruct/library/smeltery/MeltingRecipe;)V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5431|5444|MeltingRecipe|class|slimeknights.tconstruct.library.smeltery.MeltingRecipe|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5445|5456|RecipeMatch|class|slimeknights.mantle.util.RecipeMatch|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5457|5459|of|method|slimeknights.mantle.util.RecipeMatch|of|(Ljava/lang/String;)Lslimeknights/mantle/util/RecipeMatch;
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5482|5492|FluidStack|class|net.minecraftforge.fluids.FluidStack|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5517|5525|Material|class|slimeknights.tconstruct.library.materials.Material|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5526|5537|VALUE_Ingot|field|slimeknights.tconstruct.library.materials.Material|VALUE_Ingot
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5558|5572|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5573|5588|registerMelting|method|slimeknights.tconstruct.library.TinkerRegistry|registerMelting|(Lslimeknights/tconstruct/library/smeltery/MeltingRecipe;)V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5593|5606|MeltingRecipe|class|slimeknights.tconstruct.library.smeltery.MeltingRecipe|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5607|5618|RecipeMatch|class|slimeknights.mantle.util.RecipeMatch|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5619|5621|of|method|slimeknights.mantle.util.RecipeMatch|of|(Lnet/minecraft/item/Item;I)Lslimeknights/mantle/util/RecipeMatch;
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5622|5630|ModItems|class|com.groupzts.netheriteroad.init.ModItems|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5631|5647|NETHERITE_HELMET|field|com.groupzts.netheriteroad.init.ModItems|NETHERITE_HELMET
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5649|5657|Material|class|slimeknights.tconstruct.library.materials.Material|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5658|5669|VALUE_Ingot|field|slimeknights.tconstruct.library.materials.Material|VALUE_Ingot
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5715|5729|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5730|5745|registerMelting|method|slimeknights.tconstruct.library.TinkerRegistry|registerMelting|(Lslimeknights/tconstruct/library/smeltery/MeltingRecipe;)V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5750|5763|MeltingRecipe|class|slimeknights.tconstruct.library.smeltery.MeltingRecipe|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5764|5775|RecipeMatch|class|slimeknights.mantle.util.RecipeMatch|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5776|5778|of|method|slimeknights.mantle.util.RecipeMatch|of|(Lnet/minecraft/item/Item;I)Lslimeknights/mantle/util/RecipeMatch;
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5779|5787|ModItems|class|com.groupzts.netheriteroad.init.ModItems|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5788|5808|NETHERITE_CHESTPLATE|field|com.groupzts.netheriteroad.init.ModItems|NETHERITE_CHESTPLATE
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5810|5818|Material|class|slimeknights.tconstruct.library.materials.Material|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5819|5830|VALUE_Ingot|field|slimeknights.tconstruct.library.materials.Material|VALUE_Ingot
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5876|5890|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5891|5906|registerMelting|method|slimeknights.tconstruct.library.TinkerRegistry|registerMelting|(Lslimeknights/tconstruct/library/smeltery/MeltingRecipe;)V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5911|5924|MeltingRecipe|class|slimeknights.tconstruct.library.smeltery.MeltingRecipe|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5925|5936|RecipeMatch|class|slimeknights.mantle.util.RecipeMatch|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5937|5939|of|method|slimeknights.mantle.util.RecipeMatch|of|(Lnet/minecraft/item/Item;I)Lslimeknights/mantle/util/RecipeMatch;
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5940|5948|ModItems|class|com.groupzts.netheriteroad.init.ModItems|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5949|5967|NETHERITE_LEGGINGS|field|com.groupzts.netheriteroad.init.ModItems|NETHERITE_LEGGINGS
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5969|5977|Material|class|slimeknights.tconstruct.library.materials.Material|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5978|5989|VALUE_Ingot|field|slimeknights.tconstruct.library.materials.Material|VALUE_Ingot
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6036|6050|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6051|6066|registerMelting|method|slimeknights.tconstruct.library.TinkerRegistry|registerMelting|(Lslimeknights/tconstruct/library/smeltery/MeltingRecipe;)V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6071|6084|MeltingRecipe|class|slimeknights.tconstruct.library.smeltery.MeltingRecipe|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6085|6096|RecipeMatch|class|slimeknights.mantle.util.RecipeMatch|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6097|6099|of|method|slimeknights.mantle.util.RecipeMatch|of|(Lnet/minecraft/item/Item;I)Lslimeknights/mantle/util/RecipeMatch;
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6100|6108|ModItems|class|com.groupzts.netheriteroad.init.ModItems|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6109|6124|NETHERITE_BOOTS|field|com.groupzts.netheriteroad.init.ModItems|NETHERITE_BOOTS
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6126|6134|Material|class|slimeknights.tconstruct.library.materials.Material|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6135|6146|VALUE_Ingot|field|slimeknights.tconstruct.library.materials.Material|VALUE_Ingot
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6193|6207|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6208|6217|integrate|method|slimeknights.tconstruct.library.TinkerRegistry|integrate|(Lslimeknights/tconstruct/library/materials/Material;)Lslimeknights/tconstruct/library/MaterialIntegration;
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6218|6227|netherite|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|netherite
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6229|6236|preInit|method|slimeknights.tconstruct.library.MaterialIntegration|preInit|()V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6249|6266|registerToolParts|method|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|registerToolParts|(Lslimeknights/tconstruct/library/materials/Material;)V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6267|6276|netherite|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|netherite
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5002|5016|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5017|5033|addMaterialStats|method|slimeknights.tconstruct.library.TinkerRegistry|addMaterialStats|(Lslimeknights/tconstruct/library/materials/Material;Lslimeknights/tconstruct/library/materials/IMaterialStats;[Lslimeknights/tconstruct/library/materials/IMaterialStats;)V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5034|5043|netherite|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|netherite
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5066|5083|HeadMaterialStats|class|slimeknights.tconstruct.library.materials.HeadMaterialStats|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5126|5145|HandleMaterialStats|class|slimeknights.tconstruct.library.materials.HandleMaterialStats|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5181|5199|ExtraMaterialStats|class|slimeknights.tconstruct.library.materials.ExtraMaterialStats|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5221|5237|BowMaterialStats|class|slimeknights.tconstruct.library.materials.BowMaterialStats|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5266|5280|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5281|5294|registerAlloy|method|slimeknights.tconstruct.library.TinkerRegistry|registerAlloy|(Lslimeknights/tconstruct/library/smeltery/AlloyRecipe;)V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5299|5310|AlloyRecipe|class|slimeknights.tconstruct.library.smeltery.AlloyRecipe|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5315|5325|FluidStack|class|net.minecraftforge.fluids.FluidStack|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5350|5358|Material|class|slimeknights.tconstruct.library.materials.Material|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5359|5370|VALUE_Ingot|field|slimeknights.tconstruct.library.materials.Material|VALUE_Ingot
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5376|5386|FluidStack|class|net.minecraftforge.fluids.FluidStack|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5403|5411|Material|class|slimeknights.tconstruct.library.materials.Material|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5412|5423|VALUE_Ingot|field|slimeknights.tconstruct.library.materials.Material|VALUE_Ingot
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5429|5439|FluidStack|class|net.minecraftforge.fluids.FluidStack|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5440|5452|TinkerFluids|class|slimeknights.tconstruct.shared.TinkerFluids|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5453|5457|gold|field|slimeknights.tconstruct.shared.TinkerFluids|gold
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5459|5467|Material|class|slimeknights.tconstruct.library.materials.Material|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5468|5479|VALUE_Ingot|field|slimeknights.tconstruct.library.materials.Material|VALUE_Ingot
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5495|5509|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5510|5525|registerMelting|method|slimeknights.tconstruct.library.TinkerRegistry|registerMelting|(Lslimeknights/tconstruct/library/smeltery/MeltingRecipe;)V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5530|5543|MeltingRecipe|class|slimeknights.tconstruct.library.smeltery.MeltingRecipe|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5544|5555|RecipeMatch|class|slimeknights.mantle.util.RecipeMatch|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5556|5558|of|method|slimeknights.mantle.util.RecipeMatch|of|(Ljava/lang/String;)Lslimeknights/mantle/util/RecipeMatch;
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5581|5591|FluidStack|class|net.minecraftforge.fluids.FluidStack|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5616|5624|Material|class|slimeknights.tconstruct.library.materials.Material|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5625|5636|VALUE_Ingot|field|slimeknights.tconstruct.library.materials.Material|VALUE_Ingot
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5655|5669|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5670|5685|registerMelting|method|slimeknights.tconstruct.library.TinkerRegistry|registerMelting|(Lslimeknights/tconstruct/library/smeltery/MeltingRecipe;)V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5690|5703|MeltingRecipe|class|slimeknights.tconstruct.library.smeltery.MeltingRecipe|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5704|5715|RecipeMatch|class|slimeknights.mantle.util.RecipeMatch|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5716|5718|of|method|slimeknights.mantle.util.RecipeMatch|of|(Lnet/minecraft/item/Item;I)Lslimeknights/mantle/util/RecipeMatch;
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5719|5727|ModItems|class|com.groupzts.netheriteroad.init.ModItems|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5728|5744|NETHERITE_HELMET|field|com.groupzts.netheriteroad.init.ModItems|NETHERITE_HELMET
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5746|5754|Material|class|slimeknights.tconstruct.library.materials.Material|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5755|5766|VALUE_Ingot|field|slimeknights.tconstruct.library.materials.Material|VALUE_Ingot
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5812|5826|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5827|5842|registerMelting|method|slimeknights.tconstruct.library.TinkerRegistry|registerMelting|(Lslimeknights/tconstruct/library/smeltery/MeltingRecipe;)V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5847|5860|MeltingRecipe|class|slimeknights.tconstruct.library.smeltery.MeltingRecipe|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5861|5872|RecipeMatch|class|slimeknights.mantle.util.RecipeMatch|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5873|5875|of|method|slimeknights.mantle.util.RecipeMatch|of|(Lnet/minecraft/item/Item;I)Lslimeknights/mantle/util/RecipeMatch;
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5876|5884|ModItems|class|com.groupzts.netheriteroad.init.ModItems|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5885|5905|NETHERITE_CHESTPLATE|field|com.groupzts.netheriteroad.init.ModItems|NETHERITE_CHESTPLATE
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5907|5915|Material|class|slimeknights.tconstruct.library.materials.Material|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5916|5927|VALUE_Ingot|field|slimeknights.tconstruct.library.materials.Material|VALUE_Ingot
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5973|5987|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|5988|6003|registerMelting|method|slimeknights.tconstruct.library.TinkerRegistry|registerMelting|(Lslimeknights/tconstruct/library/smeltery/MeltingRecipe;)V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6008|6021|MeltingRecipe|class|slimeknights.tconstruct.library.smeltery.MeltingRecipe|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6022|6033|RecipeMatch|class|slimeknights.mantle.util.RecipeMatch|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6034|6036|of|method|slimeknights.mantle.util.RecipeMatch|of|(Lnet/minecraft/item/Item;I)Lslimeknights/mantle/util/RecipeMatch;
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6037|6045|ModItems|class|com.groupzts.netheriteroad.init.ModItems|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6046|6064|NETHERITE_LEGGINGS|field|com.groupzts.netheriteroad.init.ModItems|NETHERITE_LEGGINGS
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6066|6074|Material|class|slimeknights.tconstruct.library.materials.Material|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6075|6086|VALUE_Ingot|field|slimeknights.tconstruct.library.materials.Material|VALUE_Ingot
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6133|6147|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6148|6163|registerMelting|method|slimeknights.tconstruct.library.TinkerRegistry|registerMelting|(Lslimeknights/tconstruct/library/smeltery/MeltingRecipe;)V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6168|6181|MeltingRecipe|class|slimeknights.tconstruct.library.smeltery.MeltingRecipe|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6182|6193|RecipeMatch|class|slimeknights.mantle.util.RecipeMatch|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6194|6196|of|method|slimeknights.mantle.util.RecipeMatch|of|(Lnet/minecraft/item/Item;I)Lslimeknights/mantle/util/RecipeMatch;
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6197|6205|ModItems|class|com.groupzts.netheriteroad.init.ModItems|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6206|6221|NETHERITE_BOOTS|field|com.groupzts.netheriteroad.init.ModItems|NETHERITE_BOOTS
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6223|6231|Material|class|slimeknights.tconstruct.library.materials.Material|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6232|6243|VALUE_Ingot|field|slimeknights.tconstruct.library.materials.Material|VALUE_Ingot
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6290|6304|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6305|6325|registerBasinCasting|method|slimeknights.tconstruct.library.TinkerRegistry|registerBasinCasting|(Lslimeknights/tconstruct/library/smeltery/ICastingRecipe;)V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6330|6343|CastingRecipe|class|slimeknights.tconstruct.library.smeltery.CastingRecipe|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6348|6357|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6358|6366|ModItems|class|com.groupzts.netheriteroad.init.ModItems|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6367|6387|NETHERITE_BLOCK_ITEM|field|com.groupzts.netheriteroad.init.ModItems|NETHERITE_BLOCK_ITEM
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6390|6401|RecipeMatch|class|slimeknights.mantle.util.RecipeMatch|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6402|6404|of|method|slimeknights.mantle.util.RecipeMatch|of|(Lnet/minecraft/block/Block;)Lslimeknights/mantle/util/RecipeMatch;
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6405|6411|Blocks|class|net.minecraft.init.Blocks|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6412|6415|AIR|field|net.minecraft.init.Blocks|AIR
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6442|6450|Material|class|slimeknights.tconstruct.library.materials.Material|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6451|6462|VALUE_Block|field|slimeknights.tconstruct.library.materials.Material|VALUE_Block
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6475|6489|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6490|6499|integrate|method|slimeknights.tconstruct.library.TinkerRegistry|integrate|(Lslimeknights/tconstruct/library/materials/Material;)Lslimeknights/tconstruct/library/MaterialIntegration;
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6500|6509|netherite|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|netherite
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6511|6518|preInit|method|slimeknights.tconstruct.library.MaterialIntegration|preInit|()V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6531|6548|registerToolParts|method|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|registerToolParts|(Lslimeknights/tconstruct/library/materials/Material;)V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6549|6558|netherite|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|netherite
    Method End: registerTiC()V
    Method Start: registerToolParts(Lslimeknights/tconstruct/library/materials/Material;)V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6342|6350|material|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|registerToolParts|(Lslimeknights/tconstruct/library/materials/Material;)V|material|0
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6315|6332|registerToolParts|method|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|registerToolParts|(Lslimeknights/tconstruct/library/materials/Material;)V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6333|6341|Material|class|slimeknights.tconstruct.library.materials.Material|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6368|6373|Fluid|class|net.minecraftforge.fluids.Fluid|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6382|6390|material|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|registerToolParts|(Lslimeknights/tconstruct/library/materials/Material;)V|material|0
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6391|6399|getFluid|method|slimeknights.tconstruct.library.materials.Material|getFluid|()Lnet/minecraftforge/fluids/Fluid;
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6418|6427|IToolPart|class|slimeknights.tconstruct.library.tools.IToolPart|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6439|6453|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6454|6466|getToolParts|method|slimeknights.tconstruct.library.TinkerRegistry|getToolParts|()Ljava/util/Set;
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6507|6518|canBeCasted|method|slimeknights.tconstruct.library.tools.IToolPart|canBeCasted|()Z
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6577|6591|canUseMaterial|method|slimeknights.tconstruct.library.tools.IToolPart|canUseMaterial|(Lslimeknights/tconstruct/library/materials/Material;)Z
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6592|6600|material|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|registerToolParts|(Lslimeknights/tconstruct/library/materials/Material;)V|material|0
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6668|6680|MaterialItem|class|slimeknights.tconstruct.library.tinkering.MaterialItem|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6714|6723|ItemStack|class|net.minecraft.item.ItemStack|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6741|6765|getItemstackWithMaterial|method|slimeknights.tconstruct.library.tinkering.IMaterialItem|getItemstackWithMaterial|(Lslimeknights/tconstruct/library/materials/Material;)Lnet/minecraft/item/ItemStack;
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6766|6774|material|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|registerToolParts|(Lslimeknights/tconstruct/library/materials/Material;)V|material|0
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6794|6803|ItemStack|class|net.minecraft.item.ItemStack|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6817|6821|Cast|class|slimeknights.tconstruct.library.smeltery.Cast|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6822|6835|setTagForPart|method|slimeknights.tconstruct.library.tools.Pattern|setTagForPart|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/item/Item;)Lnet/minecraft/item/ItemStack;
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6840|6849|ItemStack|class|net.minecraft.item.ItemStack|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6850|6864|TinkerSmeltery|class|slimeknights.tconstruct.smeltery.TinkerSmeltery|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6865|6869|cast|field|slimeknights.tconstruct.smeltery.TinkerSmeltery|cast
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6878|6885|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6965|6979|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6980|6995|registerMelting|method|slimeknights.tconstruct.library.TinkerRegistry|registerMelting|(Lnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/Fluid;I)V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7019|7026|getCost|method|slimeknights.tconstruct.library.tools.IToolPart|getCost|()I
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7052|7066|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7067|7087|registerTableCasting|method|slimeknights.tconstruct.library.TinkerRegistry|registerTableCasting|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/Fluid;I)V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7123|7130|getCost|method|slimeknights.tconstruct.library.tools.IToolPart|getCost|()I
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6624|6632|material|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|registerToolParts|(Lslimeknights/tconstruct/library/materials/Material;)V|material|0
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6597|6614|registerToolParts|method|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|registerToolParts|(Lslimeknights/tconstruct/library/materials/Material;)V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6615|6623|Material|class|slimeknights.tconstruct.library.materials.Material|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6650|6655|Fluid|class|net.minecraftforge.fluids.Fluid|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6664|6672|material|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|registerToolParts|(Lslimeknights/tconstruct/library/materials/Material;)V|material|0
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6673|6681|getFluid|method|slimeknights.tconstruct.library.materials.Material|getFluid|()Lnet/minecraftforge/fluids/Fluid;
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6700|6709|IToolPart|class|slimeknights.tconstruct.library.tools.IToolPart|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6721|6735|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6736|6748|getToolParts|method|slimeknights.tconstruct.library.TinkerRegistry|getToolParts|()Ljava/util/Set;
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6789|6800|canBeCasted|method|slimeknights.tconstruct.library.tools.IToolPart|canBeCasted|()Z
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6859|6873|canUseMaterial|method|slimeknights.tconstruct.library.tools.IToolPart|canUseMaterial|(Lslimeknights/tconstruct/library/materials/Material;)Z
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6874|6882|material|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|registerToolParts|(Lslimeknights/tconstruct/library/materials/Material;)V|material|0
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6950|6962|MaterialItem|class|slimeknights.tconstruct.library.tinkering.MaterialItem|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|6996|7005|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7023|7047|getItemstackWithMaterial|method|slimeknights.tconstruct.library.tinkering.IMaterialItem|getItemstackWithMaterial|(Lslimeknights/tconstruct/library/materials/Material;)Lnet/minecraft/item/ItemStack;
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7048|7056|material|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|registerToolParts|(Lslimeknights/tconstruct/library/materials/Material;)V|material|0
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7076|7085|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7099|7103|Cast|class|slimeknights.tconstruct.library.smeltery.Cast|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7104|7117|setTagForPart|method|slimeknights.tconstruct.library.tools.Pattern|setTagForPart|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/item/Item;)Lnet/minecraft/item/ItemStack;
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7122|7131|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7132|7146|TinkerSmeltery|class|slimeknights.tconstruct.smeltery.TinkerSmeltery|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7147|7151|cast|field|slimeknights.tconstruct.smeltery.TinkerSmeltery|cast
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7160|7167|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7247|7261|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7262|7277|registerMelting|method|slimeknights.tconstruct.library.TinkerRegistry|registerMelting|(Lnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/Fluid;I)V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7301|7308|getCost|method|slimeknights.tconstruct.library.tools.IToolPart|getCost|()I
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7334|7348|TinkerRegistry|class|slimeknights.tconstruct.library.TinkerRegistry|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7349|7369|registerTableCasting|method|slimeknights.tconstruct.library.TinkerRegistry|registerTableCasting|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/Fluid;I)V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7405|7412|getCost|method|slimeknights.tconstruct.library.tools.IToolPart|getCost|()I
    Method End: registerToolParts(Lslimeknights/tconstruct/library/materials/Material;)V
    Method Start: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7265|7270|event|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7195|7211|Mod.EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7229|7237|postInit|method|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7238|7264|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7287|7292|event|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7293|7300|getSide|method|net.minecraftforge.fml.common.event.FMLStateEvent|getSide|()Lnet/minecraftforge/fml/relauncher/Side;
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7303|7311|isClient|method|net.minecraftforge.fml.relauncher.Side|isClient|()Z
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7330|7355|registerMaterialRendering|method|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|registerMaterialRendering|()V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7547|7552|event|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7477|7493|Mod.EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7511|7519|postInit|method|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7520|7546|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7569|7574|event|param|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7575|7582|getSide|method|net.minecraftforge.fml.common.event.FMLStateEvent|getSide|()Lnet/minecraftforge/fml/relauncher/Side;
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7585|7593|isClient|method|net.minecraftforge.fml.relauncher.Side|isClient|()Z
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7612|7637|registerMaterialRendering|method|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|registerMaterialRendering|()V
    Method End: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
    Method Start: registerMaterialRendering()V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7379|7387|SideOnly|class|net.minecraftforge.fml.relauncher.SideOnly|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7388|7392|Side|class|net.minecraftforge.fml.relauncher.Side|false
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7393|7399|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7425|7450|registerMaterialRendering|method|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|registerMaterialRendering|()V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7464|7473|netherite|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|netherite
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7474|7487|setRenderInfo|method|slimeknights.tconstruct.library.materials.Material|setRenderInfo|(Lslimeknights/tconstruct/library/client/MaterialRenderInfo;)V
-      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7492|7516|MaterialRenderInfo.Metal|class|slimeknights.tconstruct.library.client.MaterialRenderInfo.Metal|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7661|7669|SideOnly|class|net.minecraftforge.fml.relauncher.SideOnly|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7670|7674|Side|class|net.minecraftforge.fml.relauncher.Side|false
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7675|7681|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7707|7732|registerMaterialRendering|method|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|registerMaterialRendering|()V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7746|7755|netherite|field|com.groupzts.netheriteroad.compat.tinkers.TiCRegister|netherite
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7756|7769|setRenderInfo|method|slimeknights.tconstruct.library.materials.Material|setRenderInfo|(Lslimeknights/tconstruct/library/client/MaterialRenderInfo;)V
+      @|com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java|7774|7798|MaterialRenderInfo.Metal|class|slimeknights.tconstruct.library.client.MaterialRenderInfo.Metal|false
    Method End: registerMaterialRendering()V
 Class End  : com.groupzts.netheriteroad.compat.tinkers.TiCRegister
 endProcessing "com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java"
@@ -2295,7 +2577,7 @@ Class Start: com.groupzts.netheriteroad.utils.ModMaterials
 Class End  : com.groupzts.netheriteroad.utils.ModMaterials
 endProcessing "com/groupzts/netheriteroad/utils/ModMaterials.java"
 
-startProcessing "com/groupzts/netheriteroad/utils/Reference.java" md5: 48763f3e73a2b35ec2bf3751a6643f78
+startProcessing "com/groupzts/netheriteroad/utils/Reference.java" md5: 4295ee649dbf55296c972e737759dc20
 @|com/groupzts/netheriteroad/utils/Reference.java|8|40|com.groupzts.netheriteroad.utils|package|com.groupzts.netheriteroad.utils|(file)
 Class Start: com.groupzts.netheriteroad.utils.Reference
    @|com/groupzts/netheriteroad/utils/Reference.java|58|67|Reference|class|com.groupzts.netheriteroad.utils.Reference|false

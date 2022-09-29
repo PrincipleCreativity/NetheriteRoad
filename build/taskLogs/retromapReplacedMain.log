@@ -1,4 +1,4 @@
-Processing 37 files
+Processing 40 files
 Start Processing: com/groupzts/netheriteroad/NetheriteRoad.java
 New Key: class net/minecraftforge/fml/common/Mod
 New Key: class net/minecraftforge/fml/common/Mod
@@ -345,6 +345,68 @@ Import: org.lwjgl.opengl.GL11
 Import: java.io.IOException
 End  Processing: com/groupzts/netheriteroad/client/gui/GuiSmithing.java
 
+Start Processing: com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java
+FOUND CONSTR method com/groupzts/netheriteroad/compat/jei/ModSmithingMaker/ModSmithingMaker ()V com/groupzts/netheriteroad/compat/jei/ModSmithingMaker
+New Key: class java/util/Map
+Rename method net/minecraft/item/ItemStack/copy ()Lnet/minecraft/item/ItemStack;[2367,2371]::copy->func_77946_l
+Rename method net/minecraft/item/ItemStack/setItemDamage (I)V[2409,2422]::setItemDamage->func_77964_b
+Rename method net/minecraft/item/ItemStack/getMaxDamage ()I[2431,2443]::getMaxDamage->func_77958_k
+Rename method net/minecraft/item/ItemStack/copy ()Lnet/minecraft/item/ItemStack;[2497,2501]::copy->func_77946_l
+Rename method net/minecraft/item/ItemStack/setItemDamage (I)V[2539,2552]::setItemDamage->func_77964_b
+Rename method net/minecraft/item/ItemStack/getMaxDamage ()I[2561,2573]::getMaxDamage->func_77958_k
+Rename method net/minecraft/item/ItemStack/copy ()Lnet/minecraft/item/ItemStack;[2635,2639]::copy->func_77946_l
+Rename method net/minecraft/item/ItemStack/setItemDamage (I)V[2677,2690]::setItemDamage->func_77964_b
+Rename method net/minecraft/item/ItemStack/getMaxDamage ()I[2699,2711]::getMaxDamage->func_77958_k
+Import: com.google.common.base.Stopwatch
+Import: com.google.common.collect.Lists
+Import: com.google.common.collect.Maps
+Import: com.groupzts.netheriteroad.init.ModItems
+Import: mezz.jei.api.ingredients.IIngredientRegistry
+Import: mezz.jei.api.recipe.IRecipeWrapper
+Import: mezz.jei.api.recipe.IVanillaRecipeFactory
+Import: mezz.jei.util.Log
+Import: net.minecraft.init.Blocks
+Import: net.minecraft.item.ItemStack
+Import: java.util.ArrayList
+Import: java.util.Collections
+Import: java.util.List
+Import: java.util.Map
+End  Processing: com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java
+
+Start Processing: com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java
+FOUND CONSTR method com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory/ModSmithingRecipeCategory (Lmezz/jei/api/IGuiHelper;)V com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory
+Import: com.groupzts.netheriteroad.init.ModBlocks
+Import: mezz.jei.api.IGuiHelper
+Import: mezz.jei.api.gui.ICraftingGridHelper
+Import: mezz.jei.api.gui.IDrawable
+Import: mezz.jei.api.gui.IGuiItemStackGroup
+Import: mezz.jei.api.gui.IRecipeLayout
+Import: mezz.jei.api.ingredients.IIngredients
+Import: mezz.jei.api.recipe.IRecipeCategory
+Import: mezz.jei.api.recipe.VanillaRecipeCategoryUid
+Import: mezz.jei.api.recipe.wrapper.ICraftingRecipeWrapper
+Import: mezz.jei.config.Constants
+Import: mezz.jei.plugins.vanilla.anvil.AnvilRecipeWrapper
+Import: mezz.jei.util.Translator
+Import: net.minecraft.item.ItemStack
+Import: net.minecraft.util.ResourceLocation
+End  Processing: com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java
+
+Start Processing: com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java
+Import: mezz.jei.Internal
+Import: mezz.jei.api.IJeiHelpers
+Import: mezz.jei.api.IModPlugin
+Import: mezz.jei.api.IModRegistry
+Import: mezz.jei.api.JEIPlugin
+Import: mezz.jei.api.ingredients.IIngredientRegistry
+Import: mezz.jei.api.recipe.IRecipeCategoryRegistration
+Import: mezz.jei.api.recipe.IVanillaRecipeFactory
+Import: mezz.jei.api.recipe.VanillaRecipeCategoryUid
+Import: mezz.jei.gui.GuiHelper
+Import: mezz.jei.runtime.JeiHelpers
+Import: javax.annotation.Nullable
+End  Processing: com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java
+
 Start Processing: com/groupzts/netheriteroad/compat/tinkers/RegistryEvent.java
 New Key: class net/minecraftforge/fml/common/Mod
 Import: com.groupzts.netheriteroad.blocks.common.BlockMoltenAncient
@@ -369,15 +431,16 @@ Start Processing: com/groupzts/netheriteroad/compat/tinkers/TiCConfig.java
 End  Processing: com/groupzts/netheriteroad/compat/tinkers/TiCConfig.java
 
 Start Processing: com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java
-Rename method net/minecraft/nbt/NBTTagCompound/setString (Ljava/lang/String;Ljava/lang/String;)V[2796,2805]::setString->func_74778_a
-Rename method net/minecraft/nbt/NBTTagCompound/setString (Ljava/lang/String;Ljava/lang/String;)V[2877,2886]::setString->func_74778_a
-Rename method net/minecraft/nbt/NBTTagCompound/setBoolean (Ljava/lang/String;Z)V[2931,2941]::setBoolean->func_74757_a
-Rename method net/minecraft/nbt/NBTTagCompound/setString (Ljava/lang/String;Ljava/lang/String;)V[3223,3232]::setString->func_74778_a
-Rename method net/minecraft/nbt/NBTTagCompound/setString (Ljava/lang/String;Ljava/lang/String;)V[3302,3311]::setString->func_74778_a
-Rename method net/minecraft/nbt/NBTTagCompound/setBoolean (Ljava/lang/String;Z)V[3354,3364]::setBoolean->func_74757_a
-Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[4784,4794]::getInteger->func_74762_e
-Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[4840,4850]::setInteger->func_74768_a
-Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[6898,6905]::getItem->func_77973_b
+Rename method net/minecraft/nbt/NBTTagCompound/setString (Ljava/lang/String;Ljava/lang/String;)V[2895,2904]::setString->func_74778_a
+Rename method net/minecraft/nbt/NBTTagCompound/setString (Ljava/lang/String;Ljava/lang/String;)V[2976,2985]::setString->func_74778_a
+Rename method net/minecraft/nbt/NBTTagCompound/setBoolean (Ljava/lang/String;Z)V[3030,3040]::setBoolean->func_74757_a
+Rename method net/minecraft/nbt/NBTTagCompound/setString (Ljava/lang/String;Ljava/lang/String;)V[3322,3331]::setString->func_74778_a
+Rename method net/minecraft/nbt/NBTTagCompound/setString (Ljava/lang/String;Ljava/lang/String;)V[3401,3410]::setString->func_74778_a
+Rename method net/minecraft/nbt/NBTTagCompound/setBoolean (Ljava/lang/String;Z)V[3453,3463]::setBoolean->func_74757_a
+Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[4883,4893]::getInteger->func_74762_e
+Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[4939,4949]::setInteger->func_74768_a
+Rename field net/minecraft/init/Blocks/AIR[6432,6435]::AIR->field_150350_a
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[7191,7198]::getItem->func_77973_b
 New Key: class net/minecraftforge/fml/common/Mod
 New Key: class slimeknights/tconstruct/library/client/MaterialRenderInfo
 Import: com.google.common.collect.Lists
@@ -386,6 +449,7 @@ Import: com.groupzts.netheriteroad.fluid.MoltenAncientDebris
 Import: com.groupzts.netheriteroad.init.ModItems
 Import: net.minecraft.entity.EntityLivingBase
 Import: net.minecraft.entity.player.EntityPlayer
+Import: net.minecraft.init.Blocks
 Import: net.minecraft.item.ItemStack
 Import: net.minecraft.nbt.NBTTagCompound
 Import: net.minecraft.util.text.TextFormatting
@@ -404,6 +468,7 @@ Import: slimeknights.tconstruct.library.client.MaterialRenderInfo
 Import: slimeknights.tconstruct.library.materials.*
 Import: slimeknights.tconstruct.library.smeltery.AlloyRecipe
 Import: slimeknights.tconstruct.library.smeltery.Cast
+Import: slimeknights.tconstruct.library.smeltery.CastingRecipe
 Import: slimeknights.tconstruct.library.smeltery.MeltingRecipe
 Import: slimeknights.tconstruct.library.tinkering.MaterialItem
 Import: slimeknights.tconstruct.library.tools.IToolPart

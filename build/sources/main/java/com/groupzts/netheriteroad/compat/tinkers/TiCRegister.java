@@ -6,6 +6,7 @@ import com.groupzts.netheriteroad.fluid.MoltenAncientDebris;
 import com.groupzts.netheriteroad.init.ModItems;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.text.TextFormatting;
@@ -24,6 +25,7 @@ import slimeknights.tconstruct.library.client.MaterialRenderInfo;
 import slimeknights.tconstruct.library.materials.*;
 import slimeknights.tconstruct.library.smeltery.AlloyRecipe;
 import slimeknights.tconstruct.library.smeltery.Cast;
+import slimeknights.tconstruct.library.smeltery.CastingRecipe;
 import slimeknights.tconstruct.library.smeltery.MeltingRecipe;
 import slimeknights.tconstruct.library.tinkering.MaterialItem;
 import slimeknights.tconstruct.library.tools.IToolPart;
@@ -93,7 +95,7 @@ public class TiCRegister {
             public void applyEffect(NBTTagCompound rootCompound, NBTTagCompound modifierTag) {
                 NBTTagCompound toolTag = TagUtil.getToolTag(rootCompound);
                int modifiers = toolTag.getInteger("FreeModifiers");
-                toolTag.setInteger("FreeModifiers",50 + modifiers);
+                toolTag.setInteger("FreeModifiers",25 + modifiers);
             }
         });
         TinkerRegistry.addMaterialStats(netherite,
@@ -105,11 +107,11 @@ public class TiCRegister {
         TinkerRegistry.registerAlloy(new AlloyRecipe(new FluidStack(MOLTEN_NETHERITE_FLUID, Material.VALUE_Ingot),new FluidStack(MOLTEN_ANCIENT, Material.VALUE_Ingot),new FluidStack(TinkerFluids.gold, Material.VALUE_Ingot)));
 
         TinkerRegistry.registerMelting(new MeltingRecipe(RecipeMatch.of("ingotNetherite"),new FluidStack(MOLTEN_NETHERITE_FLUID, Material.VALUE_Ingot),1000));
-
         TinkerRegistry.registerMelting(new MeltingRecipe(RecipeMatch.of(ModItems.NETHERITE_HELMET, Material.VALUE_Ingot * 5),MOLTEN_NETHERITE_FLUID,1000));
         TinkerRegistry.registerMelting(new MeltingRecipe(RecipeMatch.of(ModItems.NETHERITE_CHESTPLATE, Material.VALUE_Ingot * 8),MOLTEN_NETHERITE_FLUID,1000));
         TinkerRegistry.registerMelting(new MeltingRecipe(RecipeMatch.of(ModItems.NETHERITE_LEGGINGS, Material.VALUE_Ingot * 7),MOLTEN_NETHERITE_FLUID, 1000));
         TinkerRegistry.registerMelting(new MeltingRecipe(RecipeMatch.of(ModItems.NETHERITE_BOOTS, Material.VALUE_Ingot * 4),MOLTEN_NETHERITE_FLUID, 1000));
+        TinkerRegistry.registerBasinCasting(new CastingRecipe(new ItemStack(ModItems.NETHERITE_BLOCK_ITEM), RecipeMatch.of(Blocks.AIR), MOLTEN_NETHERITE_FLUID, Material.VALUE_Block));
         TinkerRegistry.integrate(netherite).preInit();
         registerToolParts(netherite);
     }

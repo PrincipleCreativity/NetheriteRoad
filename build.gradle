@@ -14,7 +14,7 @@ buildscript {
 apply plugin: "net.minecraftforge.gradle.forge"
 
 group = 'com.groupzts'
-version = '0.4.0'
+version = '0.4.1'
 archivesBaseName = 'netheriteroad'
 
 minecraft {
@@ -29,12 +29,24 @@ repositories {
     maven {
         url "https://cursemaven.com"
     }
+        maven {
+            // location of the maven that hosts JEI files
+            name = "Progwml6 maven"
+            url = "https://dvs1.progwml6.com/files/maven/"
+        }
+        maven {
+            // location of a maven mirror for JEI files, as a fallback
+            name = "ModMaven"
+            url = "https://modmaven.dev"
+    }
     mavenCentral()
 }
 
 dependencies {
     deobfCompile "curse.maven:mantle-${mantle_build}"
     deobfCompile "curse.maven:tconstruct-${tic_build}"
+    implementation "mezz.jei:jei_${mc_version}:${jei_version}:api"
+    implementation "mezz.jei:jei_${mc_version}:${jei_version}"
 }
 
 processResources {
