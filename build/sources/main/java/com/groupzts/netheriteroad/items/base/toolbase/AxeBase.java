@@ -15,10 +15,10 @@ import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;
 
 public class AxeBase extends ItemAxe implements IHasModel {
-    public AxeBase(String name, ToolMaterial material) {
+    public AxeBase(String modId, String name, ToolMaterial material) {
         super(material, 9F, -3F);
-        setRegistryName(Reference.MOD_ID, name);
-        setTranslationKey(Reference.MOD_ID + "." + name);
+        setRegistryName(modId, name);
+        setTranslationKey(modId + "." + name);
         setCreativeTab(CreativeTabs.TOOLS);
         ModItems.ITEMS.add(this);
     }

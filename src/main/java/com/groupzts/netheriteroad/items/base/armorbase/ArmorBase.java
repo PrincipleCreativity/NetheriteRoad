@@ -21,10 +21,10 @@ import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.UUID;
 
 public class ArmorBase extends ItemArmor implements IHasModel {
-    public ArmorBase(String name, ArmorMaterial materialIn, EntityEquipmentSlot slot) {
+    public ArmorBase(String modId, String name, ArmorMaterial materialIn, EntityEquipmentSlot slot) {
         super(materialIn, 0, slot);
-        setRegistryName(Reference.MOD_ID, name);
-        setTranslationKey(Reference.MOD_ID + "." + name);
+        setRegistryName(modId, name);
+        setTranslationKey(modId + "." + name);
         setCreativeTab(CreativeTabs.COMBAT);
         ModItems.ITEMS.add(this);
     }

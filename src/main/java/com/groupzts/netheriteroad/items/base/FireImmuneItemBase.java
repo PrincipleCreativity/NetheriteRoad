@@ -9,8 +9,8 @@ import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;
 
 public class FireImmuneItemBase extends CommonItemBase{
-    public FireImmuneItemBase(String name, CreativeTabs tab) {
-        super(name, tab);
+    public FireImmuneItemBase(String modId, String name, CreativeTabs tab) {
+        super(modId, name, tab);
     }
 
     @Override

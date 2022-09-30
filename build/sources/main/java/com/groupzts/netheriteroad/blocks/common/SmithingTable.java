@@ -2,6 +2,7 @@ package com.groupzts.netheriteroad.blocks.common;
 
 import com.groupzts.netheriteroad.NetheriteRoad;
 import com.groupzts.netheriteroad.blocks.BlockBase;
+import com.groupzts.netheriteroad.utils.Reference;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -16,7 +17,7 @@ public class SmithingTable extends BlockBase {
 
 
     public SmithingTable(String name, CreativeTabs tab, Material material) {
-        super(name, tab, material);
+        super(Reference.MOD_ID, name, tab, material);
         setHardness(2.5F).setResistance(2.5F);
         setHarvestLevel("axe", 0);
         setSoundType(SoundType.WOOD);

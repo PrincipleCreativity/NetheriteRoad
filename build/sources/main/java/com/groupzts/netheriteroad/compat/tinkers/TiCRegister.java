@@ -106,7 +106,7 @@ public class TiCRegister {
 
         TinkerRegistry.registerAlloy(new AlloyRecipe(new FluidStack(MOLTEN_NETHERITE_FLUID, Material.VALUE_Ingot),new FluidStack(MOLTEN_ANCIENT, Material.VALUE_Ingot),new FluidStack(TinkerFluids.gold, Material.VALUE_Ingot)));
 
-        TinkerRegistry.registerMelting(new MeltingRecipe(RecipeMatch.of("ingotNetherite"),new FluidStack(MOLTEN_NETHERITE_FLUID, Material.VALUE_Ingot),1000));
+        TinkerRegistry.registerMelting(new MeltingRecipe(RecipeMatch.of("ingotNetherite", Material.VALUE_Ingot), MOLTEN_NETHERITE_FLUID, 1000));
         TinkerRegistry.registerMelting(new MeltingRecipe(RecipeMatch.of(ModItems.NETHERITE_HELMET, Material.VALUE_Ingot * 5),MOLTEN_NETHERITE_FLUID,1000));
         TinkerRegistry.registerMelting(new MeltingRecipe(RecipeMatch.of(ModItems.NETHERITE_CHESTPLATE, Material.VALUE_Ingot * 8),MOLTEN_NETHERITE_FLUID,1000));
         TinkerRegistry.registerMelting(new MeltingRecipe(RecipeMatch.of(ModItems.NETHERITE_LEGGINGS, Material.VALUE_Ingot * 7),MOLTEN_NETHERITE_FLUID, 1000));

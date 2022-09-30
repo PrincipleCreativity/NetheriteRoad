@@ -1,11 +1,11 @@
 Unsupposrted library path: E:\NetheriteRoad-0.1\build\classes\java\api
 Unsupposrted library path: E:\NetheriteRoad-0.1\build\resources\api
 Symbol range map extraction starting
-Processing 40 files
+Processing 37 files
 startProcessing "com/groupzts/netheriteroad/NetheriteRoad.java" md5: 840e23a9283437af15002b42bbd531f5
 endProcessing "com/groupzts/netheriteroad/NetheriteRoad.java"
 
-startProcessing "com/groupzts/netheriteroad/blocks/BlockBase.java" md5: 718353e90d74ba6166e3e966277ea83f
+startProcessing "com/groupzts/netheriteroad/blocks/BlockBase.java" md5: 894ddc367e9c07579e78d429b1fb0798
 endProcessing "com/groupzts/netheriteroad/blocks/BlockBase.java"
 
 startProcessing "com/groupzts/netheriteroad/blocks/BlockItemBase.java" md5: 9fc772733f85967cfd3afb5a45589604
@@ -23,7 +23,7 @@ endProcessing "com/groupzts/netheriteroad/blocks/common/BlockMoltenNetherite.jav
 startProcessing "com/groupzts/netheriteroad/blocks/common/NetheriteBlock.java" md5: 2f20423cd2b31e51c03319d6ed90403e
 endProcessing "com/groupzts/netheriteroad/blocks/common/NetheriteBlock.java"
 
-startProcessing "com/groupzts/netheriteroad/blocks/common/SmithingTable.java" md5: 37cbe907c6cce6e259935283b82a67f6
+startProcessing "com/groupzts/netheriteroad/blocks/common/SmithingTable.java" md5: 32c4c78888fbe609addbcba4311daf4c
 endProcessing "com/groupzts/netheriteroad/blocks/common/SmithingTable.java"
 
 startProcessing "com/groupzts/netheriteroad/client/container/ContainerSmithing.java" md5: ee87bb2a40d2300dbb27bb62d4d75dc4
@@ -32,22 +32,13 @@ endProcessing "com/groupzts/netheriteroad/client/container/ContainerSmithing.jav
 startProcessing "com/groupzts/netheriteroad/client/gui/GuiSmithing.java" md5: 2c1fa8e4e902a8f349afb7e737cc8090
 endProcessing "com/groupzts/netheriteroad/client/gui/GuiSmithing.java"
 
-startProcessing "com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java" md5: 7bb18492a0ff357a412c01e3607e0525
-endProcessing "com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java"
-
-startProcessing "com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java" md5: b1c6dd9ca9749b7c1b60d9fa963b93e2
-endProcessing "com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java"
-
-startProcessing "com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java" md5: 1a74c2257bee25175b299bbe7023fc87
-endProcessing "com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java"
-
 startProcessing "com/groupzts/netheriteroad/compat/tinkers/RegistryEvent.java" md5: 4bd2ba23194e221489e7014491bfce30
 endProcessing "com/groupzts/netheriteroad/compat/tinkers/RegistryEvent.java"
 
 startProcessing "com/groupzts/netheriteroad/compat/tinkers/TiCConfig.java" md5: 2915053c978842e131ee1fc43a262beb
 endProcessing "com/groupzts/netheriteroad/compat/tinkers/TiCConfig.java"
 
-startProcessing "com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java" md5: d11736878810d12048ec1885ef9ca373
+startProcessing "com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java" md5: 5695fd1e399faffd94ac7c59b6b5aabc
 endProcessing "com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java"
 
 startProcessing "com/groupzts/netheriteroad/event/WorldOreGen.java" md5: d6165aaadff10bc858782693f650d363
@@ -62,37 +53,37 @@ endProcessing "com/groupzts/netheriteroad/fluid/MoltenAncientDebris.java"
 startProcessing "com/groupzts/netheriteroad/init/ModBlocks.java" md5: eaff4e30f491df3e5c624d839f6ac937
 endProcessing "com/groupzts/netheriteroad/init/ModBlocks.java"
 
-startProcessing "com/groupzts/netheriteroad/init/ModItems.java" md5: bcfbcc3a718191b2c0eed2a78a96cee8
+startProcessing "com/groupzts/netheriteroad/init/ModItems.java" md5: fa9f52d38e57560bb12e773964fd48ca
 endProcessing "com/groupzts/netheriteroad/init/ModItems.java"
 
 startProcessing "com/groupzts/netheriteroad/init/ModSounds.java" md5: 3738149917ab07d2a68d225afb876f29
 endProcessing "com/groupzts/netheriteroad/init/ModSounds.java"
 
-startProcessing "com/groupzts/netheriteroad/items/base/CommonItemBase.java" md5: 0c9057f67a29763297fa3b4cc6b45f4a
+startProcessing "com/groupzts/netheriteroad/items/base/CommonItemBase.java" md5: 259fe6bbbb1b72efd6fe594443be1361
 endProcessing "com/groupzts/netheriteroad/items/base/CommonItemBase.java"
 
 startProcessing "com/groupzts/netheriteroad/items/base/FireImmune.java" md5: adf5008eebcdbd4940ad003c6d47bf3e
 endProcessing "com/groupzts/netheriteroad/items/base/FireImmune.java"
 
-startProcessing "com/groupzts/netheriteroad/items/base/FireImmuneItemBase.java" md5: a538140d817fb693c2b9972bdc5cabc3
+startProcessing "com/groupzts/netheriteroad/items/base/FireImmuneItemBase.java" md5: a2b196a7ba57fbb31c1d2f3ff01cfc19
 endProcessing "com/groupzts/netheriteroad/items/base/FireImmuneItemBase.java"
 
-startProcessing "com/groupzts/netheriteroad/items/base/armorbase/ArmorBase.java" md5: 03ed32921448d7c66f8a994cb8f3589d
+startProcessing "com/groupzts/netheriteroad/items/base/armorbase/ArmorBase.java" md5: 88d7b761563976c7d74924d76e89d82f
 endProcessing "com/groupzts/netheriteroad/items/base/armorbase/ArmorBase.java"
 
-startProcessing "com/groupzts/netheriteroad/items/base/toolbase/AxeBase.java" md5: 97609c382bf23eb7c281682b90714c95
+startProcessing "com/groupzts/netheriteroad/items/base/toolbase/AxeBase.java" md5: e46f1d2096a003578a919a2db6d91f94
 endProcessing "com/groupzts/netheriteroad/items/base/toolbase/AxeBase.java"
 
-startProcessing "com/groupzts/netheriteroad/items/base/toolbase/HoeBase.java" md5: cd61d397ebeed27b0159cb00108907c4
+startProcessing "com/groupzts/netheriteroad/items/base/toolbase/HoeBase.java" md5: a3cacb2a5ccaa9ae56b7ffdf214512a4
 endProcessing "com/groupzts/netheriteroad/items/base/toolbase/HoeBase.java"
 
-startProcessing "com/groupzts/netheriteroad/items/base/toolbase/PickaxeBase.java" md5: e1ec025253af487ee1bb82c4f7e724d2
+startProcessing "com/groupzts/netheriteroad/items/base/toolbase/PickaxeBase.java" md5: c732767f464304c99221318d1272ab5b
 endProcessing "com/groupzts/netheriteroad/items/base/toolbase/PickaxeBase.java"
 
-startProcessing "com/groupzts/netheriteroad/items/base/toolbase/ShovelBase.java" md5: de1988495a1e7a3cfd4193cf255c94a6
+startProcessing "com/groupzts/netheriteroad/items/base/toolbase/ShovelBase.java" md5: d3646948e2df08079f9b764c73ee32bd
 endProcessing "com/groupzts/netheriteroad/items/base/toolbase/ShovelBase.java"
 
-startProcessing "com/groupzts/netheriteroad/items/base/toolbase/SwordBase.java" md5: 744c86955963b70fdcdfc2bca6c9c7ed
+startProcessing "com/groupzts/netheriteroad/items/base/toolbase/SwordBase.java" md5: 31a03a0954bbb2848e4a6c22ef091309
 endProcessing "com/groupzts/netheriteroad/items/base/toolbase/SwordBase.java"
 
 startProcessing "com/groupzts/netheriteroad/proxy/ClientProxy.java" md5: 01de2e772cd9a814e4a659bcbc6cf170
@@ -111,7 +102,7 @@ endProcessing "com/groupzts/netheriteroad/utils/ItemOreRegister.java"
 startProcessing "com/groupzts/netheriteroad/utils/ModMaterials.java" md5: 602a26dc3314bd15e186252cde4a9656
 endProcessing "com/groupzts/netheriteroad/utils/ModMaterials.java"
 
-startProcessing "com/groupzts/netheriteroad/utils/Reference.java" md5: 4295ee649dbf55296c972e737759dc20
+startProcessing "com/groupzts/netheriteroad/utils/Reference.java" md5: 0de7aa4ad0c2f26461afb8aa0e48075a
 endProcessing "com/groupzts/netheriteroad/utils/Reference.java"
 
 startProcessing "com/groupzts/netheriteroad/utils/handlers/GuiHandler.java" md5: 05bc3894a01246dfdcb06886c7c7c404

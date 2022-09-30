@@ -15,10 +15,10 @@ import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;
 
 public class PickaxeBase extends ItemPickaxe implements IHasModel {
-    public PickaxeBase(String name, ToolMaterial material){
+    public PickaxeBase(String modId, String name, ToolMaterial material){
         super(material);
-        setRegistryName(Reference.MOD_ID, name);
-        setTranslationKey(Reference.MOD_ID + "." + name);
+        setRegistryName(modId, name);
+        setTranslationKey(modId + "." + name);
         setCreativeTab(CreativeTabs.TOOLS);
         ModItems.ITEMS.add(this);
     }

@@ -15,10 +15,10 @@ import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;
 
 public class HoeBase extends ItemHoe implements IHasModel {
-    public HoeBase(String name, ToolMaterial material){
+    public HoeBase(String modId,String name, ToolMaterial material){
         super(material);
-        setRegistryName(Reference.MOD_ID, name);
-        setTranslationKey(Reference.MOD_ID + "." + name);
+        setRegistryName(modId, name);
+        setTranslationKey(modId + "." + name);
         setCreativeTab(CreativeTabs.TOOLS);
         ModItems.ITEMS.add(this);
     }

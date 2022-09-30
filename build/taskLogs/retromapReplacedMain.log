@@ -1,4 +1,4 @@
-Processing 40 files
+Processing 37 files
 Start Processing: com/groupzts/netheriteroad/NetheriteRoad.java
 New Key: class net/minecraftforge/fml/common/Mod
 New Key: class net/minecraftforge/fml/common/Mod
@@ -20,15 +20,14 @@ Import: net.minecraftforge.fml.common.registry.GameRegistry
 End  Processing: com/groupzts/netheriteroad/NetheriteRoad.java
 
 Start Processing: com/groupzts/netheriteroad/blocks/BlockBase.java
-FOUND CONSTR method com/groupzts/netheriteroad/blocks/BlockBase/BlockBase (Ljava/lang/String;Lnet/minecraft/creativetab/CreativeTabs;Lnet/minecraft/block/material/Material;)V com/groupzts/netheriteroad/blocks/BlockBase
-Rename method net/minecraft/block/Block/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/block/Block;[684,701]::setTranslationKey->func_149663_c
-Rename method net/minecraft/block/Block/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/block/Block;[778,792]::setCreativeTab->func_149647_a
-Rename method net/minecraft/item/Item/getItemFromBlock (Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;[1057,1073]::getItemFromBlock->func_150898_a
+FOUND CONSTR method com/groupzts/netheriteroad/blocks/BlockBase/BlockBase (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/creativetab/CreativeTabs;Lnet/minecraft/block/material/Material;)V com/groupzts/netheriteroad/blocks/BlockBase
+Rename method net/minecraft/block/Block/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/block/Block;[647,664]::setTranslationKey->func_149663_c
+Rename method net/minecraft/block/Block/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/block/Block;[719,733]::setCreativeTab->func_149647_a
+Rename method net/minecraft/item/Item/getItemFromBlock (Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;[998,1014]::getItemFromBlock->func_150898_a
 Import: com.groupzts.netheriteroad.NetheriteRoad
 Import: com.groupzts.netheriteroad.init.ModBlocks
 Import: com.groupzts.netheriteroad.init.ModItems
 Import: com.groupzts.netheriteroad.utils.IHasModel
-Import: com.groupzts.netheriteroad.utils.Reference
 Import: net.minecraft.block.Block
 Import: net.minecraft.block.material.Material
 Import: net.minecraft.creativetab.CreativeTabs
@@ -141,16 +140,17 @@ End  Processing: com/groupzts/netheriteroad/blocks/common/NetheriteBlock.java
 
 Start Processing: com/groupzts/netheriteroad/blocks/common/SmithingTable.java
 FOUND CONSTR method com/groupzts/netheriteroad/blocks/common/SmithingTable/SmithingTable (Ljava/lang/String;Lnet/minecraft/creativetab/CreativeTabs;Lnet/minecraft/block/material/Material;)V com/groupzts/netheriteroad/blocks/common/SmithingTable
-Rename method net/minecraft/block/Block/setHardness (F)Lnet/minecraft/block/Block;[717,728]::setHardness->func_149711_c
-Rename method net/minecraft/block/Block/setResistance (F)Lnet/minecraft/block/Block;[737,750]::setResistance->func_149752_b
-Rename method net/minecraft/block/Block/setSoundType (Lnet/minecraft/block/SoundType;)Lnet/minecraft/block/Block;[803,815]::setSoundType->func_149672_a
-Rename field net/minecraft/block/SoundType/WOOD[827,831]::WOOD->field_185848_a
-Rename method net/minecraft/block/Block/onBlockActivated (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Z[888,904]::onBlockActivated->func_180639_a
-Rename method net/minecraft/util/math/Vec3i/getX ()I[1116,1120]::getX->func_177958_n
-Rename method net/minecraft/util/math/Vec3i/getY ()I[1137,1141]::getY->func_177956_o
-Rename method net/minecraft/util/math/Vec3i/getZ ()I[1158,1162]::getZ->func_177952_p
+Rename method net/minecraft/block/Block/setHardness (F)Lnet/minecraft/block/Block;[787,798]::setHardness->func_149711_c
+Rename method net/minecraft/block/Block/setResistance (F)Lnet/minecraft/block/Block;[807,820]::setResistance->func_149752_b
+Rename method net/minecraft/block/Block/setSoundType (Lnet/minecraft/block/SoundType;)Lnet/minecraft/block/Block;[873,885]::setSoundType->func_149672_a
+Rename field net/minecraft/block/SoundType/WOOD[897,901]::WOOD->field_185848_a
+Rename method net/minecraft/block/Block/onBlockActivated (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Z[958,974]::onBlockActivated->func_180639_a
+Rename method net/minecraft/util/math/Vec3i/getX ()I[1186,1190]::getX->func_177958_n
+Rename method net/minecraft/util/math/Vec3i/getY ()I[1207,1211]::getY->func_177956_o
+Rename method net/minecraft/util/math/Vec3i/getZ ()I[1228,1232]::getZ->func_177952_p
 Import: com.groupzts.netheriteroad.NetheriteRoad
 Import: com.groupzts.netheriteroad.blocks.BlockBase
+Import: com.groupzts.netheriteroad.utils.Reference
 Import: net.minecraft.block.SoundType
 Import: net.minecraft.block.material.Material
 Import: net.minecraft.block.state.IBlockState
@@ -345,68 +345,6 @@ Import: org.lwjgl.opengl.GL11
 Import: java.io.IOException
 End  Processing: com/groupzts/netheriteroad/client/gui/GuiSmithing.java
 
-Start Processing: com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java
-FOUND CONSTR method com/groupzts/netheriteroad/compat/jei/ModSmithingMaker/ModSmithingMaker ()V com/groupzts/netheriteroad/compat/jei/ModSmithingMaker
-New Key: class java/util/Map
-Rename method net/minecraft/item/ItemStack/copy ()Lnet/minecraft/item/ItemStack;[2367,2371]::copy->func_77946_l
-Rename method net/minecraft/item/ItemStack/setItemDamage (I)V[2409,2422]::setItemDamage->func_77964_b
-Rename method net/minecraft/item/ItemStack/getMaxDamage ()I[2431,2443]::getMaxDamage->func_77958_k
-Rename method net/minecraft/item/ItemStack/copy ()Lnet/minecraft/item/ItemStack;[2497,2501]::copy->func_77946_l
-Rename method net/minecraft/item/ItemStack/setItemDamage (I)V[2539,2552]::setItemDamage->func_77964_b
-Rename method net/minecraft/item/ItemStack/getMaxDamage ()I[2561,2573]::getMaxDamage->func_77958_k
-Rename method net/minecraft/item/ItemStack/copy ()Lnet/minecraft/item/ItemStack;[2635,2639]::copy->func_77946_l
-Rename method net/minecraft/item/ItemStack/setItemDamage (I)V[2677,2690]::setItemDamage->func_77964_b
-Rename method net/minecraft/item/ItemStack/getMaxDamage ()I[2699,2711]::getMaxDamage->func_77958_k
-Import: com.google.common.base.Stopwatch
-Import: com.google.common.collect.Lists
-Import: com.google.common.collect.Maps
-Import: com.groupzts.netheriteroad.init.ModItems
-Import: mezz.jei.api.ingredients.IIngredientRegistry
-Import: mezz.jei.api.recipe.IRecipeWrapper
-Import: mezz.jei.api.recipe.IVanillaRecipeFactory
-Import: mezz.jei.util.Log
-Import: net.minecraft.init.Blocks
-Import: net.minecraft.item.ItemStack
-Import: java.util.ArrayList
-Import: java.util.Collections
-Import: java.util.List
-Import: java.util.Map
-End  Processing: com/groupzts/netheriteroad/compat/jei/ModSmithingMaker.java
-
-Start Processing: com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java
-FOUND CONSTR method com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory/ModSmithingRecipeCategory (Lmezz/jei/api/IGuiHelper;)V com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory
-Import: com.groupzts.netheriteroad.init.ModBlocks
-Import: mezz.jei.api.IGuiHelper
-Import: mezz.jei.api.gui.ICraftingGridHelper
-Import: mezz.jei.api.gui.IDrawable
-Import: mezz.jei.api.gui.IGuiItemStackGroup
-Import: mezz.jei.api.gui.IRecipeLayout
-Import: mezz.jei.api.ingredients.IIngredients
-Import: mezz.jei.api.recipe.IRecipeCategory
-Import: mezz.jei.api.recipe.VanillaRecipeCategoryUid
-Import: mezz.jei.api.recipe.wrapper.ICraftingRecipeWrapper
-Import: mezz.jei.config.Constants
-Import: mezz.jei.plugins.vanilla.anvil.AnvilRecipeWrapper
-Import: mezz.jei.util.Translator
-Import: net.minecraft.item.ItemStack
-Import: net.minecraft.util.ResourceLocation
-End  Processing: com/groupzts/netheriteroad/compat/jei/ModSmithingRecipeCategory.java
-
-Start Processing: com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java
-Import: mezz.jei.Internal
-Import: mezz.jei.api.IJeiHelpers
-Import: mezz.jei.api.IModPlugin
-Import: mezz.jei.api.IModRegistry
-Import: mezz.jei.api.JEIPlugin
-Import: mezz.jei.api.ingredients.IIngredientRegistry
-Import: mezz.jei.api.recipe.IRecipeCategoryRegistration
-Import: mezz.jei.api.recipe.IVanillaRecipeFactory
-Import: mezz.jei.api.recipe.VanillaRecipeCategoryUid
-Import: mezz.jei.gui.GuiHelper
-Import: mezz.jei.runtime.JeiHelpers
-Import: javax.annotation.Nullable
-End  Processing: com/groupzts/netheriteroad/compat/jei/NetheriteRoadPlugin.java
-
 Start Processing: com/groupzts/netheriteroad/compat/tinkers/RegistryEvent.java
 New Key: class net/minecraftforge/fml/common/Mod
 Import: com.groupzts.netheriteroad.blocks.common.BlockMoltenAncient
@@ -439,8 +377,8 @@ Rename method net/minecraft/nbt/NBTTagCompound/setString (Ljava/lang/String;Ljav
 Rename method net/minecraft/nbt/NBTTagCompound/setBoolean (Ljava/lang/String;Z)V[3453,3463]::setBoolean->func_74757_a
 Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[4883,4893]::getInteger->func_74762_e
 Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[4939,4949]::setInteger->func_74768_a
-Rename field net/minecraft/init/Blocks/AIR[6432,6435]::AIR->field_150350_a
-Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[7191,7198]::getItem->func_77973_b
+Rename field net/minecraft/init/Blocks/AIR[6418,6421]::AIR->field_150350_a
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[7177,7184]::getItem->func_77973_b
 New Key: class net/minecraftforge/fml/common/Mod
 New Key: class slimeknights/tconstruct/library/client/MaterialRenderInfo
 Import: com.google.common.collect.Lists
@@ -531,13 +469,14 @@ Import: java.util.List
 End  Processing: com/groupzts/netheriteroad/init/ModBlocks.java
 
 Start Processing: com/groupzts/netheriteroad/init/ModItems.java
-Rename field net/minecraft/creativetab/CreativeTabs/MISC[728,732]::MISC->field_78026_f
-Rename field net/minecraft/creativetab/CreativeTabs/MISC[847,851]::MISC->field_78026_f
+Rename field net/minecraft/creativetab/CreativeTabs/MISC[798,802]::MISC->field_78026_f
+Rename field net/minecraft/creativetab/CreativeTabs/MISC[935,939]::MISC->field_78026_f
 Import: com.groupzts.netheriteroad.blocks.BlockItemBase
 Import: com.groupzts.netheriteroad.items.base.FireImmuneItemBase
 Import: com.groupzts.netheriteroad.items.base.armorbase.ArmorBase
 Import: com.groupzts.netheriteroad.items.base.toolbase.*
 Import: com.groupzts.netheriteroad.utils.ModMaterials
+Import: com.groupzts.netheriteroad.utils.Reference
 Import: net.minecraft.creativetab.CreativeTabs
 Import: net.minecraft.inventory.EntityEquipmentSlot
 Import: net.minecraft.item.Item
@@ -552,9 +491,9 @@ Import: net.minecraft.util.SoundEvent
 End  Processing: com/groupzts/netheriteroad/init/ModSounds.java
 
 Start Processing: com/groupzts/netheriteroad/items/base/CommonItemBase.java
-FOUND CONSTR method com/groupzts/netheriteroad/items/base/CommonItemBase/CommonItemBase (Ljava/lang/String;Lnet/minecraft/creativetab/CreativeTabs;)V com/groupzts/netheriteroad/items/base/CommonItemBase
-Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[519,536]::setTranslationKey->func_77655_b
-Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[573,587]::setCreativeTab->func_77637_a
+FOUND CONSTR method com/groupzts/netheriteroad/items/base/CommonItemBase/CommonItemBase (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/creativetab/CreativeTabs;)V com/groupzts/netheriteroad/items/base/CommonItemBase
+Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[522,539]::setTranslationKey->func_77655_b
+Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[565,579]::setCreativeTab->func_77637_a
 Import: com.groupzts.netheriteroad.NetheriteRoad
 Import: com.groupzts.netheriteroad.init.ModItems
 Import: com.groupzts.netheriteroad.utils.IHasModel
@@ -599,7 +538,7 @@ Import: javax.annotation.Nonnull
 End  Processing: com/groupzts/netheriteroad/items/base/FireImmune.java
 
 Start Processing: com/groupzts/netheriteroad/items/base/FireImmuneItemBase.java
-FOUND CONSTR method com/groupzts/netheriteroad/items/base/FireImmuneItemBase/FireImmuneItemBase (Ljava/lang/String;Lnet/minecraft/creativetab/CreativeTabs;)V com/groupzts/netheriteroad/items/base/FireImmuneItemBase
+FOUND CONSTR method com/groupzts/netheriteroad/items/base/FireImmuneItemBase/FireImmuneItemBase (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/creativetab/CreativeTabs;)V com/groupzts/netheriteroad/items/base/FireImmuneItemBase
 Import: net.minecraft.creativetab.CreativeTabs
 Import: net.minecraft.entity.Entity
 Import: net.minecraft.item.ItemStack
@@ -609,19 +548,19 @@ Import: javax.annotation.ParametersAreNonnullByDefault
 End  Processing: com/groupzts/netheriteroad/items/base/FireImmuneItemBase.java
 
 Start Processing: com/groupzts/netheriteroad/items/base/armorbase/ArmorBase.java
-FOUND CONSTR method com/groupzts/netheriteroad/items/base/armorbase/ArmorBase/ArmorBase (Ljava/lang/String;Lnet/minecraft/item/ItemArmor$ArmorMaterial;Lnet/minecraft/inventory/EntityEquipmentSlot;)V com/groupzts/netheriteroad/items/base/armorbase/ArmorBase
-Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[1132,1149]::setTranslationKey->func_77655_b
-Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[1186,1200]::setCreativeTab->func_77637_a
-Rename field net/minecraft/creativetab/CreativeTabs/COMBAT[1212,1218]::COMBAT->field_78037_j
-Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[1522,1529]::getItem->func_77973_b
-Rename field net/minecraft/entity/SharedMonsterAttributes/KNOCKBACK_RESISTANCE[1754,1774]::KNOCKBACK_RESISTANCE->field_111266_c
-Rename method net/minecraft/entity/ai/attributes/IAttribute/getName ()Ljava/lang/String;[1769,1776]::getName->func_111108_a
-Rename field net/minecraft/entity/SharedMonsterAttributes/KNOCKBACK_RESISTANCE[2017,2037]::KNOCKBACK_RESISTANCE->field_111266_c
-Rename method net/minecraft/entity/ai/attributes/IAttribute/getName ()Ljava/lang/String;[2032,2039]::getName->func_111108_a
-Rename field net/minecraft/entity/SharedMonsterAttributes/KNOCKBACK_RESISTANCE[2277,2297]::KNOCKBACK_RESISTANCE->field_111266_c
-Rename method net/minecraft/entity/ai/attributes/IAttribute/getName ()Ljava/lang/String;[2292,2299]::getName->func_111108_a
-Rename field net/minecraft/entity/SharedMonsterAttributes/KNOCKBACK_RESISTANCE[2534,2554]::KNOCKBACK_RESISTANCE->field_111266_c
-Rename method net/minecraft/entity/ai/attributes/IAttribute/getName ()Ljava/lang/String;[2549,2556]::getName->func_111108_a
+FOUND CONSTR method com/groupzts/netheriteroad/items/base/armorbase/ArmorBase/ArmorBase (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/item/ItemArmor$ArmorMaterial;Lnet/minecraft/inventory/EntityEquipmentSlot;)V com/groupzts/netheriteroad/items/base/armorbase/ArmorBase
+Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[1135,1152]::setTranslationKey->func_77655_b
+Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[1178,1192]::setCreativeTab->func_77637_a
+Rename field net/minecraft/creativetab/CreativeTabs/COMBAT[1204,1210]::COMBAT->field_78037_j
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[1514,1521]::getItem->func_77973_b
+Rename field net/minecraft/entity/SharedMonsterAttributes/KNOCKBACK_RESISTANCE[1746,1766]::KNOCKBACK_RESISTANCE->field_111266_c
+Rename method net/minecraft/entity/ai/attributes/IAttribute/getName ()Ljava/lang/String;[1761,1768]::getName->func_111108_a
+Rename field net/minecraft/entity/SharedMonsterAttributes/KNOCKBACK_RESISTANCE[2009,2029]::KNOCKBACK_RESISTANCE->field_111266_c
+Rename method net/minecraft/entity/ai/attributes/IAttribute/getName ()Ljava/lang/String;[2024,2031]::getName->func_111108_a
+Rename field net/minecraft/entity/SharedMonsterAttributes/KNOCKBACK_RESISTANCE[2269,2289]::KNOCKBACK_RESISTANCE->field_111266_c
+Rename method net/minecraft/entity/ai/attributes/IAttribute/getName ()Ljava/lang/String;[2284,2291]::getName->func_111108_a
+Rename field net/minecraft/entity/SharedMonsterAttributes/KNOCKBACK_RESISTANCE[2526,2546]::KNOCKBACK_RESISTANCE->field_111266_c
+Rename method net/minecraft/entity/ai/attributes/IAttribute/getName ()Ljava/lang/String;[2541,2548]::getName->func_111108_a
 Import: com.google.common.collect.Multimap
 Import: com.groupzts.netheriteroad.NetheriteRoad
 Import: com.groupzts.netheriteroad.init.ModItems
@@ -645,10 +584,10 @@ Adding 1 imports
 End  Processing: com/groupzts/netheriteroad/items/base/armorbase/ArmorBase.java
 
 Start Processing: com/groupzts/netheriteroad/items/base/toolbase/AxeBase.java
-FOUND CONSTR method com/groupzts/netheriteroad/items/base/toolbase/AxeBase/AxeBase (Ljava/lang/String;Lnet/minecraft/item/Item$ToolMaterial;)V com/groupzts/netheriteroad/items/base/toolbase/AxeBase
-Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[822,839]::setTranslationKey->func_77655_b
-Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[876,890]::setCreativeTab->func_77637_a
-Rename field net/minecraft/creativetab/CreativeTabs/TOOLS[902,907]::TOOLS->field_78040_i
+FOUND CONSTR method com/groupzts/netheriteroad/items/base/toolbase/AxeBase/AxeBase (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/item/Item$ToolMaterial;)V com/groupzts/netheriteroad/items/base/toolbase/AxeBase
+Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[825,842]::setTranslationKey->func_77655_b
+Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[868,882]::setCreativeTab->func_77637_a
+Rename field net/minecraft/creativetab/CreativeTabs/TOOLS[894,899]::TOOLS->field_78040_i
 Import: com.groupzts.netheriteroad.NetheriteRoad
 Import: com.groupzts.netheriteroad.init.ModItems
 Import: com.groupzts.netheriteroad.items.base.FireImmune
@@ -666,10 +605,10 @@ Adding 1 imports
 End  Processing: com/groupzts/netheriteroad/items/base/toolbase/AxeBase.java
 
 Start Processing: com/groupzts/netheriteroad/items/base/toolbase/HoeBase.java
-FOUND CONSTR method com/groupzts/netheriteroad/items/base/toolbase/HoeBase/HoeBase (Ljava/lang/String;Lnet/minecraft/item/Item$ToolMaterial;)V com/groupzts/netheriteroad/items/base/toolbase/HoeBase
-Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[812,829]::setTranslationKey->func_77655_b
-Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[866,880]::setCreativeTab->func_77637_a
-Rename field net/minecraft/creativetab/CreativeTabs/TOOLS[892,897]::TOOLS->field_78040_i
+FOUND CONSTR method com/groupzts/netheriteroad/items/base/toolbase/HoeBase/HoeBase (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/item/Item$ToolMaterial;)V com/groupzts/netheriteroad/items/base/toolbase/HoeBase
+Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[814,831]::setTranslationKey->func_77655_b
+Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[857,871]::setCreativeTab->func_77637_a
+Rename field net/minecraft/creativetab/CreativeTabs/TOOLS[883,888]::TOOLS->field_78040_i
 Import: com.groupzts.netheriteroad.NetheriteRoad
 Import: com.groupzts.netheriteroad.init.ModItems
 Import: com.groupzts.netheriteroad.items.base.FireImmune
@@ -687,10 +626,10 @@ Adding 1 imports
 End  Processing: com/groupzts/netheriteroad/items/base/toolbase/HoeBase.java
 
 Start Processing: com/groupzts/netheriteroad/items/base/toolbase/PickaxeBase.java
-FOUND CONSTR method com/groupzts/netheriteroad/items/base/toolbase/PickaxeBase/PickaxeBase (Ljava/lang/String;Lnet/minecraft/item/Item$ToolMaterial;)V com/groupzts/netheriteroad/items/base/toolbase/PickaxeBase
-Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[828,845]::setTranslationKey->func_77655_b
-Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[882,896]::setCreativeTab->func_77637_a
-Rename field net/minecraft/creativetab/CreativeTabs/TOOLS[908,913]::TOOLS->field_78040_i
+FOUND CONSTR method com/groupzts/netheriteroad/items/base/toolbase/PickaxeBase/PickaxeBase (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/item/Item$ToolMaterial;)V com/groupzts/netheriteroad/items/base/toolbase/PickaxeBase
+Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[831,848]::setTranslationKey->func_77655_b
+Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[874,888]::setCreativeTab->func_77637_a
+Rename field net/minecraft/creativetab/CreativeTabs/TOOLS[900,905]::TOOLS->field_78040_i
 Import: com.groupzts.netheriteroad.NetheriteRoad
 Import: com.groupzts.netheriteroad.init.ModItems
 Import: com.groupzts.netheriteroad.items.base.FireImmune
@@ -708,10 +647,10 @@ Adding 1 imports
 End  Processing: com/groupzts/netheriteroad/items/base/toolbase/PickaxeBase.java
 
 Start Processing: com/groupzts/netheriteroad/items/base/toolbase/ShovelBase.java
-FOUND CONSTR method com/groupzts/netheriteroad/items/base/toolbase/ShovelBase/ShovelBase (Ljava/lang/String;Lnet/minecraft/item/Item$ToolMaterial;)V com/groupzts/netheriteroad/items/base/toolbase/ShovelBase
-Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[823,840]::setTranslationKey->func_77655_b
-Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[877,891]::setCreativeTab->func_77637_a
-Rename field net/minecraft/creativetab/CreativeTabs/TOOLS[903,908]::TOOLS->field_78040_i
+FOUND CONSTR method com/groupzts/netheriteroad/items/base/toolbase/ShovelBase/ShovelBase (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/item/Item$ToolMaterial;)V com/groupzts/netheriteroad/items/base/toolbase/ShovelBase
+Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[826,843]::setTranslationKey->func_77655_b
+Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[869,883]::setCreativeTab->func_77637_a
+Rename field net/minecraft/creativetab/CreativeTabs/TOOLS[895,900]::TOOLS->field_78040_i
 Import: com.groupzts.netheriteroad.NetheriteRoad
 Import: com.groupzts.netheriteroad.init.ModItems
 Import: com.groupzts.netheriteroad.items.base.FireImmune
@@ -729,10 +668,10 @@ Adding 1 imports
 End  Processing: com/groupzts/netheriteroad/items/base/toolbase/ShovelBase.java
 
 Start Processing: com/groupzts/netheriteroad/items/base/toolbase/SwordBase.java
-FOUND CONSTR method com/groupzts/netheriteroad/items/base/toolbase/SwordBase/SwordBase (Ljava/lang/String;Lnet/minecraft/item/Item$ToolMaterial;)V com/groupzts/netheriteroad/items/base/toolbase/SwordBase
-Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[820,837]::setTranslationKey->func_77655_b
-Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[874,888]::setCreativeTab->func_77637_a
-Rename field net/minecraft/creativetab/CreativeTabs/COMBAT[900,906]::COMBAT->field_78037_j
+FOUND CONSTR method com/groupzts/netheriteroad/items/base/toolbase/SwordBase/SwordBase (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/item/Item$ToolMaterial;)V com/groupzts/netheriteroad/items/base/toolbase/SwordBase
+Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[823,840]::setTranslationKey->func_77655_b
+Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[866,880]::setCreativeTab->func_77637_a
+Rename field net/minecraft/creativetab/CreativeTabs/COMBAT[892,898]::COMBAT->field_78037_j
 Import: com.groupzts.netheriteroad.NetheriteRoad
 Import: com.groupzts.netheriteroad.init.ModItems
 Import: com.groupzts.netheriteroad.items.base.FireImmune

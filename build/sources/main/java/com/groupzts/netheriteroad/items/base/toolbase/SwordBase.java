@@ -15,10 +15,10 @@ import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;
 
 public class SwordBase extends ItemSword implements IHasModel {
-    public SwordBase(String name, ToolMaterial material){
+    public SwordBase(String modId, String name, ToolMaterial material){
         super(material);
-        setRegistryName(Reference.MOD_ID, name);
-        setTranslationKey(Reference.MOD_ID + "." + name);
+        setRegistryName(modId, name);
+        setTranslationKey(modId + "." + name);
         setCreativeTab(CreativeTabs.COMBAT);
         ModItems.ITEMS.add(this);
     }

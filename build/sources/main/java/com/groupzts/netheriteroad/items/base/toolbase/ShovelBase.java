@@ -15,10 +15,10 @@ import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;
 
 public class ShovelBase extends ItemSpade implements IHasModel {
-    public ShovelBase(String name, ToolMaterial material) {
+    public ShovelBase(String modId, String name, ToolMaterial material) {
         super(material);
-        setRegistryName(Reference.MOD_ID, name);
-        setTranslationKey(Reference.MOD_ID + "." + name);
+        setRegistryName(modId, name);
+        setTranslationKey(modId + "." + name);
         setCreativeTab(CreativeTabs.TOOLS);
         ModItems.ITEMS.add(this);
     }
