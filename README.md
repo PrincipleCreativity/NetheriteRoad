@@ -7,3 +7,25 @@ This mod is dedicated to restoring the nether metal equipment, tools, and armor 
 Are you still worried that your TiC smelting furnace can't make the craftsman's soul's netherite alloy equipment without the nether alloy? The ontology of the Netherite Road can do it! The Nether Road is also a TiC linkage module, which can be smelted with molten gold and molten ancient wreckage into molten netherite alloy, and then you can make various tools related to the netherite alloy of the TiC.
 
 The NetheriterRoad is just an ontology, and we make various expansion packs to enrich the gameplay of the mod. If you have any suggestions, please give us feedback!
+
+If you want to add this mod to your development environment for development, please type the following in your build.gradle:
+
+'''gradle
+repositories {
+    maven {
+        url "https://cursemaven.com"
+    }
+    mavenCentral()
+}
+dependencies {
+    deobfCompile implementation("curse.maven:netheriteroad-${nr_build}")
+}
+'''
+${nr_build} is the CurseForge code of NetheriteRoad. It is recommended to write variables in gradle.properties, and the latest code is given here:
+'''properties
+nr_build=616670:4012543
+'''
+
+---
+
+Finally, thank you for your support for NetheriteRoad!
