@@ -10,7 +10,7 @@ The NetheriterRoad is just an ontology, and we make various expansion packs to e
 
 If you want to add this mod to your development environment for development, please type the following in your build.gradle:
 
-'''
+```gradle
 repositories {
     maven {
         url "https://cursemaven.com"
@@ -20,11 +20,11 @@ repositories {
 dependencies {
     deobfCompile implementation("curse.maven:netheriteroad-${nr_build}")
 }
-'''
+```
 ${nr_build} is the CurseForge code of NetheriteRoad. It is recommended to write variables in gradle.properties, and the latest code is given here:
-'''properties
+```properties
 nr_build=616670:4012543
-'''
+```
 
 ---
 
