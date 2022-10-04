@@ -14,7 +14,7 @@ buildscript {
 apply plugin: "net.minecraftforge.gradle.forge"
 
 group = 'com.groupzts'
-version = '0.4.2'
+version = '0.4.3'
 archivesBaseName = 'netheriteroad'
 
 minecraft {

@@ -1,5 +1,7 @@
 package com.groupzts.netheriteroad.client.container;
 
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import com.groupzts.netheriteroad.init.ModItems;
 import com.groupzts.netheriteroad.init.ModSounds;
 import net.minecraft.entity.player.EntityPlayer;
@@ -11,11 +13,14 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.util.*;
 
 public class ContainerSmithing extends Container
 {
@@ -101,50 +106,26 @@ public class ContainerSmithing extends Container
         }
     }
 
-    public void updateRepairOutput()
-    {
+    public void updateRepairOutput() {
         Item item1 = getSlot(1).getStack().getItem();
         Item item2 = getSlot(0).getStack().getItem();
-        if (item1 == ModItems.NETHERITE_INGOT) {
-            if (item2 == Items.DIAMOND_SWORD) {
 
-                    getSlot(2).putStack(new ItemStack(ModItems.NETHERITE_SWORD));
-            }
-            else if (item2 == Items.DIAMOND_PICKAXE) {
-
-                getSlot(2).putStack(new ItemStack(ModItems.NETHERITE_PICKAXE));
-            }
-            else if (item2 == Items.DIAMOND_AXE) {
-
-                getSlot(2).putStack(new ItemStack(ModItems.NETHERITE_AXE));
-            }
-            else if (item2 == Items.DIAMOND_SHOVEL) {
-
-                getSlot(2).putStack(new ItemStack(ModItems.NETHERITE_SHOVEL));
-            }
-            else if (item2 == Items.DIAMOND_HOE) {
-
-                getSlot(2).putStack(new ItemStack(ModItems.NETHERITE_HOE));
-            }
-            else if (item2 == Items.DIAMOND_HELMET) {
-
-                getSlot(2).putStack(new ItemStack(ModItems.NETHERITE_HELMET));
-            }
-            else if (item2 == Items.DIAMOND_CHESTPLATE) {
-
-                getSlot(2).putStack(new ItemStack(ModItems.NETHERITE_CHESTPLATE));
-            }
-            else if (item2 == Items.DIAMOND_LEGGINGS) {
-
-                getSlot(2).putStack(new ItemStack(ModItems.NETHERITE_LEGGINGS));
-            }
-            else if (item2 == Items.DIAMOND_BOOTS) {
-
-                getSlot(2).putStack(new ItemStack(ModItems.NETHERITE_BOOTS));
+        if(SmithingType.NETHERITE.getSmithingItem().equals(item1))
+            for(Map.Entry<Item, Item> entry: Objects.requireNonNull(SmithingType.NETHERITE.getItemMap()).entrySet()){
+            if(entry.getKey().equals(item2)){
+                getSlot(2).putStack(new ItemStack(entry.getValue()));
             }
         }
+        if(SmithingType.CUSTOM.getSmithingItem() == null || SmithingType.CUSTOM.getItemMap() == null) {
+            return;
         }
-
+            if (SmithingType.CUSTOM.getSmithingItem().equals(item1))
+                for (Map.Entry<Item, Item> entry : Objects.requireNonNull(SmithingType.CUSTOM.getItemMap()).entrySet()) {
+                    if (entry.getKey().equals(item2)) {
+                        getSlot(2).putStack(new ItemStack(entry.getValue()));
+                    }
+                }
+    }
     public void addListener(IContainerListener listener)
     {
         super.addListener(listener);
@@ -196,7 +177,7 @@ public class ContainerSmithing extends Container
             }
             else if (index != 0 && index != 1)
             {
-                if (index >= 3 && index < 39 && !this.mergeItemStack(itemstack1, 0, 2, false))
+                if (index < 39 && !this.mergeItemStack(itemstack1, 0, 2, false))
                 {
                     return ItemStack.EMPTY;
                 }
@@ -225,7 +206,6 @@ public class ContainerSmithing extends Container
 
         return itemstack;
     }
-
     public void updateItemName(String newName)
     {
         this.repairedItemName = newName;
@@ -246,5 +226,72 @@ public class ContainerSmithing extends Container
 
         this.updateRepairOutput();
     }
+    public enum SmithingType {
+        NETHERITE(netheriteMap(), ModItems.NETHERITE_INGOT),
+        CUSTOM(getSwitchMap(), getCustomSmithingItem());
+
+        private final Map<Map<Item, Item>, Item> totalMap;
+        private final Item smithingItem;
+        private static String customName;
+        private static Map<Item, Item> switchMap;
+        private static Item customSmithingItem;
+        private static Map<String, SmithingType> nameMap = new HashMap<>();
+
+        SmithingType(Map<Item, Item> switchMap, Item smithingItem){
+            Map<Map<Item, Item>, Item> totalMap = new HashMap<>();
+            totalMap.put(switchMap, smithingItem);
+            this.totalMap = totalMap;
+            this.smithingItem = smithingItem;
+        }
+
+        public Map<Map<Item, Item>, Item> getTotalMap() {
+            return totalMap;
+        }
+
+        public Map<Item, Item> getItemMap(){
+            for(Map.Entry<Map<Item, Item>, Item> entry: getTotalMap().entrySet()){
+                return entry.getKey();
+            }
+            return null;
+        }
+
+        public static SmithingType addCustomType(String customName, Map<Item, Item> switchMap, Item customSmithingItem){
+            SmithingType.customName = customName;
+            SmithingType.switchMap = switchMap;
+            SmithingType.customSmithingItem = customSmithingItem;
+            return CUSTOM;
+        }
+
+        public static Map<Item, Item> netheriteMap(){
+            Map<Item, Item> netheriteMap = new HashMap<>();
+            netheriteMap.put(Items.DIAMOND_SWORD, ModItems.NETHERITE_SWORD);
+            netheriteMap.put(Items.DIAMOND_PICKAXE, ModItems.NETHERITE_PICKAXE);
+            netheriteMap.put(Items.DIAMOND_AXE, ModItems.NETHERITE_AXE);
+            netheriteMap.put(Items.DIAMOND_SHOVEL, ModItems.NETHERITE_SHOVEL);
+            netheriteMap.put(Items.DIAMOND_HOE, ModItems.NETHERITE_HOE);
+            netheriteMap.put(Items.DIAMOND_HELMET, ModItems.NETHERITE_HELMET);
+            netheriteMap.put(Items.DIAMOND_CHESTPLATE, ModItems.NETHERITE_CHESTPLATE);
+            netheriteMap.put(Items.DIAMOND_LEGGINGS, ModItems.NETHERITE_LEGGINGS);
+            netheriteMap.put(Items.DIAMOND_BOOTS, ModItems.NETHERITE_BOOTS);
+            return netheriteMap;
+        }
+
+        public Item getSmithingItem() {
+            return smithingItem;
+        }
+
+        public static Map<Item, Item> getSwitchMap() {
+            return switchMap;
+        }
+
+        public static Item getCustomSmithingItem() {
+            return customSmithingItem;
+        }
+
+        public static Map<String, SmithingType> getNameMap() {
+            return nameMap;
+        }
+    }
+
 }
 
