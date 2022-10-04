@@ -10,7 +10,7 @@ The NetheriterRoad is just an ontology, and we make various expansion packs to e
 
 If you want to add this mod to your development environment for development, please type the following in your build.gradle:
 
-'''gradle
+'''
 repositories {
     maven {
         url "https://cursemaven.com"
