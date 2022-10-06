@@ -26,6 +26,4 @@ ${nr_build} is the CurseForge code of NetheriteRoad. It is recommended to write 
 nr_build=616670:4012543
 ```
 
----
-
 Finally, thank you for your support for NetheriteRoad!
