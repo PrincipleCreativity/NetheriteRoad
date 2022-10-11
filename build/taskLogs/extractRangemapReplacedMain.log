@@ -26,7 +26,7 @@ endProcessing "com/groupzts/netheriteroad/blocks/common/NetheriteBlock.java"
 startProcessing "com/groupzts/netheriteroad/blocks/common/SmithingTable.java" md5: 32c4c78888fbe609addbcba4311daf4c
 endProcessing "com/groupzts/netheriteroad/blocks/common/SmithingTable.java"
 
-startProcessing "com/groupzts/netheriteroad/client/container/ContainerSmithing.java" md5: 8709e69399ceee3aca71ec00b968df7e
+startProcessing "com/groupzts/netheriteroad/client/container/ContainerSmithing.java" md5: 6a8d6c20341ac02bd5691088ebdca2a8
 endProcessing "com/groupzts/netheriteroad/client/container/ContainerSmithing.java"
 
 startProcessing "com/groupzts/netheriteroad/client/gui/GuiSmithing.java" md5: 2c1fa8e4e902a8f349afb7e737cc8090
@@ -102,7 +102,7 @@ endProcessing "com/groupzts/netheriteroad/utils/ItemOreRegister.java"
 startProcessing "com/groupzts/netheriteroad/utils/ModMaterials.java" md5: d5ce1729ec58ffa4cbcd6ee4cec13f9f
 endProcessing "com/groupzts/netheriteroad/utils/ModMaterials.java"
 
-startProcessing "com/groupzts/netheriteroad/utils/Reference.java" md5: 55a2adae0a505ff890461126845afacb
+startProcessing "com/groupzts/netheriteroad/utils/Reference.java" md5: a9a9ddfe5f2f410c8f0987f9439efab4
 endProcessing "com/groupzts/netheriteroad/utils/Reference.java"
 
 startProcessing "com/groupzts/netheriteroad/utils/handlers/GuiHandler.java" md5: 05bc3894a01246dfdcb06886c7c7c404

@@ -164,108 +164,130 @@ End  Processing: com/groupzts/netheriteroad/blocks/common/SmithingTable.java
 
 Start Processing: com/groupzts/netheriteroad/client/container/ContainerSmithing.java
 FOUND CONSTR method com/groupzts/netheriteroad/client/container/ContainerSmithing/ContainerSmithing (Lnet/minecraft/entity/player/InventoryPlayer;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;)V com/groupzts/netheriteroad/client/container/ContainerSmithing
-Rename field net/minecraft/util/math/BlockPos/ORIGIN[1506,1512]::ORIGIN->field_177992_a
+Rename field net/minecraft/util/math/BlockPos/ORIGIN[1606,1612]::ORIGIN->field_177992_a
 FOUND CONSTR method com/groupzts/netheriteroad/client/container/ContainerSmithing/ContainerSmithing (Lnet/minecraft/entity/player/InventoryPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/EntityPlayer;)V com/groupzts/netheriteroad/client/container/ContainerSmithing
-Rename method net/minecraft/inventory/IInventory/markDirty ()V[1835,1844]::markDirty->func_70296_d
-Rename method net/minecraft/inventory/IInventory/markDirty ()V[1888,1897]::markDirty->func_70296_d
-Rename method net/minecraft/inventory/Container/onCraftMatrixChanged (Lnet/minecraft/inventory/IInventory;)V[1944,1964]::onCraftMatrixChanged->func_75130_a
-Rename method net/minecraft/inventory/Container/addSlotToContainer (Lnet/minecraft/inventory/Slot;)Lnet/minecraft/inventory/Slot;[2108,2126]::addSlotToContainer->func_75146_a
-Rename method net/minecraft/inventory/Container/addSlotToContainer (Lnet/minecraft/inventory/Slot;)Lnet/minecraft/inventory/Slot;[2174,2192]::addSlotToContainer->func_75146_a
-Rename method net/minecraft/inventory/Slot/isItemValid (Lnet/minecraft/item/ItemStack;)Z[2276,2287]::isItemValid->func_75214_a
-Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[2338,2345]::getItem->func_77973_b
-Rename method net/minecraft/inventory/Container/addSlotToContainer (Lnet/minecraft/inventory/Slot;)Lnet/minecraft/inventory/Slot;[2424,2442]::addSlotToContainer->func_75146_a
-Rename method net/minecraft/inventory/Slot/isItemValid (Lnet/minecraft/item/ItemStack;)Z[2514,2525]::isItemValid->func_75214_a
-Rename method net/minecraft/inventory/Slot/onTake (Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/ItemStack;[2635,2641]::onTake->func_190901_a
-Rename method net/minecraft/world/World/playSound (Lnet/minecraft/entity/player/EntityPlayer;DDDLnet/minecraft/util/SoundEvent;Lnet/minecraft/util/SoundCategory;FF)V[2728,2737]::playSound->func_184148_a
-Rename field net/minecraft/entity/Entity/posX[2757,2761]::posX->field_70165_t
-Rename field net/minecraft/entity/Entity/posY[2779,2783]::posY->field_70163_u
-Rename field net/minecraft/entity/Entity/posZ[2801,2805]::posZ->field_70161_v
-Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[2899,2906]::getSlot->func_75139_a
-Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[2915,2923]::getStack->func_75211_c
-Rename method net/minecraft/item/ItemStack/isEmpty ()Z[2930,2937]::isEmpty->func_190926_b
-Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[2950,2957]::getSlot->func_75139_a
-Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[2966,2974]::getStack->func_75211_c
-Rename method net/minecraft/item/ItemStack/isEmpty ()Z[2981,2988]::isEmpty->func_190926_b
-Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[3020,3027]::getSlot->func_75139_a
-Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[3036,3044]::getStack->func_75211_c
-Rename method net/minecraft/item/ItemStack/shrink (I)V[3051,3057]::shrink->func_190918_g
-Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[3090,3097]::getSlot->func_75139_a
-Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[3106,3114]::getStack->func_75211_c
-Rename method net/minecraft/item/ItemStack/shrink (I)V[3121,3127]::shrink->func_190918_g
-Rename field net/minecraft/entity/player/EntityPlayer/capabilities[3190,3202]::capabilities->field_71075_bZ
-Rename field net/minecraft/entity/player/PlayerCapabilities/isCreativeMode[3205,3219]::isCreativeMode->field_75098_d
-Rename method net/minecraft/entity/player/EntityPlayer/addExperienceLevel (I)V[3270,3288]::addExperienceLevel->func_82242_a
-Rename method net/minecraft/inventory/Container/addSlotToContainer (Lnet/minecraft/inventory/Slot;)Lnet/minecraft/inventory/Slot;[3527,3545]::addSlotToContainer->func_75146_a
-Rename method net/minecraft/inventory/Container/addSlotToContainer (Lnet/minecraft/inventory/Slot;)Lnet/minecraft/inventory/Slot;[3702,3720]::addSlotToContainer->func_75146_a
-Rename method net/minecraft/inventory/Container/onCraftMatrixChanged (Lnet/minecraft/inventory/IInventory;)V[3800,3820]::onCraftMatrixChanged->func_75130_a
-Rename method net/minecraft/inventory/Container/onCraftMatrixChanged (Lnet/minecraft/inventory/IInventory;)V[3859,3879]::onCraftMatrixChanged->func_75130_a
-Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[4066,4073]::getSlot->func_75139_a
-Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[4082,4090]::getStack->func_75211_c
-Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[4097,4104]::getItem->func_77973_b
-Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[4135,4142]::getSlot->func_75139_a
-Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[4151,4159]::getStack->func_75211_c
-Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[4166,4173]::getItem->func_77973_b
+Rename method net/minecraft/inventory/IInventory/markDirty ()V[1935,1944]::markDirty->func_70296_d
+Rename method net/minecraft/inventory/IInventory/markDirty ()V[1988,1997]::markDirty->func_70296_d
+Rename method net/minecraft/inventory/Container/onCraftMatrixChanged (Lnet/minecraft/inventory/IInventory;)V[2044,2064]::onCraftMatrixChanged->func_75130_a
+Rename method net/minecraft/inventory/Container/addSlotToContainer (Lnet/minecraft/inventory/Slot;)Lnet/minecraft/inventory/Slot;[2208,2226]::addSlotToContainer->func_75146_a
+Rename method net/minecraft/inventory/Container/addSlotToContainer (Lnet/minecraft/inventory/Slot;)Lnet/minecraft/inventory/Slot;[2274,2292]::addSlotToContainer->func_75146_a
+Rename method net/minecraft/inventory/Slot/isItemValid (Lnet/minecraft/item/ItemStack;)Z[2376,2387]::isItemValid->func_75214_a
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[2438,2445]::getItem->func_77973_b
+Rename method net/minecraft/inventory/Container/addSlotToContainer (Lnet/minecraft/inventory/Slot;)Lnet/minecraft/inventory/Slot;[2524,2542]::addSlotToContainer->func_75146_a
+Rename method net/minecraft/inventory/Slot/isItemValid (Lnet/minecraft/item/ItemStack;)Z[2614,2625]::isItemValid->func_75214_a
+Rename method net/minecraft/inventory/Slot/onTake (Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/ItemStack;[2735,2741]::onTake->func_190901_a
+Rename method net/minecraft/world/World/playSound (Lnet/minecraft/entity/player/EntityPlayer;DDDLnet/minecraft/util/SoundEvent;Lnet/minecraft/util/SoundCategory;FF)V[2828,2837]::playSound->func_184148_a
+Rename field net/minecraft/entity/Entity/posX[2857,2861]::posX->field_70165_t
+Rename field net/minecraft/entity/Entity/posY[2879,2883]::posY->field_70163_u
+Rename field net/minecraft/entity/Entity/posZ[2901,2905]::posZ->field_70161_v
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[2999,3006]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[3015,3023]::getStack->func_75211_c
+Rename method net/minecraft/item/ItemStack/isEmpty ()Z[3030,3037]::isEmpty->func_190926_b
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[3050,3057]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[3066,3074]::getStack->func_75211_c
+Rename method net/minecraft/item/ItemStack/isEmpty ()Z[3081,3088]::isEmpty->func_190926_b
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[3120,3127]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[3136,3144]::getStack->func_75211_c
+Rename method net/minecraft/item/ItemStack/shrink (I)V[3151,3157]::shrink->func_190918_g
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[3190,3197]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[3206,3214]::getStack->func_75211_c
+Rename method net/minecraft/item/ItemStack/shrink (I)V[3221,3227]::shrink->func_190918_g
+Rename field net/minecraft/entity/player/EntityPlayer/capabilities[3290,3302]::capabilities->field_71075_bZ
+Rename field net/minecraft/entity/player/PlayerCapabilities/isCreativeMode[3305,3319]::isCreativeMode->field_75098_d
+Rename method net/minecraft/entity/player/EntityPlayer/addExperienceLevel (I)V[3370,3388]::addExperienceLevel->func_82242_a
+Rename method net/minecraft/inventory/Container/addSlotToContainer (Lnet/minecraft/inventory/Slot;)Lnet/minecraft/inventory/Slot;[3627,3645]::addSlotToContainer->func_75146_a
+Rename method net/minecraft/inventory/Container/addSlotToContainer (Lnet/minecraft/inventory/Slot;)Lnet/minecraft/inventory/Slot;[3802,3820]::addSlotToContainer->func_75146_a
+Rename method net/minecraft/inventory/Container/onCraftMatrixChanged (Lnet/minecraft/inventory/IInventory;)V[3900,3920]::onCraftMatrixChanged->func_75130_a
+Rename method net/minecraft/inventory/Container/onCraftMatrixChanged (Lnet/minecraft/inventory/IInventory;)V[3959,3979]::onCraftMatrixChanged->func_75130_a
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[4166,4173]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[4182,4190]::getStack->func_75211_c
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[4197,4204]::getItem->func_77973_b
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[4235,4242]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[4251,4259]::getStack->func_75211_c
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[4266,4273]::getItem->func_77973_b
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[4310,4317]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[4326,4334]::getStack->func_75211_c
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[4370,4377]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[4386,4394]::getStack->func_75211_c
+Rename method net/minecraft/enchantment/EnchantmentHelper/getEnchantments (Lnet/minecraft/item/ItemStack;)Ljava/util/Map;[4464,4479]::getEnchantments->func_82781_a
 New Key: class java/util/Map
-Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[4435,4442]::getSlot->func_75139_a
-Rename method net/minecraft/inventory/Slot/putStack (Lnet/minecraft/item/ItemStack;)V[4451,4459]::putStack->func_75215_d
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[4871,4878]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/putStack (Lnet/minecraft/item/ItemStack;)V[4887,4895]::putStack->func_75215_d
+Rename method net/minecraft/item/Item/isEnchantable (Lnet/minecraft/item/ItemStack;)Z[4984,4997]::isEnchantable->func_77616_k
 New Key: class java/util/Map
-Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[4936,4943]::getSlot->func_75139_a
-Rename method net/minecraft/inventory/Slot/putStack (Lnet/minecraft/item/ItemStack;)V[4952,4960]::putStack->func_75215_d
-Rename method net/minecraft/inventory/Container/addListener (Lnet/minecraft/inventory/IContainerListener;)V[5065,5076]::addListener->func_75132_a
-Rename method net/minecraft/inventory/Container/addListener (Lnet/minecraft/inventory/IContainerListener;)V[5129,5140]::addListener->func_75132_a
-Rename method net/minecraft/inventory/IContainerListener/sendWindowProperty (Lnet/minecraft/inventory/Container;II)V[5171,5189]::sendWindowProperty->func_71112_a
-Rename method net/minecraft/inventory/Container/updateProgressBar (II)V[5266,5283]::updateProgressBar->func_75137_b
-Rename method net/minecraft/inventory/Container/onContainerClosed (Lnet/minecraft/entity/player/EntityPlayer;)V[5412,5429]::onContainerClosed->func_75134_a
-Rename method net/minecraft/inventory/Container/onContainerClosed (Lnet/minecraft/entity/player/EntityPlayer;)V[5470,5487]::onContainerClosed->func_75134_a
-Rename field net/minecraft/world/World/isRemote[5521,5529]::isRemote->field_72995_K
-Rename method net/minecraft/inventory/Container/clearContainer (Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/inventory/IInventory;)V[5565,5579]::clearContainer->func_193327_a
-Rename method net/minecraft/inventory/Container/canInteractWith (Lnet/minecraft/entity/player/EntityPlayer;)Z[5659,5674]::canInteractWith->func_75145_c
-Rename method net/minecraft/entity/Entity/getDistanceSq (DDD)D[5731,5744]::getDistanceSq->func_70092_e
-Rename method net/minecraft/util/math/Vec3i/getX ()I[5770,5774]::getX->func_177958_n
-Rename method net/minecraft/util/math/Vec3i/getY ()I[5820,5824]::getY->func_177956_o
-Rename method net/minecraft/util/math/Vec3i/getZ ()I[5870,5874]::getZ->func_177952_p
-Rename method net/minecraft/inventory/Container/transferStackInSlot (Lnet/minecraft/entity/player/EntityPlayer;I)Lnet/minecraft/item/ItemStack;[5935,5954]::transferStackInSlot->func_82846_b
-Rename field net/minecraft/item/ItemStack/EMPTY[6030,6035]::EMPTY->field_190927_a
-Rename field net/minecraft/inventory/Container/inventorySlots[6072,6086]::inventorySlots->field_75151_b
-Rename method net/minecraft/inventory/Slot/getHasStack ()Z[6134,6145]::getHasStack->func_75216_d
-Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[6202,6210]::getStack->func_75211_c
-Rename method net/minecraft/item/ItemStack/copy ()Lnet/minecraft/item/ItemStack;[6254,6258]::copy->func_77946_l
-Rename method net/minecraft/inventory/Container/mergeItemStack (Lnet/minecraft/item/ItemStack;IIZ)Z[6343,6357]::mergeItemStack->func_75135_a
-Rename field net/minecraft/item/ItemStack/EMPTY[6439,6444]::EMPTY->field_190927_a
-Rename method net/minecraft/inventory/Slot/onSlotChange (Lnet/minecraft/item/ItemStack;Lnet/minecraft/item/ItemStack;)V[6498,6510]::onSlotChange->func_75220_a
-Rename method net/minecraft/inventory/Container/mergeItemStack (Lnet/minecraft/item/ItemStack;IIZ)Z[6654,6668]::mergeItemStack->func_75135_a
-Rename field net/minecraft/item/ItemStack/EMPTY[6750,6755]::EMPTY->field_190927_a
-Rename method net/minecraft/inventory/Container/mergeItemStack (Lnet/minecraft/item/ItemStack;IIZ)Z[6828,6842]::mergeItemStack->func_75135_a
-Rename field net/minecraft/item/ItemStack/EMPTY[6917,6922]::EMPTY->field_190927_a
-Rename method net/minecraft/item/ItemStack/isEmpty ()Z[6978,6985]::isEmpty->func_190926_b
-Rename method net/minecraft/inventory/Slot/putStack (Lnet/minecraft/item/ItemStack;)V[7032,7040]::putStack->func_75215_d
-Rename field net/minecraft/item/ItemStack/EMPTY[7055,7060]::EMPTY->field_190927_a
-Rename method net/minecraft/inventory/Slot/onSlotChanged ()V[7142,7155]::onSlotChanged->func_75218_e
-Rename method net/minecraft/item/ItemStack/getCount ()I[7203,7211]::getCount->func_190916_E
-Rename method net/minecraft/item/ItemStack/getCount ()I[7232,7240]::getCount->func_190916_E
-Rename field net/minecraft/item/ItemStack/EMPTY[7298,7303]::EMPTY->field_190927_a
-Rename method net/minecraft/inventory/Slot/onTake (Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/ItemStack;[7349,7355]::onTake->func_190901_a
-Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[7550,7557]::getSlot->func_75139_a
-Rename method net/minecraft/inventory/Slot/getHasStack ()Z[7566,7577]::getHasStack->func_75216_d
-Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[7633,7640]::getSlot->func_75139_a
-Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[7649,7657]::getStack->func_75211_c
-Rename method net/minecraft/item/ItemStack/clearCustomName ()V[7756,7771]::clearCustomName->func_135074_t
-Rename method net/minecraft/item/ItemStack/setStackDisplayName (Ljava/lang/String;)Lnet/minecraft/item/ItemStack;[7848,7867]::setStackDisplayName->func_151001_c
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[5119,5126]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/putStack (Lnet/minecraft/item/ItemStack;)V[5135,5143]::putStack->func_75215_d
+Rename method net/minecraft/item/ItemStack/addEnchantment (Lnet/minecraft/enchantment/Enchantment;I)V[5195,5209]::addEnchantment->func_77966_a
+Rename method net/minecraft/item/ItemStack/isEmpty ()Z[5334,5341]::isEmpty->func_190926_b
+Rename method net/minecraft/item/ItemStack/isEmpty ()Z[5360,5367]::isEmpty->func_190926_b
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[5392,5399]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/putStack (Lnet/minecraft/item/ItemStack;)V[5408,5416]::putStack->func_75215_d
+Rename field net/minecraft/item/ItemStack/EMPTY[5431,5436]::EMPTY->field_190927_a
+New Key: class java/util/Map
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[6004,6011]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/putStack (Lnet/minecraft/item/ItemStack;)V[6020,6028]::putStack->func_75215_d
+Rename method net/minecraft/item/Item/isEnchantable (Lnet/minecraft/item/ItemStack;)Z[6133,6146]::isEnchantable->func_77616_k
+New Key: class java/util/Map
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[6284,6291]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/putStack (Lnet/minecraft/item/ItemStack;)V[6300,6308]::putStack->func_75215_d
+Rename method net/minecraft/item/ItemStack/addEnchantment (Lnet/minecraft/enchantment/Enchantment;I)V[6368,6382]::addEnchantment->func_77966_a
+Rename method net/minecraft/inventory/Container/addListener (Lnet/minecraft/inventory/IContainerListener;)V[6531,6542]::addListener->func_75132_a
+Rename method net/minecraft/inventory/Container/addListener (Lnet/minecraft/inventory/IContainerListener;)V[6595,6606]::addListener->func_75132_a
+Rename method net/minecraft/inventory/IContainerListener/sendWindowProperty (Lnet/minecraft/inventory/Container;II)V[6637,6655]::sendWindowProperty->func_71112_a
+Rename method net/minecraft/inventory/Container/updateProgressBar (II)V[6732,6749]::updateProgressBar->func_75137_b
+Rename method net/minecraft/inventory/Container/onContainerClosed (Lnet/minecraft/entity/player/EntityPlayer;)V[6878,6895]::onContainerClosed->func_75134_a
+Rename method net/minecraft/inventory/Container/onContainerClosed (Lnet/minecraft/entity/player/EntityPlayer;)V[6936,6953]::onContainerClosed->func_75134_a
+Rename field net/minecraft/world/World/isRemote[6987,6995]::isRemote->field_72995_K
+Rename method net/minecraft/inventory/Container/clearContainer (Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/inventory/IInventory;)V[7031,7045]::clearContainer->func_193327_a
+Rename method net/minecraft/inventory/Container/canInteractWith (Lnet/minecraft/entity/player/EntityPlayer;)Z[7125,7140]::canInteractWith->func_75145_c
+Rename method net/minecraft/entity/Entity/getDistanceSq (DDD)D[7197,7210]::getDistanceSq->func_70092_e
+Rename method net/minecraft/util/math/Vec3i/getX ()I[7236,7240]::getX->func_177958_n
+Rename method net/minecraft/util/math/Vec3i/getY ()I[7286,7290]::getY->func_177956_o
+Rename method net/minecraft/util/math/Vec3i/getZ ()I[7336,7340]::getZ->func_177952_p
+Rename method net/minecraft/inventory/Container/transferStackInSlot (Lnet/minecraft/entity/player/EntityPlayer;I)Lnet/minecraft/item/ItemStack;[7401,7420]::transferStackInSlot->func_82846_b
+Rename field net/minecraft/item/ItemStack/EMPTY[7496,7501]::EMPTY->field_190927_a
+Rename field net/minecraft/inventory/Container/inventorySlots[7538,7552]::inventorySlots->field_75151_b
+Rename method net/minecraft/inventory/Slot/getHasStack ()Z[7600,7611]::getHasStack->func_75216_d
+Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[7668,7676]::getStack->func_75211_c
+Rename method net/minecraft/item/ItemStack/copy ()Lnet/minecraft/item/ItemStack;[7720,7724]::copy->func_77946_l
+Rename method net/minecraft/inventory/Container/mergeItemStack (Lnet/minecraft/item/ItemStack;IIZ)Z[7809,7823]::mergeItemStack->func_75135_a
+Rename field net/minecraft/item/ItemStack/EMPTY[7905,7910]::EMPTY->field_190927_a
+Rename method net/minecraft/inventory/Slot/onSlotChange (Lnet/minecraft/item/ItemStack;Lnet/minecraft/item/ItemStack;)V[7964,7976]::onSlotChange->func_75220_a
+Rename method net/minecraft/inventory/Container/mergeItemStack (Lnet/minecraft/item/ItemStack;IIZ)Z[8120,8134]::mergeItemStack->func_75135_a
+Rename field net/minecraft/item/ItemStack/EMPTY[8216,8221]::EMPTY->field_190927_a
+Rename method net/minecraft/inventory/Container/mergeItemStack (Lnet/minecraft/item/ItemStack;IIZ)Z[8294,8308]::mergeItemStack->func_75135_a
+Rename field net/minecraft/item/ItemStack/EMPTY[8383,8388]::EMPTY->field_190927_a
+Rename method net/minecraft/item/ItemStack/isEmpty ()Z[8444,8451]::isEmpty->func_190926_b
+Rename method net/minecraft/inventory/Slot/putStack (Lnet/minecraft/item/ItemStack;)V[8498,8506]::putStack->func_75215_d
+Rename field net/minecraft/item/ItemStack/EMPTY[8521,8526]::EMPTY->field_190927_a
+Rename method net/minecraft/inventory/Slot/onSlotChanged ()V[8608,8621]::onSlotChanged->func_75218_e
+Rename method net/minecraft/item/ItemStack/getCount ()I[8669,8677]::getCount->func_190916_E
+Rename method net/minecraft/item/ItemStack/getCount ()I[8698,8706]::getCount->func_190916_E
+Rename field net/minecraft/item/ItemStack/EMPTY[8764,8769]::EMPTY->field_190927_a
+Rename method net/minecraft/inventory/Slot/onTake (Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/ItemStack;[8815,8821]::onTake->func_190901_a
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[9016,9023]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/getHasStack ()Z[9032,9043]::getHasStack->func_75216_d
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[9099,9106]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[9115,9123]::getStack->func_75211_c
+Rename method net/minecraft/item/ItemStack/clearCustomName ()V[9222,9237]::clearCustomName->func_135074_t
+Rename method net/minecraft/item/ItemStack/setStackDisplayName (Ljava/lang/String;)Lnet/minecraft/item/ItemStack;[9314,9333]::setStackDisplayName->func_151001_c
 FOUND CONSTR method com/groupzts/netheriteroad/client/container/ContainerSmithing/SmithingType/SmithingType (Ljava/util/Map;Lnet/minecraft/item/Item;)V com/groupzts/netheriteroad/client/container/ContainerSmithing/SmithingType
 New Key: class java/util/Map
-Rename field net/minecraft/init/Items/DIAMOND_SWORD[9531,9544]::DIAMOND_SWORD->field_151048_u
-Rename field net/minecraft/init/Items/DIAMOND_PICKAXE[9610,9625]::DIAMOND_PICKAXE->field_151046_w
-Rename field net/minecraft/init/Items/DIAMOND_AXE[9691,9702]::DIAMOND_AXE->field_151056_x
-Rename field net/minecraft/init/Items/DIAMOND_SHOVEL[9768,9782]::DIAMOND_SHOVEL->field_151047_v
-Rename field net/minecraft/init/Items/DIAMOND_HOE[9848,9859]::DIAMOND_HOE->field_151012_L
-Rename field net/minecraft/init/Items/DIAMOND_HELMET[9925,9939]::DIAMOND_HELMET->field_151161_ac
-Rename field net/minecraft/init/Items/DIAMOND_CHESTPLATE[10006,10024]::DIAMOND_CHESTPLATE->field_151163_ad
-Rename field net/minecraft/init/Items/DIAMOND_LEGGINGS[10091,10107]::DIAMOND_LEGGINGS->field_151173_ae
-Rename field net/minecraft/init/Items/DIAMOND_BOOTS[10174,10187]::DIAMOND_BOOTS->field_151175_af
+Rename field net/minecraft/init/Items/DIAMOND_SWORD[11003,11016]::DIAMOND_SWORD->field_151048_u
+Rename field net/minecraft/init/Items/DIAMOND_PICKAXE[11082,11097]::DIAMOND_PICKAXE->field_151046_w
+Rename field net/minecraft/init/Items/DIAMOND_AXE[11163,11174]::DIAMOND_AXE->field_151056_x
+Rename field net/minecraft/init/Items/DIAMOND_SHOVEL[11240,11254]::DIAMOND_SHOVEL->field_151047_v
+Rename field net/minecraft/init/Items/DIAMOND_HOE[11320,11331]::DIAMOND_HOE->field_151012_L
+Rename field net/minecraft/init/Items/DIAMOND_HELMET[11397,11411]::DIAMOND_HELMET->field_151161_ac
+Rename field net/minecraft/init/Items/DIAMOND_CHESTPLATE[11478,11496]::DIAMOND_CHESTPLATE->field_151163_ad
+Rename field net/minecraft/init/Items/DIAMOND_LEGGINGS[11563,11579]::DIAMOND_LEGGINGS->field_151173_ae
+Rename field net/minecraft/init/Items/DIAMOND_BOOTS[11646,11659]::DIAMOND_BOOTS->field_151175_af
 Import: com.google.common.collect.Lists
 Import: com.google.common.collect.Maps
 Import: com.groupzts.netheriteroad.init.ModItems
 Import: com.groupzts.netheriteroad.init.ModSounds
+Import: net.minecraft.enchantment.Enchantment
+Import: net.minecraft.enchantment.EnchantmentHelper
 Import: net.minecraft.entity.player.EntityPlayer
 Import: net.minecraft.entity.player.InventoryPlayer
 Import: net.minecraft.init.Items

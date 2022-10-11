@@ -4,6 +4,8 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.groupzts.netheriteroad.init.ModItems;
 import com.groupzts.netheriteroad.init.ModSounds;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.init.Items;
@@ -109,20 +111,41 @@ public class ContainerSmithing extends Container
     public void updateRepairOutput() {
         Item item1 = getSlot(1).getStack().getItem();
         Item item2 = getSlot(0).getStack().getItem();
+        ItemStack stack1 = getSlot(1).getStack();
+        ItemStack stack2 = getSlot(0).getStack();
+
+        Map<Enchantment, Integer> map1 = EnchantmentHelper.getEnchantments(stack2);
 
         if(SmithingType.NETHERITE.getSmithingItem().equals(item1))
             for(Map.Entry<Item, Item> entry: Objects.requireNonNull(SmithingType.NETHERITE.getItemMap()).entrySet()){
-            if(entry.getKey().equals(item2)){
-                getSlot(2).putStack(new ItemStack(entry.getValue()));
+                ItemStack outputValue = new ItemStack(entry.getValue());
+            if(entry.getKey().equals(item2) && SmithingType.NETHERITE.getSmithingItem().equals(item1)){
+                getSlot(2).putStack(outputValue);
             }
+            if (entry.getKey().equals(item2) && item2.isEnchantable(stack2)) {
+                for(Map.Entry<Enchantment, Integer> entryEnchantment: map1.entrySet()) {
+                    getSlot(2).putStack(outputValue);
+                    outputValue.addEnchantment(entryEnchantment.getKey(), entryEnchantment.getValue());
+                }
+            }
+            }
+        if (stack1.isEmpty() || stack2.isEmpty()) {
+            getSlot(2).putStack(ItemStack.EMPTY);
         }
         if(SmithingType.CUSTOM.getSmithingItem() == null || SmithingType.CUSTOM.getItemMap() == null) {
             return;
         }
             if (SmithingType.CUSTOM.getSmithingItem().equals(item1))
                 for (Map.Entry<Item, Item> entry : Objects.requireNonNull(SmithingType.CUSTOM.getItemMap()).entrySet()) {
-                    if (entry.getKey().equals(item2)) {
-                        getSlot(2).putStack(new ItemStack(entry.getValue()));
+                    ItemStack outputValue = new ItemStack(entry.getValue());
+                    if (entry.getKey().equals(item2) && SmithingType.CUSTOM.getSmithingItem().equals(item1)) {
+                        getSlot(2).putStack(outputValue);
+                    }
+                    if (entry.getKey().equals(item2) && item2.isEnchantable(stack2)) {
+                        for(Map.Entry<Enchantment, Integer> entryEnchantment: map1.entrySet()) {
+                            getSlot(2).putStack(outputValue);
+                            outputValue.addEnchantment(entryEnchantment.getKey(), entryEnchantment.getValue());
+                        }
                     }
                 }
     }
@@ -235,7 +258,7 @@ public class ContainerSmithing extends Container
         private static String customName;
         private static Map<Item, Item> switchMap;
         private static Item customSmithingItem;
-        private static Map<String, SmithingType> nameMap = new HashMap<>();
+        private static final Map<String, SmithingType> nameMap = new HashMap<>();
 
         SmithingType(Map<Item, Item> switchMap, Item smithingItem){
             Map<Map<Item, Item>, Item> totalMap = new HashMap<>();
