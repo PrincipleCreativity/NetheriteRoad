@@ -23,7 +23,7 @@ dependencies {
 ```
 ${nr_build} is the CurseForge code of NetheriteRoad. It is recommended to write variables in gradle.properties, and the latest code is given here:
 ```properties
-nr_build=616670:4012543
+nr_build=616670:4025521
 ```
 
 Finally, thank you for your support for NetheriteRoad!
