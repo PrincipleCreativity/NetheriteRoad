@@ -34,6 +34,7 @@ import slimeknights.tconstruct.library.utils.HarvestLevels;
 import slimeknights.tconstruct.library.utils.TagUtil;
 import slimeknights.tconstruct.shared.TinkerFluids;
 import slimeknights.tconstruct.smeltery.TinkerSmeltery;
+import slimeknights.tconstruct.tools.TinkerTools;
 
 import java.util.List;
 
@@ -81,28 +82,12 @@ public class TiCRegister {
         netherite.setFluid(MOLTEN_NETHERITE_FLUID);
         netherite.setCraftable(true);
 
-        netherite.addTrait(new AbstractTrait("superfortified", TextFormatting.DARK_GRAY) {
-            @Override
-            public void onArmorTick(ItemStack tool, World world, EntityPlayer player) {
-            }
-
-            @Override
-            public float damage(ItemStack tool, EntityLivingBase player, EntityLivingBase target, float damage, float newDamage, boolean isCritical) {
-                return 3;
-            }
-
-            @Override
-            public void applyEffect(NBTTagCompound rootCompound, NBTTagCompound modifierTag) {
-                NBTTagCompound toolTag = TagUtil.getToolTag(rootCompound);
-               int modifiers = toolTag.getInteger("FreeModifiers");
-                toolTag.setInteger("FreeModifiers",25 + modifiers);
-            }
-        });
+        netherite.addTrait(new SuperFortified());
         TinkerRegistry.addMaterialStats(netherite,
-                new HeadMaterialStats(2031, 11f, 6.0f, 4),
-                new HandleMaterialStats(10.0f, 3042),
-                new ExtraMaterialStats(1011));
-        new BowMaterialStats(5.0F, 5.0F, 5F);
+                new HeadMaterialStats(1250, 11f, 10.0f, 4),
+                new HandleMaterialStats(1.0f, 100),
+                new ExtraMaterialStats(350),
+                new BowMaterialStats(5.0F, 5.0F, 5F));
 
         TinkerRegistry.registerAlloy(new AlloyRecipe(new FluidStack(MOLTEN_NETHERITE_FLUID, Material.VALUE_Ingot),new FluidStack(MOLTEN_ANCIENT, Material.VALUE_Ingot),new FluidStack(TinkerFluids.gold, Material.VALUE_Ingot)));
 

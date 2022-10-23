@@ -1,7 +1,5 @@
 package com.groupzts.netheriteroad.client.container;
 
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
 import com.groupzts.netheriteroad.init.ModItems;
 import com.groupzts.netheriteroad.init.ModSounds;
 import net.minecraft.enchantment.Enchantment;
@@ -15,14 +13,16 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.*;
+import javax.annotation.Nullable;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
 
 public class ContainerSmithing extends Container
 {
@@ -33,8 +33,6 @@ public class ContainerSmithing extends Container
     private final BlockPos selfPosition;
     public int maximumCost;
     public int materialCost;
-    private String repairedItemName;
-    private final EntityPlayer player;
 
     @SideOnly(Side.CLIENT)
     public ContainerSmithing(InventoryPlayer playerInventory, World worldIn, EntityPlayer player)
@@ -55,12 +53,11 @@ public class ContainerSmithing extends Container
         };
         this.selfPosition = blockPosIn;
         this.world = worldIn;
-        this.player = player;
         this.addSlotToContainer(new Slot(this.inputSlots, 0, 27, 47));
         this.addSlotToContainer(new Slot(this.inputSlots, 1, 76, 47){
             @Override
             public boolean isItemValid(ItemStack stack) {
-                return stack.getItem() == ModItems.NETHERITE_INGOT;
+                return stack.getItem() == SmithingType.NETHERITE.getSmithingItem() || stack.getItem() == SmithingType.CUSTOM.getSmithingItem();
             }
         });
         this.addSlotToContainer(new Slot(this.outputSlot, 2, 134, 47)
@@ -116,16 +113,17 @@ public class ContainerSmithing extends Container
 
         Map<Enchantment, Integer> map1 = EnchantmentHelper.getEnchantments(stack2);
 
-        if(SmithingType.NETHERITE.getSmithingItem().equals(item1))
-            for(Map.Entry<Item, Item> entry: Objects.requireNonNull(SmithingType.NETHERITE.getItemMap()).entrySet()){
+        if(SmithingType.NETHERITE.getSmithingItem().equals(item1)){
+            for(Map.Entry<Item, Item> entry: Objects.requireNonNull(SmithingType.NETHERITE.getItemMap()).entrySet()) {
                 ItemStack outputValue = new ItemStack(entry.getValue());
-            if(entry.getKey().equals(item2) && SmithingType.NETHERITE.getSmithingItem().equals(item1)){
-                getSlot(2).putStack(outputValue);
-            }
-            if (entry.getKey().equals(item2) && item2.isEnchantable(stack2)) {
-                for(Map.Entry<Enchantment, Integer> entryEnchantment: map1.entrySet()) {
+                if (entry.getKey().equals(item2) && SmithingType.NETHERITE.getSmithingItem().equals(item1)) {
                     getSlot(2).putStack(outputValue);
-                    outputValue.addEnchantment(entryEnchantment.getKey(), entryEnchantment.getValue());
+                }
+                if (entry.getKey().equals(item2) && item2.isEnchantable(stack2)) {
+                    for (Map.Entry<Enchantment, Integer> entryEnchantment : map1.entrySet()) {
+                        getSlot(2).putStack(outputValue);
+                        outputValue.addEnchantment(entryEnchantment.getKey(), entryEnchantment.getValue());
+                    }
                 }
             }
             }
@@ -149,6 +147,7 @@ public class ContainerSmithing extends Container
                     }
                 }
     }
+
     public void addListener(IContainerListener listener)
     {
         super.addListener(listener);
@@ -231,7 +230,6 @@ public class ContainerSmithing extends Container
     }
     public void updateItemName(String newName)
     {
-        this.repairedItemName = newName;
 
         if (this.getSlot(2).getHasStack())
         {
@@ -243,7 +241,7 @@ public class ContainerSmithing extends Container
             }
             else
             {
-                itemstack.setStackDisplayName(this.repairedItemName);
+                itemstack.setStackDisplayName(newName);
             }
         }
 
@@ -271,6 +269,7 @@ public class ContainerSmithing extends Container
             return totalMap;
         }
 
+        @Nullable
         public Map<Item, Item> getItemMap(){
             for(Map.Entry<Map<Item, Item>, Item> entry: getTotalMap().entrySet()){
                 return entry.getKey();
@@ -282,10 +281,11 @@ public class ContainerSmithing extends Container
             SmithingType.customName = customName;
             SmithingType.switchMap = switchMap;
             SmithingType.customSmithingItem = customSmithingItem;
+            nameMap.put(customName, CUSTOM);
             return CUSTOM;
         }
 
-        public static Map<Item, Item> netheriteMap(){
+        private static Map<Item, Item> netheriteMap(){
             Map<Item, Item> netheriteMap = new HashMap<>();
             netheriteMap.put(Items.DIAMOND_SWORD, ModItems.NETHERITE_SWORD);
             netheriteMap.put(Items.DIAMOND_PICKAXE, ModItems.NETHERITE_PICKAXE);
@@ -305,6 +305,10 @@ public class ContainerSmithing extends Container
 
         public static Map<Item, Item> getSwitchMap() {
             return switchMap;
+        }
+
+        public static String getCustomName() {
+            return customName;
         }
 
         public static Item getCustomSmithingItem() {

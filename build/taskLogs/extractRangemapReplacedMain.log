@@ -1,7 +1,7 @@
 Unsupposrted library path: E:\NetheriteRoad-0.1\build\classes\java\api
 Unsupposrted library path: E:\NetheriteRoad-0.1\build\resources\api
 Symbol range map extraction starting
-Processing 37 files
+Processing 38 files
 startProcessing "com/groupzts/netheriteroad/NetheriteRoad.java" md5: 840e23a9283437af15002b42bbd531f5
 endProcessing "com/groupzts/netheriteroad/NetheriteRoad.java"
 
@@ -26,7 +26,7 @@ endProcessing "com/groupzts/netheriteroad/blocks/common/NetheriteBlock.java"
 startProcessing "com/groupzts/netheriteroad/blocks/common/SmithingTable.java" md5: 32c4c78888fbe609addbcba4311daf4c
 endProcessing "com/groupzts/netheriteroad/blocks/common/SmithingTable.java"
 
-startProcessing "com/groupzts/netheriteroad/client/container/ContainerSmithing.java" md5: 6a8d6c20341ac02bd5691088ebdca2a8
+startProcessing "com/groupzts/netheriteroad/client/container/ContainerSmithing.java" md5: e80580cc2feae317b870b83ac6938a66
 endProcessing "com/groupzts/netheriteroad/client/container/ContainerSmithing.java"
 
 startProcessing "com/groupzts/netheriteroad/client/gui/GuiSmithing.java" md5: 2c1fa8e4e902a8f349afb7e737cc8090
@@ -35,10 +35,13 @@ endProcessing "com/groupzts/netheriteroad/client/gui/GuiSmithing.java"
 startProcessing "com/groupzts/netheriteroad/compat/tinkers/RegistryEvent.java" md5: 4bd2ba23194e221489e7014491bfce30
 endProcessing "com/groupzts/netheriteroad/compat/tinkers/RegistryEvent.java"
 
+startProcessing "com/groupzts/netheriteroad/compat/tinkers/SuperFortified.java" md5: a55338d0890f9bf32a3bb05a632c655d
+endProcessing "com/groupzts/netheriteroad/compat/tinkers/SuperFortified.java"
+
 startProcessing "com/groupzts/netheriteroad/compat/tinkers/TiCConfig.java" md5: 2915053c978842e131ee1fc43a262beb
 endProcessing "com/groupzts/netheriteroad/compat/tinkers/TiCConfig.java"
 
-startProcessing "com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java" md5: 5695fd1e399faffd94ac7c59b6b5aabc
+startProcessing "com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java" md5: db10a6c7b013f2c6012949b2c1476c59
 endProcessing "com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java"
 
 startProcessing "com/groupzts/netheriteroad/event/WorldOreGen.java" md5: d6165aaadff10bc858782693f650d363
@@ -102,7 +105,7 @@ endProcessing "com/groupzts/netheriteroad/utils/ItemOreRegister.java"
 startProcessing "com/groupzts/netheriteroad/utils/ModMaterials.java" md5: d5ce1729ec58ffa4cbcd6ee4cec13f9f
 endProcessing "com/groupzts/netheriteroad/utils/ModMaterials.java"
 
-startProcessing "com/groupzts/netheriteroad/utils/Reference.java" md5: a9a9ddfe5f2f410c8f0987f9439efab4
+startProcessing "com/groupzts/netheriteroad/utils/Reference.java" md5: 0e789f1e7f7a0dc894f1498e889f0e07
 endProcessing "com/groupzts/netheriteroad/utils/Reference.java"
 
 startProcessing "com/groupzts/netheriteroad/utils/handlers/GuiHandler.java" md5: 05bc3894a01246dfdcb06886c7c7c404
