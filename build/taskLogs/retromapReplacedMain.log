@@ -1,10 +1,9 @@
-Processing 38 files
+Processing 46 files
 Start Processing: com/groupzts/netheriteroad/NetheriteRoad.java
 New Key: class net/minecraftforge/fml/common/Mod
 New Key: class net/minecraftforge/fml/common/Mod
 New Key: class net/minecraftforge/fml/common/Mod
 Import: com.groupzts.netheriteroad.event.WorldOreGen
-Import: com.groupzts.netheriteroad.init.ModBlocks
 Import: com.groupzts.netheriteroad.init.ModItems
 Import: com.groupzts.netheriteroad.proxy.ServerProxy
 Import: com.groupzts.netheriteroad.utils.Reference
@@ -54,11 +53,11 @@ End  Processing: com/groupzts/netheriteroad/blocks/BlockItemBase.java
 
 Start Processing: com/groupzts/netheriteroad/blocks/common/AncientDebris.java
 FOUND CONSTR method com/groupzts/netheriteroad/blocks/common/AncientDebris/AncientDebris (Lnet/minecraft/block/material/Material;)V com/groupzts/netheriteroad/blocks/common/AncientDebris
-Rename method net/minecraft/block/Block/setHardness (F)Lnet/minecraft/block/Block;[465,476]::setHardness->func_149711_c
-Rename method net/minecraft/block/Block/setResistance (F)Lnet/minecraft/block/Block;[484,497]::setResistance->func_149752_b
-Rename method net/minecraft/block/Block/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/block/Block;[555,572]::setTranslationKey->func_149663_c
-Rename method net/minecraft/block/Block/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/block/Block;[669,683]::setCreativeTab->func_149647_a
-Rename field net/minecraft/creativetab/CreativeTabs/BUILDING_BLOCKS[696,711]::BUILDING_BLOCKS->field_78030_b
+Rename method net/minecraft/block/Block/setHardness (F)Lnet/minecraft/block/Block;[452,463]::setHardness->func_149711_c
+Rename method net/minecraft/block/Block/setResistance (F)Lnet/minecraft/block/Block;[471,484]::setResistance->func_149752_b
+Rename method net/minecraft/block/Block/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/block/Block;[540,557]::setTranslationKey->func_149663_c
+Rename method net/minecraft/block/Block/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/block/Block;[653,667]::setCreativeTab->func_149647_a
+Rename field net/minecraft/creativetab/CreativeTabs/BUILDING_BLOCKS[680,695]::BUILDING_BLOCKS->field_78030_b
 Import: com.groupzts.netheriteroad.init.ModBlocks
 Import: com.groupzts.netheriteroad.utils.Reference
 Import: net.minecraft.block.Block
@@ -69,65 +68,50 @@ End  Processing: com/groupzts/netheriteroad/blocks/common/AncientDebris.java
 
 Start Processing: com/groupzts/netheriteroad/blocks/common/BlockMoltenAncient.java
 FOUND CONSTR method com/groupzts/netheriteroad/blocks/common/BlockMoltenAncient/BlockMoltenAncient ()V com/groupzts/netheriteroad/blocks/common/BlockMoltenAncient
-Rename field net/minecraft/block/material/Material/LAVA[1080,1084]::LAVA->field_151587_i
-Rename method net/minecraft/block/Block/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/block/Block;[1106,1123]::setTranslationKey->func_149663_c
+Rename field net/minecraft/block/material/Material/LAVA[626,630]::LAVA->field_151587_i
+Rename method net/minecraft/block/Block/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/block/Block;[651,668]::setTranslationKey->func_149663_c
 New Key: class net/minecraft/entity/EntityLiving
-Import: com.groupzts.netheriteroad.compat.tinkers.TiCConfig
 Import: com.groupzts.netheriteroad.compat.tinkers.TiCRegister
 Import: com.groupzts.netheriteroad.init.ModBlocks
-Import: com.groupzts.netheriteroad.init.ModItems
-Import: com.groupzts.netheriteroad.utils.IHasModel
 Import: com.groupzts.netheriteroad.utils.Reference
 Import: net.minecraft.block.material.Material
 Import: net.minecraft.block.state.IBlockState
-Import: net.minecraft.client.renderer.block.model.ModelResourceLocation
-Import: net.minecraft.client.renderer.block.statemap.StateMapperBase
 Import: net.minecraft.entity.EntityLiving
-Import: net.minecraft.util.ResourceLocation
 Import: net.minecraft.util.math.BlockPos
 Import: net.minecraft.world.IBlockAccess
-Import: net.minecraftforge.client.model.ModelLoader
 Import: net.minecraftforge.fluids.BlockFluidClassic
-Import: javax.annotation.Nonnull
 End  Processing: com/groupzts/netheriteroad/blocks/common/BlockMoltenAncient.java
 
 Start Processing: com/groupzts/netheriteroad/blocks/common/BlockMoltenNetherite.java
 FOUND CONSTR method com/groupzts/netheriteroad/blocks/common/BlockMoltenNetherite/BlockMoltenNetherite ()V com/groupzts/netheriteroad/blocks/common/BlockMoltenNetherite
-Rename field net/minecraft/block/material/Material/LAVA[1036,1040]::LAVA->field_151587_i
-Rename method net/minecraft/block/Block/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/block/Block;[1062,1079]::setTranslationKey->func_149663_c
+Rename field net/minecraft/block/material/Material/LAVA[632,636]::LAVA->field_151587_i
+Rename method net/minecraft/block/Block/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/block/Block;[657,674]::setTranslationKey->func_149663_c
 New Key: class net/minecraft/entity/EntityLiving
-Import: com.groupzts.netheriteroad.compat.tinkers.TiCConfig
 Import: com.groupzts.netheriteroad.compat.tinkers.TiCRegister
 Import: com.groupzts.netheriteroad.init.ModBlocks
-Import: com.groupzts.netheriteroad.utils.IHasModel
 Import: com.groupzts.netheriteroad.utils.Reference
 Import: net.minecraft.block.material.Material
 Import: net.minecraft.block.state.IBlockState
-Import: net.minecraft.client.renderer.block.model.ModelResourceLocation
-Import: net.minecraft.client.renderer.block.statemap.StateMapperBase
 Import: net.minecraft.entity.EntityLiving
-Import: net.minecraft.util.ResourceLocation
 Import: net.minecraft.util.math.BlockPos
 Import: net.minecraft.world.IBlockAccess
-Import: net.minecraftforge.client.model.ModelLoader
 Import: net.minecraftforge.fluids.BlockFluidClassic
-Import: javax.annotation.Nonnull
 End  Processing: com/groupzts/netheriteroad/blocks/common/BlockMoltenNetherite.java
 
 Start Processing: com/groupzts/netheriteroad/blocks/common/NetheriteBlock.java
-Rename field net/minecraft/block/SoundType/METAL[625,630]::METAL->field_185852_e
-Rename method net/minecraft/block/SoundType/getPlaceSound ()Lnet/minecraft/util/SoundEvent;[640,653]::getPlaceSound->func_185841_e
-Rename field net/minecraft/block/SoundType/METAL[667,672]::METAL->field_185852_e
-Rename method net/minecraft/block/SoundType/getHitSound ()Lnet/minecraft/util/SoundEvent;[682,693]::getHitSound->func_185846_f
-Rename field net/minecraft/block/SoundType/METAL[708,713]::METAL->field_185852_e
-Rename method net/minecraft/block/SoundType/getFallSound ()Lnet/minecraft/util/SoundEvent;[723,735]::getFallSound->func_185842_g
+Rename field net/minecraft/block/SoundType/METAL[613,618]::METAL->field_185852_e
+Rename method net/minecraft/block/SoundType/getPlaceSound ()Lnet/minecraft/util/SoundEvent;[628,641]::getPlaceSound->func_185841_e
+Rename field net/minecraft/block/SoundType/METAL[655,660]::METAL->field_185852_e
+Rename method net/minecraft/block/SoundType/getHitSound ()Lnet/minecraft/util/SoundEvent;[670,681]::getHitSound->func_185846_f
+Rename field net/minecraft/block/SoundType/METAL[696,701]::METAL->field_185852_e
+Rename method net/minecraft/block/SoundType/getFallSound ()Lnet/minecraft/util/SoundEvent;[711,723]::getFallSound->func_185842_g
 FOUND CONSTR method com/groupzts/netheriteroad/blocks/common/NetheriteBlock/NetheriteBlock (Lnet/minecraft/block/material/Material;)V com/groupzts/netheriteroad/blocks/common/NetheriteBlock
-Rename method net/minecraft/block/Block/setHardness (F)Lnet/minecraft/block/Block;[824,835]::setHardness->func_149711_c
-Rename method net/minecraft/block/Block/setResistance (F)Lnet/minecraft/block/Block;[842,855]::setResistance->func_149752_b
-Rename method net/minecraft/block/Block/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/block/Block;[873,887]::setCreativeTab->func_149647_a
-Rename field net/minecraft/creativetab/CreativeTabs/BUILDING_BLOCKS[900,915]::BUILDING_BLOCKS->field_78030_b
-Rename method net/minecraft/block/Block/setSoundType (Lnet/minecraft/block/SoundType;)Lnet/minecraft/block/Block;[965,977]::setSoundType->func_149672_a
-Rename method net/minecraft/block/Block/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/block/Block;[1012,1029]::setTranslationKey->func_149663_c
+Rename method net/minecraft/block/Block/setHardness (F)Lnet/minecraft/block/Block;[809,820]::setHardness->func_149711_c
+Rename method net/minecraft/block/Block/setResistance (F)Lnet/minecraft/block/Block;[827,840]::setResistance->func_149752_b
+Rename method net/minecraft/block/Block/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/block/Block;[857,871]::setCreativeTab->func_149647_a
+Rename field net/minecraft/creativetab/CreativeTabs/BUILDING_BLOCKS[884,899]::BUILDING_BLOCKS->field_78030_b
+Rename method net/minecraft/block/Block/setSoundType (Lnet/minecraft/block/SoundType;)Lnet/minecraft/block/Block;[947,959]::setSoundType->func_149672_a
+Rename method net/minecraft/block/Block/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/block/Block;[993,1010]::setTranslationKey->func_149663_c
 Import: com.groupzts.netheriteroad.init.ModBlocks
 Import: com.groupzts.netheriteroad.init.ModSounds
 Import: com.groupzts.netheriteroad.utils.Reference
@@ -140,14 +124,14 @@ End  Processing: com/groupzts/netheriteroad/blocks/common/NetheriteBlock.java
 
 Start Processing: com/groupzts/netheriteroad/blocks/common/SmithingTable.java
 FOUND CONSTR method com/groupzts/netheriteroad/blocks/common/SmithingTable/SmithingTable (Ljava/lang/String;Lnet/minecraft/creativetab/CreativeTabs;Lnet/minecraft/block/material/Material;)V com/groupzts/netheriteroad/blocks/common/SmithingTable
-Rename method net/minecraft/block/Block/setHardness (F)Lnet/minecraft/block/Block;[787,798]::setHardness->func_149711_c
-Rename method net/minecraft/block/Block/setResistance (F)Lnet/minecraft/block/Block;[807,820]::setResistance->func_149752_b
-Rename method net/minecraft/block/Block/setSoundType (Lnet/minecraft/block/SoundType;)Lnet/minecraft/block/Block;[873,885]::setSoundType->func_149672_a
-Rename field net/minecraft/block/SoundType/WOOD[897,901]::WOOD->field_185848_a
-Rename method net/minecraft/block/Block/onBlockActivated (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Z[958,974]::onBlockActivated->func_180639_a
-Rename method net/minecraft/util/math/Vec3i/getX ()I[1186,1190]::getX->func_177958_n
-Rename method net/minecraft/util/math/Vec3i/getY ()I[1207,1211]::getY->func_177956_o
-Rename method net/minecraft/util/math/Vec3i/getZ ()I[1228,1232]::getZ->func_177952_p
+Rename method net/minecraft/block/Block/setHardness (F)Lnet/minecraft/block/Block;[767,778]::setHardness->func_149711_c
+Rename method net/minecraft/block/Block/setResistance (F)Lnet/minecraft/block/Block;[787,800]::setResistance->func_149752_b
+Rename method net/minecraft/block/Block/setSoundType (Lnet/minecraft/block/SoundType;)Lnet/minecraft/block/Block;[851,863]::setSoundType->func_149672_a
+Rename field net/minecraft/block/SoundType/WOOD[875,879]::WOOD->field_185848_a
+Rename method net/minecraft/block/Block/onBlockActivated (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Z[932,948]::onBlockActivated->func_180639_a
+Rename method net/minecraft/util/math/Vec3i/getX ()I[1159,1163]::getX->func_177958_n
+Rename method net/minecraft/util/math/Vec3i/getY ()I[1180,1184]::getY->func_177956_o
+Rename method net/minecraft/util/math/Vec3i/getZ ()I[1201,1205]::getZ->func_177952_p
 Import: com.groupzts.netheriteroad.NetheriteRoad
 Import: com.groupzts.netheriteroad.blocks.BlockBase
 Import: com.groupzts.netheriteroad.utils.Reference
@@ -162,127 +146,182 @@ Import: net.minecraft.util.math.BlockPos
 Import: net.minecraft.world.World
 End  Processing: com/groupzts/netheriteroad/blocks/common/SmithingTable.java
 
-Start Processing: com/groupzts/netheriteroad/client/container/ContainerSmithing.java
-FOUND CONSTR method com/groupzts/netheriteroad/client/container/ContainerSmithing/ContainerSmithing (Lnet/minecraft/entity/player/InventoryPlayer;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;)V com/groupzts/netheriteroad/client/container/ContainerSmithing
-Rename field net/minecraft/util/math/BlockPos/ORIGIN[1487,1493]::ORIGIN->field_177992_a
-FOUND CONSTR method com/groupzts/netheriteroad/client/container/ContainerSmithing/ContainerSmithing (Lnet/minecraft/entity/player/InventoryPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/EntityPlayer;)V com/groupzts/netheriteroad/client/container/ContainerSmithing
-Rename method net/minecraft/inventory/IInventory/markDirty ()V[1816,1825]::markDirty->func_70296_d
-Rename method net/minecraft/inventory/IInventory/markDirty ()V[1869,1878]::markDirty->func_70296_d
-Rename method net/minecraft/inventory/Container/onCraftMatrixChanged (Lnet/minecraft/inventory/IInventory;)V[1925,1945]::onCraftMatrixChanged->func_75130_a
-Rename method net/minecraft/inventory/Container/addSlotToContainer (Lnet/minecraft/inventory/Slot;)Lnet/minecraft/inventory/Slot;[2058,2076]::addSlotToContainer->func_75146_a
-Rename method net/minecraft/inventory/Container/addSlotToContainer (Lnet/minecraft/inventory/Slot;)Lnet/minecraft/inventory/Slot;[2124,2142]::addSlotToContainer->func_75146_a
-Rename method net/minecraft/inventory/Slot/isItemValid (Lnet/minecraft/item/ItemStack;)Z[2226,2237]::isItemValid->func_75214_a
-Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[2288,2295]::getItem->func_77973_b
-Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[2356,2363]::getItem->func_77973_b
-Rename method net/minecraft/inventory/Container/addSlotToContainer (Lnet/minecraft/inventory/Slot;)Lnet/minecraft/inventory/Slot;[2455,2473]::addSlotToContainer->func_75146_a
-Rename method net/minecraft/inventory/Slot/isItemValid (Lnet/minecraft/item/ItemStack;)Z[2545,2556]::isItemValid->func_75214_a
-Rename method net/minecraft/inventory/Slot/onTake (Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/ItemStack;[2666,2672]::onTake->func_190901_a
-Rename method net/minecraft/world/World/playSound (Lnet/minecraft/entity/player/EntityPlayer;DDDLnet/minecraft/util/SoundEvent;Lnet/minecraft/util/SoundCategory;FF)V[2759,2768]::playSound->func_184148_a
-Rename field net/minecraft/entity/Entity/posX[2788,2792]::posX->field_70165_t
-Rename field net/minecraft/entity/Entity/posY[2810,2814]::posY->field_70163_u
-Rename field net/minecraft/entity/Entity/posZ[2832,2836]::posZ->field_70161_v
-Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[2930,2937]::getSlot->func_75139_a
-Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[2946,2954]::getStack->func_75211_c
-Rename method net/minecraft/item/ItemStack/isEmpty ()Z[2961,2968]::isEmpty->func_190926_b
-Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[2981,2988]::getSlot->func_75139_a
-Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[2997,3005]::getStack->func_75211_c
-Rename method net/minecraft/item/ItemStack/isEmpty ()Z[3012,3019]::isEmpty->func_190926_b
-Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[3051,3058]::getSlot->func_75139_a
-Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[3067,3075]::getStack->func_75211_c
-Rename method net/minecraft/item/ItemStack/shrink (I)V[3082,3088]::shrink->func_190918_g
-Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[3121,3128]::getSlot->func_75139_a
-Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[3137,3145]::getStack->func_75211_c
-Rename method net/minecraft/item/ItemStack/shrink (I)V[3152,3158]::shrink->func_190918_g
-Rename field net/minecraft/entity/player/EntityPlayer/capabilities[3221,3233]::capabilities->field_71075_bZ
-Rename field net/minecraft/entity/player/PlayerCapabilities/isCreativeMode[3236,3250]::isCreativeMode->field_75098_d
-Rename method net/minecraft/entity/player/EntityPlayer/addExperienceLevel (I)V[3301,3319]::addExperienceLevel->func_82242_a
-Rename method net/minecraft/inventory/Container/addSlotToContainer (Lnet/minecraft/inventory/Slot;)Lnet/minecraft/inventory/Slot;[3558,3576]::addSlotToContainer->func_75146_a
-Rename method net/minecraft/inventory/Container/addSlotToContainer (Lnet/minecraft/inventory/Slot;)Lnet/minecraft/inventory/Slot;[3733,3751]::addSlotToContainer->func_75146_a
-Rename method net/minecraft/inventory/Container/onCraftMatrixChanged (Lnet/minecraft/inventory/IInventory;)V[3831,3851]::onCraftMatrixChanged->func_75130_a
-Rename method net/minecraft/inventory/Container/onCraftMatrixChanged (Lnet/minecraft/inventory/IInventory;)V[3890,3910]::onCraftMatrixChanged->func_75130_a
-Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[4097,4104]::getSlot->func_75139_a
-Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[4113,4121]::getStack->func_75211_c
-Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[4128,4135]::getItem->func_77973_b
-Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[4166,4173]::getSlot->func_75139_a
-Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[4182,4190]::getStack->func_75211_c
-Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[4197,4204]::getItem->func_77973_b
-Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[4241,4248]::getSlot->func_75139_a
-Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[4257,4265]::getStack->func_75211_c
-Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[4301,4308]::getSlot->func_75139_a
-Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[4317,4325]::getStack->func_75211_c
-Rename method net/minecraft/enchantment/EnchantmentHelper/getEnchantments (Lnet/minecraft/item/ItemStack;)Ljava/util/Map;[4395,4410]::getEnchantments->func_82781_a
+Start Processing: com/groupzts/netheriteroad/client/gui/GuiSmithing.java
+FOUND CONSTR method com/groupzts/netheriteroad/client/gui/GuiSmithing/GuiSmithing (Lnet/minecraft/world/World;IIILnet/minecraft/entity/player/EntityPlayer;)V com/groupzts/netheriteroad/client/gui/GuiSmithing
+Rename field net/minecraft/entity/player/EntityPlayer/inventory[894,903]::inventory->field_71071_by
+Rename field net/minecraft/client/gui/inventory/GuiContainer/xSize[1078,1083]::xSize->field_146999_f
+Rename field net/minecraft/client/gui/inventory/GuiContainer/ySize[1113,1118]::ySize->field_147000_g
+Rename method net/minecraft/client/gui/GuiScreen/drawScreen (IIF)V[1288,1298]::drawScreen->func_73863_a
+Rename method net/minecraft/client/gui/GuiScreen/drawDefaultBackground ()V[1360,1381]::drawDefaultBackground->func_146276_q_
+Rename method net/minecraft/client/gui/GuiScreen/drawScreen (IIF)V[1392,1402]::drawScreen->func_73863_a
+Rename method net/minecraft/client/gui/inventory/GuiContainer/renderHoveredToolTip (II)V[1449,1469]::renderHoveredToolTip->func_191948_b
+Rename method net/minecraft/client/gui/inventory/GuiContainer/drawGuiContainerBackgroundLayer (FII)V[1520,1551]::drawGuiContainerBackgroundLayer->func_146976_a
+Rename field net/minecraft/client/gui/GuiScreen/mc[1629,1631]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/renderEngine[1644,1656]::renderEngine->field_71446_o
+Rename method net/minecraft/client/renderer/texture/TextureManager/bindTexture (Lnet/minecraft/util/ResourceLocation;)V[1658,1669]::bindTexture->func_110577_a
+Rename field net/minecraft/client/gui/GuiScreen/width[1704,1709]::width->field_146294_l
+Rename field net/minecraft/client/gui/inventory/GuiContainer/xSize[1726,1731]::xSize->field_146999_f
+Rename field net/minecraft/client/gui/GuiScreen/height[1769,1775]::height->field_146295_m
+Rename field net/minecraft/client/gui/inventory/GuiContainer/ySize[1791,1796]::ySize->field_147000_g
+Rename method net/minecraft/client/gui/Gui/drawTexturedModalRect (IIIIII)V[1825,1846]::drawTexturedModalRect->func_73729_b
+Rename field net/minecraft/client/gui/inventory/GuiContainer/xSize[1855,1860]::xSize->field_146999_f
+Rename field net/minecraft/client/gui/inventory/GuiContainer/ySize[1876,1881]::ySize->field_147000_g
+Rename field net/minecraft/client/gui/Gui/zLevel[1901,1907]::zLevel->field_73735_i
+Rename method net/minecraft/client/gui/GuiScreen/updateScreen ()V[1962,1974]::updateScreen->func_73876_c
+Rename method net/minecraft/client/gui/GuiScreen/updateScreen ()V[1993,2005]::updateScreen->func_73876_c
+Rename method net/minecraft/client/gui/GuiScreen/mouseClicked (III)V[2049,2061]::mouseClicked->func_73864_a
+Rename method net/minecraft/client/gui/GuiScreen/mouseClicked (III)V[2138,2150]::mouseClicked->func_73864_a
+Rename method net/minecraft/client/gui/GuiScreen/keyTyped (CI)V[2221,2229]::keyTyped->func_73869_a
+Rename method net/minecraft/client/gui/GuiScreen/keyTyped (CI)V[2298,2306]::keyTyped->func_73869_a
+Rename method net/minecraft/client/gui/inventory/GuiContainer/drawGuiContainerForegroundLayer (II)V[2372,2403]::drawGuiContainerForegroundLayer->func_146979_b
+Rename field net/minecraft/client/gui/GuiScreen/fontRenderer[2421,2433]::fontRenderer->field_146289_q
+Rename method net/minecraft/client/gui/FontRenderer/drawString (Ljava/lang/String;III)I[2436,2446]::drawString->func_78276_b
+Rename method net/minecraft/client/resources/I18n/format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;[2454,2460]::format->func_135052_a
+Rename method net/minecraft/client/gui/GuiScreen/onGuiClosed ()V[2554,2565]::onGuiClosed->func_146281_b
+Rename method net/minecraft/client/gui/GuiScreen/onGuiClosed ()V[2586,2597]::onGuiClosed->func_146281_b
+Rename method net/minecraft/client/gui/GuiScreen/initGui ()V[2684,2691]::initGui->func_73866_w_
+Rename method net/minecraft/client/gui/GuiScreen/initGui ()V[2716,2723]::initGui->func_73866_w_
+Rename field net/minecraft/client/gui/inventory/GuiContainer/guiLeft[2746,2753]::guiLeft->field_147003_i
+Rename field net/minecraft/client/gui/GuiScreen/width[2769,2774]::width->field_146294_l
+Rename field net/minecraft/client/gui/inventory/GuiContainer/guiTop[2809,2815]::guiTop->field_147009_r
+Rename field net/minecraft/client/gui/GuiScreen/height[2832,2838]::height->field_146295_m
+Rename field net/minecraft/client/gui/GuiScreen/buttonList[2915,2925]::buttonList->field_146292_n
+Rename method net/minecraft/client/gui/GuiScreen/doesGuiPauseGame ()Z[2980,2996]::doesGuiPauseGame->func_73868_f
+Import: com.groupzts.netheriteroad.common.container.ContainerSmithing
+Import: net.minecraft.client.gui.inventory.GuiContainer
+Import: net.minecraft.client.resources.I18n
+Import: net.minecraft.entity.player.EntityPlayer
+Import: net.minecraft.util.ResourceLocation
+Import: net.minecraft.util.math.BlockPos
+Import: net.minecraft.world.World
+Import: net.minecraftforge.fml.relauncher.Side
+Import: net.minecraftforge.fml.relauncher.SideOnly
+Import: org.lwjgl.input.Keyboard
+Import: org.lwjgl.opengl.GL11
+Import: java.io.IOException
+End  Processing: com/groupzts/netheriteroad/client/gui/GuiSmithing.java
+
+Start Processing: com/groupzts/netheriteroad/common/container/ContainerSmithing.java
+FOUND CONSTR method com/groupzts/netheriteroad/common/container/ContainerSmithing/ContainerSmithing (Lnet/minecraft/entity/player/InventoryPlayer;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;)V com/groupzts/netheriteroad/common/container/ContainerSmithing
+Rename field net/minecraft/util/math/BlockPos/ORIGIN[1422,1428]::ORIGIN->field_177992_a
+FOUND CONSTR method com/groupzts/netheriteroad/common/container/ContainerSmithing/ContainerSmithing (Lnet/minecraft/entity/player/InventoryPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/EntityPlayer;)V com/groupzts/netheriteroad/common/container/ContainerSmithing
+Rename method net/minecraft/inventory/IInventory/markDirty ()V[1743,1752]::markDirty->func_70296_d
+Rename method net/minecraft/inventory/IInventory/markDirty ()V[1794,1803]::markDirty->func_70296_d
+Rename method net/minecraft/inventory/Container/onCraftMatrixChanged (Lnet/minecraft/inventory/IInventory;)V[1849,1869]::onCraftMatrixChanged->func_75130_a
+Rename method net/minecraft/inventory/Container/addSlotToContainer (Lnet/minecraft/inventory/Slot;)Lnet/minecraft/inventory/Slot;[1977,1995]::addSlotToContainer->func_75146_a
+Rename method net/minecraft/inventory/Container/addSlotToContainer (Lnet/minecraft/inventory/Slot;)Lnet/minecraft/inventory/Slot;[2042,2060]::addSlotToContainer->func_75146_a
+Rename method net/minecraft/inventory/Slot/isItemValid (Lnet/minecraft/item/ItemStack;)Z[2142,2153]::isItemValid->func_75214_a
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[2203,2210]::getItem->func_77973_b
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[2271,2278]::getItem->func_77973_b
+Rename method net/minecraft/inventory/Container/addSlotToContainer (Lnet/minecraft/inventory/Slot;)Lnet/minecraft/inventory/Slot;[2367,2385]::addSlotToContainer->func_75146_a
+Rename method net/minecraft/inventory/Slot/isItemValid (Lnet/minecraft/item/ItemStack;)Z[2455,2466]::isItemValid->func_75214_a
+Rename method net/minecraft/inventory/Slot/onTake (Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/ItemStack;[2572,2578]::onTake->func_190901_a
+Rename method net/minecraft/world/World/playSound (Lnet/minecraft/entity/player/EntityPlayer;DDDLnet/minecraft/util/SoundEvent;Lnet/minecraft/util/SoundCategory;FF)V[2663,2672]::playSound->func_184148_a
+Rename field net/minecraft/entity/Entity/posX[2692,2696]::posX->field_70165_t
+Rename field net/minecraft/entity/Entity/posY[2714,2718]::posY->field_70163_u
+Rename field net/minecraft/entity/Entity/posZ[2736,2740]::posZ->field_70161_v
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[2833,2840]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[2849,2857]::getStack->func_75211_c
+Rename method net/minecraft/item/ItemStack/isEmpty ()Z[2864,2871]::isEmpty->func_190926_b
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[2884,2891]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[2900,2908]::getStack->func_75211_c
+Rename method net/minecraft/item/ItemStack/isEmpty ()Z[2915,2922]::isEmpty->func_190926_b
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[2953,2960]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[2969,2977]::getStack->func_75211_c
+Rename method net/minecraft/item/ItemStack/shrink (I)V[2984,2990]::shrink->func_190918_g
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[3022,3029]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[3038,3046]::getStack->func_75211_c
+Rename method net/minecraft/item/ItemStack/shrink (I)V[3053,3059]::shrink->func_190918_g
+Rename field net/minecraft/entity/player/EntityPlayer/capabilities[3120,3132]::capabilities->field_71075_bZ
+Rename field net/minecraft/entity/player/PlayerCapabilities/isCreativeMode[3135,3149]::isCreativeMode->field_75098_d
+Rename method net/minecraft/entity/player/EntityPlayer/addExperienceLevel (I)V[3198,3216]::addExperienceLevel->func_82242_a
+Rename method net/minecraft/inventory/Container/addSlotToContainer (Lnet/minecraft/inventory/Slot;)Lnet/minecraft/inventory/Slot;[3445,3463]::addSlotToContainer->func_75146_a
+Rename method net/minecraft/inventory/Container/addSlotToContainer (Lnet/minecraft/inventory/Slot;)Lnet/minecraft/inventory/Slot;[3614,3632]::addSlotToContainer->func_75146_a
+Rename method net/minecraft/inventory/Container/onCraftMatrixChanged (Lnet/minecraft/inventory/IInventory;)V[3708,3728]::onCraftMatrixChanged->func_75130_a
+Rename method net/minecraft/inventory/Container/onCraftMatrixChanged (Lnet/minecraft/inventory/IInventory;)V[3765,3785]::onCraftMatrixChanged->func_75130_a
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[3963,3970]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[3979,3987]::getStack->func_75211_c
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[3994,4001]::getItem->func_77973_b
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[4031,4038]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[4047,4055]::getStack->func_75211_c
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[4062,4069]::getItem->func_77973_b
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[4105,4112]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[4121,4129]::getStack->func_75211_c
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[4164,4171]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[4180,4188]::getStack->func_75211_c
+Rename method net/minecraft/enchantment/EnchantmentHelper/getEnchantments (Lnet/minecraft/item/ItemStack;)Ljava/util/Map;[4256,4271]::getEnchantments->func_82781_a
 New Key: class java/util/Map
-Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[4814,4821]::getSlot->func_75139_a
-Rename method net/minecraft/inventory/Slot/putStack (Lnet/minecraft/item/ItemStack;)V[4830,4838]::putStack->func_75215_d
-Rename method net/minecraft/item/Item/isEnchantable (Lnet/minecraft/item/ItemStack;)Z[4935,4948]::isEnchantable->func_77616_k
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[4732,4739]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/putStack (Lnet/minecraft/item/ItemStack;)V[4748,4756]::putStack->func_75215_d
+Rename method net/minecraft/item/Item/isEnchantable (Lnet/minecraft/item/ItemStack;)Z[4851,4864]::isEnchantable->func_77616_k
 New Key: class java/util/Map
-Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[5080,5087]::getSlot->func_75139_a
-Rename method net/minecraft/inventory/Slot/putStack (Lnet/minecraft/item/ItemStack;)V[5096,5104]::putStack->func_75215_d
-Rename method net/minecraft/item/ItemStack/addEnchantment (Lnet/minecraft/enchantment/Enchantment;I)V[5160,5174]::addEnchantment->func_77966_a
-Rename method net/minecraft/item/ItemStack/isEmpty ()Z[5322,5329]::isEmpty->func_190926_b
-Rename method net/minecraft/item/ItemStack/isEmpty ()Z[5348,5355]::isEmpty->func_190926_b
-Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[5380,5387]::getSlot->func_75139_a
-Rename method net/minecraft/inventory/Slot/putStack (Lnet/minecraft/item/ItemStack;)V[5396,5404]::putStack->func_75215_d
-Rename field net/minecraft/item/ItemStack/EMPTY[5419,5424]::EMPTY->field_190927_a
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[4994,5001]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/putStack (Lnet/minecraft/item/ItemStack;)V[5010,5018]::putStack->func_75215_d
+Rename method net/minecraft/item/ItemStack/addEnchantment (Lnet/minecraft/enchantment/Enchantment;I)V[5073,5087]::addEnchantment->func_77966_a
+Rename method net/minecraft/item/ItemStack/isEmpty ()Z[5230,5237]::isEmpty->func_190926_b
+Rename method net/minecraft/item/ItemStack/isEmpty ()Z[5256,5263]::isEmpty->func_190926_b
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[5287,5294]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/putStack (Lnet/minecraft/item/ItemStack;)V[5303,5311]::putStack->func_75215_d
+Rename field net/minecraft/item/ItemStack/EMPTY[5326,5331]::EMPTY->field_190927_a
 New Key: class java/util/Map
-Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[5992,5999]::getSlot->func_75139_a
-Rename method net/minecraft/inventory/Slot/putStack (Lnet/minecraft/item/ItemStack;)V[6008,6016]::putStack->func_75215_d
-Rename method net/minecraft/item/Item/isEnchantable (Lnet/minecraft/item/ItemStack;)Z[6121,6134]::isEnchantable->func_77616_k
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[5865,5872]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/putStack (Lnet/minecraft/item/ItemStack;)V[5881,5889]::putStack->func_75215_d
+Rename method net/minecraft/item/Item/isEnchantable (Lnet/minecraft/item/ItemStack;)Z[5992,6005]::isEnchantable->func_77616_k
 New Key: class java/util/Map
-Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[6272,6279]::getSlot->func_75139_a
-Rename method net/minecraft/inventory/Slot/putStack (Lnet/minecraft/item/ItemStack;)V[6288,6296]::putStack->func_75215_d
-Rename method net/minecraft/item/ItemStack/addEnchantment (Lnet/minecraft/enchantment/Enchantment;I)V[6356,6370]::addEnchantment->func_77966_a
-Rename method net/minecraft/inventory/Container/addListener (Lnet/minecraft/inventory/IContainerListener;)V[6521,6532]::addListener->func_75132_a
-Rename method net/minecraft/inventory/Container/addListener (Lnet/minecraft/inventory/IContainerListener;)V[6585,6596]::addListener->func_75132_a
-Rename method net/minecraft/inventory/IContainerListener/sendWindowProperty (Lnet/minecraft/inventory/Container;II)V[6627,6645]::sendWindowProperty->func_71112_a
-Rename method net/minecraft/inventory/Container/updateProgressBar (II)V[6722,6739]::updateProgressBar->func_75137_b
-Rename method net/minecraft/inventory/Container/onContainerClosed (Lnet/minecraft/entity/player/EntityPlayer;)V[6868,6885]::onContainerClosed->func_75134_a
-Rename method net/minecraft/inventory/Container/onContainerClosed (Lnet/minecraft/entity/player/EntityPlayer;)V[6926,6943]::onContainerClosed->func_75134_a
-Rename field net/minecraft/world/World/isRemote[6977,6985]::isRemote->field_72995_K
-Rename method net/minecraft/inventory/Container/clearContainer (Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/inventory/IInventory;)V[7021,7035]::clearContainer->func_193327_a
-Rename method net/minecraft/inventory/Container/canInteractWith (Lnet/minecraft/entity/player/EntityPlayer;)Z[7115,7130]::canInteractWith->func_75145_c
-Rename method net/minecraft/entity/Entity/getDistanceSq (DDD)D[7187,7200]::getDistanceSq->func_70092_e
-Rename method net/minecraft/util/math/Vec3i/getX ()I[7226,7230]::getX->func_177958_n
-Rename method net/minecraft/util/math/Vec3i/getY ()I[7276,7280]::getY->func_177956_o
-Rename method net/minecraft/util/math/Vec3i/getZ ()I[7326,7330]::getZ->func_177952_p
-Rename method net/minecraft/inventory/Container/transferStackInSlot (Lnet/minecraft/entity/player/EntityPlayer;I)Lnet/minecraft/item/ItemStack;[7391,7410]::transferStackInSlot->func_82846_b
-Rename field net/minecraft/item/ItemStack/EMPTY[7486,7491]::EMPTY->field_190927_a
-Rename field net/minecraft/inventory/Container/inventorySlots[7528,7542]::inventorySlots->field_75151_b
-Rename method net/minecraft/inventory/Slot/getHasStack ()Z[7590,7601]::getHasStack->func_75216_d
-Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[7658,7666]::getStack->func_75211_c
-Rename method net/minecraft/item/ItemStack/copy ()Lnet/minecraft/item/ItemStack;[7710,7714]::copy->func_77946_l
-Rename method net/minecraft/inventory/Container/mergeItemStack (Lnet/minecraft/item/ItemStack;IIZ)Z[7799,7813]::mergeItemStack->func_75135_a
-Rename field net/minecraft/item/ItemStack/EMPTY[7895,7900]::EMPTY->field_190927_a
-Rename method net/minecraft/inventory/Slot/onSlotChange (Lnet/minecraft/item/ItemStack;Lnet/minecraft/item/ItemStack;)V[7954,7966]::onSlotChange->func_75220_a
-Rename method net/minecraft/inventory/Container/mergeItemStack (Lnet/minecraft/item/ItemStack;IIZ)Z[8110,8124]::mergeItemStack->func_75135_a
-Rename field net/minecraft/item/ItemStack/EMPTY[8206,8211]::EMPTY->field_190927_a
-Rename method net/minecraft/inventory/Container/mergeItemStack (Lnet/minecraft/item/ItemStack;IIZ)Z[8284,8298]::mergeItemStack->func_75135_a
-Rename field net/minecraft/item/ItemStack/EMPTY[8373,8378]::EMPTY->field_190927_a
-Rename method net/minecraft/item/ItemStack/isEmpty ()Z[8434,8441]::isEmpty->func_190926_b
-Rename method net/minecraft/inventory/Slot/putStack (Lnet/minecraft/item/ItemStack;)V[8488,8496]::putStack->func_75215_d
-Rename field net/minecraft/item/ItemStack/EMPTY[8511,8516]::EMPTY->field_190927_a
-Rename method net/minecraft/inventory/Slot/onSlotChanged ()V[8598,8611]::onSlotChanged->func_75218_e
-Rename method net/minecraft/item/ItemStack/getCount ()I[8659,8667]::getCount->func_190916_E
-Rename method net/minecraft/item/ItemStack/getCount ()I[8688,8696]::getCount->func_190916_E
-Rename field net/minecraft/item/ItemStack/EMPTY[8754,8759]::EMPTY->field_190927_a
-Rename method net/minecraft/inventory/Slot/onTake (Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/ItemStack;[8805,8811]::onTake->func_190901_a
-Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[8964,8971]::getSlot->func_75139_a
-Rename method net/minecraft/inventory/Slot/getHasStack ()Z[8980,8991]::getHasStack->func_75216_d
-Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[9047,9054]::getSlot->func_75139_a
-Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[9063,9071]::getStack->func_75211_c
-Rename method net/minecraft/item/ItemStack/clearCustomName ()V[9170,9185]::clearCustomName->func_135074_t
-Rename method net/minecraft/item/ItemStack/setStackDisplayName (Ljava/lang/String;)Lnet/minecraft/item/ItemStack;[9262,9281]::setStackDisplayName->func_151001_c
-FOUND CONSTR method com/groupzts/netheriteroad/client/container/ContainerSmithing/SmithingType/SmithingType (Ljava/util/Map;Lnet/minecraft/item/Item;)V com/groupzts/netheriteroad/client/container/ContainerSmithing/SmithingType
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[6141,6148]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/putStack (Lnet/minecraft/item/ItemStack;)V[6157,6165]::putStack->func_75215_d
+Rename method net/minecraft/item/ItemStack/addEnchantment (Lnet/minecraft/enchantment/Enchantment;I)V[6224,6238]::addEnchantment->func_77966_a
+Rename method net/minecraft/inventory/Container/addListener (Lnet/minecraft/inventory/IContainerListener;)V[6383,6394]::addListener->func_75132_a
+Rename method net/minecraft/inventory/Container/addListener (Lnet/minecraft/inventory/IContainerListener;)V[6445,6456]::addListener->func_75132_a
+Rename method net/minecraft/inventory/IContainerListener/sendWindowProperty (Lnet/minecraft/inventory/Container;II)V[6486,6504]::sendWindowProperty->func_71112_a
+Rename method net/minecraft/inventory/Container/updateProgressBar (II)V[6577,6594]::updateProgressBar->func_75137_b
+Rename method net/minecraft/inventory/Container/onContainerClosed (Lnet/minecraft/entity/player/EntityPlayer;)V[6715,6732]::onContainerClosed->func_75134_a
+Rename method net/minecraft/inventory/Container/onContainerClosed (Lnet/minecraft/entity/player/EntityPlayer;)V[6771,6788]::onContainerClosed->func_75134_a
+Rename field net/minecraft/world/World/isRemote[6820,6828]::isRemote->field_72995_K
+Rename method net/minecraft/inventory/Container/clearContainer (Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/inventory/IInventory;)V[6862,6876]::clearContainer->func_193327_a
+Rename method net/minecraft/inventory/Container/canInteractWith (Lnet/minecraft/entity/player/EntityPlayer;)Z[6952,6967]::canInteractWith->func_75145_c
+Rename method net/minecraft/entity/Entity/getDistanceSq (DDD)D[7022,7035]::getDistanceSq->func_70092_e
+Rename method net/minecraft/util/math/Vec3i/getX ()I[7061,7065]::getX->func_177958_n
+Rename method net/minecraft/util/math/Vec3i/getY ()I[7111,7115]::getY->func_177956_o
+Rename method net/minecraft/util/math/Vec3i/getZ ()I[7161,7165]::getZ->func_177952_p
+Rename method net/minecraft/inventory/Container/transferStackInSlot (Lnet/minecraft/entity/player/EntityPlayer;I)Lnet/minecraft/item/ItemStack;[7223,7242]::transferStackInSlot->func_82846_b
+Rename field net/minecraft/item/ItemStack/EMPTY[7316,7321]::EMPTY->field_190927_a
+Rename field net/minecraft/inventory/Container/inventorySlots[7357,7371]::inventorySlots->field_75151_b
+Rename method net/minecraft/inventory/Slot/getHasStack ()Z[7417,7428]::getHasStack->func_75216_d
+Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[7483,7491]::getStack->func_75211_c
+Rename method net/minecraft/item/ItemStack/copy ()Lnet/minecraft/item/ItemStack;[7534,7538]::copy->func_77946_l
+Rename method net/minecraft/inventory/Container/mergeItemStack (Lnet/minecraft/item/ItemStack;IIZ)Z[7619,7633]::mergeItemStack->func_75135_a
+Rename field net/minecraft/item/ItemStack/EMPTY[7713,7718]::EMPTY->field_190927_a
+Rename method net/minecraft/inventory/Slot/onSlotChange (Lnet/minecraft/item/ItemStack;Lnet/minecraft/item/ItemStack;)V[7769,7781]::onSlotChange->func_75220_a
+Rename method net/minecraft/inventory/Container/mergeItemStack (Lnet/minecraft/item/ItemStack;IIZ)Z[7921,7935]::mergeItemStack->func_75135_a
+Rename field net/minecraft/item/ItemStack/EMPTY[8015,8020]::EMPTY->field_190927_a
+Rename method net/minecraft/inventory/Container/mergeItemStack (Lnet/minecraft/item/ItemStack;IIZ)Z[8090,8104]::mergeItemStack->func_75135_a
+Rename field net/minecraft/item/ItemStack/EMPTY[8177,8182]::EMPTY->field_190927_a
+Rename method net/minecraft/item/ItemStack/isEmpty ()Z[8235,8242]::isEmpty->func_190926_b
+Rename method net/minecraft/inventory/Slot/putStack (Lnet/minecraft/item/ItemStack;)V[8287,8295]::putStack->func_75215_d
+Rename field net/minecraft/item/ItemStack/EMPTY[8310,8315]::EMPTY->field_190927_a
+Rename method net/minecraft/inventory/Slot/onSlotChanged ()V[8393,8406]::onSlotChanged->func_75218_e
+Rename method net/minecraft/item/ItemStack/getCount ()I[8451,8459]::getCount->func_190916_E
+Rename method net/minecraft/item/ItemStack/getCount ()I[8480,8488]::getCount->func_190916_E
+Rename field net/minecraft/item/ItemStack/EMPTY[8544,8549]::EMPTY->field_190927_a
+Rename method net/minecraft/inventory/Slot/onTake (Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/ItemStack;[8592,8598]::onTake->func_190901_a
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[8743,8750]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/getHasStack ()Z[8759,8770]::getHasStack->func_75216_d
+Rename method net/minecraft/inventory/Container/getSlot (I)Lnet/minecraft/inventory/Slot;[8824,8831]::getSlot->func_75139_a
+Rename method net/minecraft/inventory/Slot/getStack ()Lnet/minecraft/item/ItemStack;[8840,8848]::getStack->func_75211_c
+Rename method net/minecraft/item/ItemStack/clearCustomName ()V[8943,8958]::clearCustomName->func_135074_t
+Rename method net/minecraft/item/ItemStack/setStackDisplayName (Ljava/lang/String;)Lnet/minecraft/item/ItemStack;[9031,9050]::setStackDisplayName->func_151001_c
+FOUND CONSTR method com/groupzts/netheriteroad/common/container/ContainerSmithing/SmithingType/SmithingType (Ljava/util/Map;Lnet/minecraft/item/Item;)V com/groupzts/netheriteroad/common/container/ContainerSmithing/SmithingType
 New Key: class java/util/Map
-Rename field net/minecraft/init/Items/DIAMOND_SWORD[11003,11016]::DIAMOND_SWORD->field_151048_u
-Rename field net/minecraft/init/Items/DIAMOND_PICKAXE[11082,11097]::DIAMOND_PICKAXE->field_151046_w
-Rename field net/minecraft/init/Items/DIAMOND_AXE[11163,11174]::DIAMOND_AXE->field_151056_x
-Rename field net/minecraft/init/Items/DIAMOND_SHOVEL[11240,11254]::DIAMOND_SHOVEL->field_151047_v
-Rename field net/minecraft/init/Items/DIAMOND_HOE[11320,11331]::DIAMOND_HOE->field_151012_L
-Rename field net/minecraft/init/Items/DIAMOND_HELMET[11397,11411]::DIAMOND_HELMET->field_151161_ac
-Rename field net/minecraft/init/Items/DIAMOND_CHESTPLATE[11478,11496]::DIAMOND_CHESTPLATE->field_151163_ad
-Rename field net/minecraft/init/Items/DIAMOND_LEGGINGS[11563,11579]::DIAMOND_LEGGINGS->field_151173_ae
-Rename field net/minecraft/init/Items/DIAMOND_BOOTS[11646,11659]::DIAMOND_BOOTS->field_151175_af
+Rename field net/minecraft/init/Items/DIAMOND_SWORD[10726,10739]::DIAMOND_SWORD->field_151048_u
+Rename field net/minecraft/init/Items/DIAMOND_PICKAXE[10804,10819]::DIAMOND_PICKAXE->field_151046_w
+Rename field net/minecraft/init/Items/DIAMOND_AXE[10884,10895]::DIAMOND_AXE->field_151056_x
+Rename field net/minecraft/init/Items/DIAMOND_SHOVEL[10960,10974]::DIAMOND_SHOVEL->field_151047_v
+Rename field net/minecraft/init/Items/DIAMOND_HOE[11039,11050]::DIAMOND_HOE->field_151012_L
+Rename field net/minecraft/init/Items/DIAMOND_HELMET[11115,11129]::DIAMOND_HELMET->field_151161_ac
+Rename field net/minecraft/init/Items/DIAMOND_CHESTPLATE[11195,11213]::DIAMOND_CHESTPLATE->field_151163_ad
+Rename field net/minecraft/init/Items/DIAMOND_LEGGINGS[11279,11295]::DIAMOND_LEGGINGS->field_151173_ae
+Rename field net/minecraft/init/Items/DIAMOND_BOOTS[11361,11374]::DIAMOND_BOOTS->field_151175_af
 Import: com.groupzts.netheriteroad.init.ModItems
 Import: com.groupzts.netheriteroad.init.ModSounds
 Import: net.minecraft.enchantment.Enchantment
@@ -304,88 +343,114 @@ Import: org.apache.logging.log4j.Logger
 Import: javax.annotation.Nullable
 Import: java.util.HashMap
 Import: java.util.Map
-Import: java.util.Objects
-End  Processing: com/groupzts/netheriteroad/client/container/ContainerSmithing.java
+End  Processing: com/groupzts/netheriteroad/common/container/ContainerSmithing.java
 
-Start Processing: com/groupzts/netheriteroad/client/gui/GuiSmithing.java
-FOUND CONSTR method com/groupzts/netheriteroad/client/gui/GuiSmithing/GuiSmithing (Lnet/minecraft/world/World;IIILnet/minecraft/entity/player/EntityPlayer;)V com/groupzts/netheriteroad/client/gui/GuiSmithing
-Rename field net/minecraft/entity/player/EntityPlayer/inventory[917,926]::inventory->field_71071_by
-Rename field net/minecraft/client/gui/inventory/GuiContainer/xSize[1107,1112]::xSize->field_146999_f
-Rename field net/minecraft/client/gui/inventory/GuiContainer/ySize[1143,1148]::ySize->field_147000_g
-Rename method net/minecraft/client/gui/GuiScreen/drawScreen (IIF)V[1322,1332]::drawScreen->func_73863_a
-Rename method net/minecraft/client/gui/GuiScreen/drawDefaultBackground ()V[1395,1416]::drawDefaultBackground->func_146276_q_
-Rename method net/minecraft/client/gui/GuiScreen/drawScreen (IIF)V[1428,1438]::drawScreen->func_73863_a
-Rename method net/minecraft/client/gui/inventory/GuiContainer/renderHoveredToolTip (II)V[1486,1506]::renderHoveredToolTip->func_191948_b
-Rename method net/minecraft/client/gui/inventory/GuiContainer/drawGuiContainerBackgroundLayer (FII)V[1561,1592]::drawGuiContainerBackgroundLayer->func_146976_a
-Rename field net/minecraft/client/gui/GuiScreen/mc[1672,1674]::mc->field_146297_k
-Rename field net/minecraft/client/Minecraft/renderEngine[1687,1699]::renderEngine->field_71446_o
-Rename method net/minecraft/client/renderer/texture/TextureManager/bindTexture (Lnet/minecraft/util/ResourceLocation;)V[1701,1712]::bindTexture->func_110577_a
-Rename field net/minecraft/client/gui/GuiScreen/width[1748,1753]::width->field_146294_l
-Rename field net/minecraft/client/gui/inventory/GuiContainer/xSize[1770,1775]::xSize->field_146999_f
-Rename field net/minecraft/client/gui/GuiScreen/height[1814,1820]::height->field_146295_m
-Rename field net/minecraft/client/gui/inventory/GuiContainer/ySize[1836,1841]::ySize->field_147000_g
-Rename method net/minecraft/client/gui/Gui/drawTexturedModalRect (IIIIII)V[1871,1892]::drawTexturedModalRect->func_73729_b
-Rename field net/minecraft/client/gui/inventory/GuiContainer/xSize[1901,1906]::xSize->field_146999_f
-Rename field net/minecraft/client/gui/inventory/GuiContainer/ySize[1922,1927]::ySize->field_147000_g
-Rename field net/minecraft/client/gui/Gui/zLevel[1948,1954]::zLevel->field_73735_i
-Rename method net/minecraft/client/gui/GuiScreen/updateScreen ()V[2013,2025]::updateScreen->func_73876_c
-Rename method net/minecraft/client/gui/GuiScreen/updateScreen ()V[2045,2057]::updateScreen->func_73876_c
-Rename method net/minecraft/client/gui/GuiScreen/mouseClicked (III)V[2105,2117]::mouseClicked->func_73864_a
-Rename method net/minecraft/client/gui/GuiScreen/mouseClicked (III)V[2195,2207]::mouseClicked->func_73864_a
-Rename method net/minecraft/client/gui/GuiScreen/keyTyped (CI)V[2282,2290]::keyTyped->func_73869_a
-Rename method net/minecraft/client/gui/GuiScreen/keyTyped (CI)V[2360,2368]::keyTyped->func_73869_a
-Rename method net/minecraft/client/gui/inventory/GuiContainer/drawGuiContainerForegroundLayer (II)V[2438,2469]::drawGuiContainerForegroundLayer->func_146979_b
-Rename field net/minecraft/client/gui/GuiScreen/fontRenderer[2488,2500]::fontRenderer->field_146289_q
-Rename method net/minecraft/client/gui/FontRenderer/drawString (Ljava/lang/String;III)I[2503,2513]::drawString->func_78276_b
-Rename method net/minecraft/client/resources/I18n/format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;[2521,2527]::format->func_135052_a
-Rename method net/minecraft/client/gui/GuiScreen/onGuiClosed ()V[2619,2630]::onGuiClosed->func_146281_b
-Rename method net/minecraft/client/gui/GuiScreen/onGuiClosed ()V[2652,2663]::onGuiClosed->func_146281_b
-Rename method net/minecraft/client/gui/GuiScreen/initGui ()V[2755,2762]::initGui->func_73866_w_
-Rename method net/minecraft/client/gui/GuiScreen/initGui ()V[2788,2795]::initGui->func_73866_w_
-Rename field net/minecraft/client/gui/inventory/GuiContainer/guiLeft[2819,2826]::guiLeft->field_147003_i
-Rename field net/minecraft/client/gui/GuiScreen/width[2842,2847]::width->field_146294_l
-Rename field net/minecraft/client/gui/inventory/GuiContainer/guiTop[2883,2889]::guiTop->field_147009_r
-Rename field net/minecraft/client/gui/GuiScreen/height[2906,2912]::height->field_146295_m
-Rename field net/minecraft/client/gui/GuiScreen/buttonList[2991,3001]::buttonList->field_146292_n
-Rename method net/minecraft/client/gui/GuiScreen/doesGuiPauseGame ()Z[3061,3077]::doesGuiPauseGame->func_73868_f
-Import: com.groupzts.netheriteroad.client.container.ContainerSmithing
-Import: net.minecraft.client.gui.inventory.GuiContainer
-Import: net.minecraft.client.resources.I18n
-Import: net.minecraft.entity.player.EntityPlayer
+Start Processing: com/groupzts/netheriteroad/compat/jei/NetheriteRoadJEIPlugin.java
+FOUND CONSTR method com/groupzts/netheriteroad/compat/jei/NetheriteRoadJEIPlugin/NetheriteRoadJEIPlugin ()V com/groupzts/netheriteroad/compat/jei/NetheriteRoadJEIPlugin
+Import: com.groupzts.netheriteroad.common.container.ContainerSmithing
+Import: com.groupzts.netheriteroad.compat.jei.catgory.SmithingCategory
+Import: com.groupzts.netheriteroad.compat.jei.recipe.SmithingFactory
+Import: com.groupzts.netheriteroad.compat.jei.recipe.SmithingRecipe
+Import: com.groupzts.netheriteroad.compat.jei.recipe.SmithingRecipes
+Import: com.groupzts.netheriteroad.init.ModBlocks
+Import: mezz.jei.api.*
+Import: mezz.jei.api.ingredients.IIngredientRegistry
+Import: mezz.jei.api.recipe.IRecipeCategoryRegistration
+Import: mezz.jei.api.recipe.transfer.IRecipeTransferRegistry
+Import: net.minecraft.client.gui.GuiRepair
+Import: net.minecraft.item.ItemStack
+End  Processing: com/groupzts/netheriteroad/compat/jei/NetheriteRoadJEIPlugin.java
+
+Start Processing: com/groupzts/netheriteroad/compat/jei/catgory/SmithingCategory.java
+FOUND CONSTR method com/groupzts/netheriteroad/compat/jei/catgory/SmithingCategory/SmithingCategory (Lmezz/jei/api/IGuiHelper;)V com/groupzts/netheriteroad/compat/jei/catgory/SmithingCategory
+Rename method net/minecraft/block/Block/getLocalizedName ()Ljava/lang/String;[1697,1713]::getLocalizedName->func_149732_F
+Import: com.groupzts.netheriteroad.compat.jei.wrapper.SmithingWrapper
+Import: com.groupzts.netheriteroad.init.ModBlocks
+Import: com.groupzts.netheriteroad.utils.Reference
+Import: mezz.jei.api.IGuiHelper
+Import: mezz.jei.api.gui.IDrawable
+Import: mezz.jei.api.gui.IGuiItemStackGroup
+Import: mezz.jei.api.gui.IRecipeLayout
+Import: mezz.jei.api.ingredients.IIngredients
+Import: mezz.jei.api.recipe.IRecipeCategory
+Import: net.minecraft.item.ItemStack
 Import: net.minecraft.util.ResourceLocation
-Import: net.minecraft.util.math.BlockPos
-Import: net.minecraft.world.World
-Import: net.minecraftforge.fml.relauncher.Side
-Import: net.minecraftforge.fml.relauncher.SideOnly
-Import: org.lwjgl.input.Keyboard
-Import: org.lwjgl.opengl.GL11
-Import: java.io.IOException
-End  Processing: com/groupzts/netheriteroad/client/gui/GuiSmithing.java
+Import: java.util.Locale
+End  Processing: com/groupzts/netheriteroad/compat/jei/catgory/SmithingCategory.java
+
+Start Processing: com/groupzts/netheriteroad/compat/jei/recipe/Recipe.java
+FOUND CONSTR method com/groupzts/netheriteroad/compat/jei/recipe/Recipe/Recipe (Lnet/minecraft/item/crafting/Ingredient;Lnet/minecraft/item/ItemStack;)V com/groupzts/netheriteroad/compat/jei/recipe/Recipe
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[612,619]::getItem->func_77973_b
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[635,642]::getItem->func_77973_b
+Rename method net/minecraft/item/ItemStack/getMetadata ()I[659,670]::getMetadata->func_77960_j
+Rename method net/minecraft/item/ItemStack/getMetadata ()I[692,703]::getMetadata->func_77960_j
+Rename method net/minecraft/item/ItemStack/getMetadata ()I[715,726]::getMetadata->func_77960_j
+Rename method net/minecraft/item/ItemStack/getCount ()I[740,748]::getCount->func_190916_E
+Rename method net/minecraft/item/ItemStack/getCount ()I[764,772]::getCount->func_190916_E
+Import: net.minecraft.item.ItemStack
+Import: net.minecraft.item.crafting.Ingredient
+End  Processing: com/groupzts/netheriteroad/compat/jei/recipe/Recipe.java
+
+Start Processing: com/groupzts/netheriteroad/compat/jei/recipe/SmithingFactory.java
+FOUND CONSTR method com/groupzts/netheriteroad/compat/jei/recipe/SmithingFactory/SmithingFactory (Lmezz/jei/api/IJeiHelpers;)V com/groupzts/netheriteroad/compat/jei/recipe/SmithingFactory
+Import: com.groupzts.netheriteroad.compat.jei.wrapper.SmithingWrapper
+Import: mezz.jei.api.IJeiHelpers
+Import: mezz.jei.api.recipe.IRecipeWrapper
+Import: mezz.jei.api.recipe.IRecipeWrapperFactory
+End  Processing: com/groupzts/netheriteroad/compat/jei/recipe/SmithingFactory.java
+
+Start Processing: com/groupzts/netheriteroad/compat/jei/recipe/SmithingRecipe.java
+FOUND CONSTR method com/groupzts/netheriteroad/compat/jei/recipe/SmithingRecipe/SmithingRecipe (Lnet/minecraft/item/crafting/Ingredient;Lnet/minecraft/item/ItemStack;Lnet/minecraft/item/ItemStack;)V com/groupzts/netheriteroad/compat/jei/recipe/SmithingRecipe
+Import: net.minecraft.item.ItemStack
+Import: net.minecraft.item.crafting.Ingredient
+End  Processing: com/groupzts/netheriteroad/compat/jei/recipe/SmithingRecipe.java
+
+Start Processing: com/groupzts/netheriteroad/compat/jei/recipe/SmithingRecipes.java
+New Key: class com/groupzts/netheriteroad/common/container/ContainerSmithing
+New Key: class com/groupzts/netheriteroad/common/container/ContainerSmithing
+New Key: class com/groupzts/netheriteroad/common/container/ContainerSmithing
+New Key: class java/util/Map
+New Key: class com/groupzts/netheriteroad/common/container/ContainerSmithing
+Rename method net/minecraft/item/crafting/Ingredient/fromStacks ([Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/crafting/Ingredient;[1178,1188]::fromStacks->func_193369_a
+New Key: class com/groupzts/netheriteroad/common/container/ContainerSmithing
+New Key: class java/util/Map
+New Key: class com/groupzts/netheriteroad/common/container/ContainerSmithing
+Rename method net/minecraft/item/crafting/Ingredient/fromStacks ([Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/crafting/Ingredient;[1765,1775]::fromStacks->func_193369_a
+Import: com.groupzts.netheriteroad.common.container.ContainerSmithing
+Import: net.minecraft.item.Item
+Import: net.minecraft.item.ItemStack
+Import: net.minecraft.item.crafting.Ingredient
+Import: java.util.ArrayList
+Import: java.util.List
+Import: java.util.Map
+End  Processing: com/groupzts/netheriteroad/compat/jei/recipe/SmithingRecipes.java
+
+Start Processing: com/groupzts/netheriteroad/compat/jei/wrapper/SmithingWrapper.java
+FOUND CONSTR method com/groupzts/netheriteroad/compat/jei/wrapper/SmithingWrapper/SmithingWrapper (Ljava/util/List;Lnet/minecraft/item/ItemStack;Ljava/util/List;)V com/groupzts/netheriteroad/compat/jei/wrapper/SmithingWrapper
+Import: com.google.common.collect.ImmutableList
+Import: mezz.jei.api.ingredients.IIngredients
+Import: mezz.jei.api.ingredients.VanillaTypes
+Import: mezz.jei.api.recipe.IRecipeWrapper
+Import: net.minecraft.item.ItemStack
+Import: java.util.Collections
+Import: java.util.List
+End  Processing: com/groupzts/netheriteroad/compat/jei/wrapper/SmithingWrapper.java
 
 Start Processing: com/groupzts/netheriteroad/compat/tinkers/RegistryEvent.java
 New Key: class net/minecraftforge/fml/common/Mod
 Import: com.groupzts.netheriteroad.blocks.common.BlockMoltenAncient
 Import: com.groupzts.netheriteroad.blocks.common.BlockMoltenNetherite
-Import: com.groupzts.netheriteroad.utils.Reference
 Import: net.minecraft.block.Block
-Import: net.minecraft.block.state.IBlockState
-Import: net.minecraft.client.renderer.block.model.ModelResourceLocation
-Import: net.minecraft.client.renderer.block.statemap.StateMapperBase
-Import: net.minecraft.util.ResourceLocation
-Import: net.minecraftforge.client.model.ModelLoader
 Import: net.minecraftforge.fluids.BlockFluidClassic
 Import: net.minecraftforge.fml.common.Loader
 Import: net.minecraftforge.fml.common.Mod
 Import: net.minecraftforge.fml.common.eventhandler.SubscribeEvent
-Import: net.minecraftforge.fml.relauncher.Side
-Import: net.minecraftforge.fml.relauncher.SideOnly
-Import: javax.annotation.Nonnull
 End  Processing: com/groupzts/netheriteroad/compat/tinkers/RegistryEvent.java
 
 Start Processing: com/groupzts/netheriteroad/compat/tinkers/SuperFortified.java
 FOUND CONSTR method com/groupzts/netheriteroad/compat/tinkers/SuperFortified/SuperFortified ()V com/groupzts/netheriteroad/compat/tinkers/SuperFortified
-Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[1081,1091]::getInteger->func_74762_e
-Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[1129,1139]::setInteger->func_74768_a
+Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[1053,1063]::getInteger->func_74762_e
+Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[1100,1110]::setInteger->func_74768_a
 Import: net.minecraft.entity.EntityLivingBase
 Import: net.minecraft.entity.player.EntityPlayer
 Import: net.minecraft.item.ItemStack
@@ -400,27 +465,24 @@ Start Processing: com/groupzts/netheriteroad/compat/tinkers/TiCConfig.java
 End  Processing: com/groupzts/netheriteroad/compat/tinkers/TiCConfig.java
 
 Start Processing: com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java
-Rename method net/minecraft/nbt/NBTTagCompound/setString (Ljava/lang/String;Ljava/lang/String;)V[2946,2955]::setString->func_74778_a
-Rename method net/minecraft/nbt/NBTTagCompound/setString (Ljava/lang/String;Ljava/lang/String;)V[3027,3036]::setString->func_74778_a
-Rename method net/minecraft/nbt/NBTTagCompound/setBoolean (Ljava/lang/String;Z)V[3081,3091]::setBoolean->func_74757_a
-Rename method net/minecraft/nbt/NBTTagCompound/setString (Ljava/lang/String;Ljava/lang/String;)V[3373,3382]::setString->func_74778_a
-Rename method net/minecraft/nbt/NBTTagCompound/setString (Ljava/lang/String;Ljava/lang/String;)V[3452,3461]::setString->func_74778_a
-Rename method net/minecraft/nbt/NBTTagCompound/setBoolean (Ljava/lang/String;Z)V[3504,3514]::setBoolean->func_74757_a
-Rename field net/minecraft/init/Blocks/AIR[5721,5724]::AIR->field_150350_a
-Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[6480,6487]::getItem->func_77973_b
+Rename method net/minecraft/nbt/NBTTagCompound/setString (Ljava/lang/String;Ljava/lang/String;)V[2590,2599]::setString->func_74778_a
+Rename method net/minecraft/nbt/NBTTagCompound/setString (Ljava/lang/String;Ljava/lang/String;)V[2670,2679]::setString->func_74778_a
+Rename method net/minecraft/nbt/NBTTagCompound/setBoolean (Ljava/lang/String;Z)V[2723,2733]::setBoolean->func_74757_a
+Rename method net/minecraft/nbt/NBTTagCompound/setString (Ljava/lang/String;Ljava/lang/String;)V[3009,3018]::setString->func_74778_a
+Rename method net/minecraft/nbt/NBTTagCompound/setString (Ljava/lang/String;Ljava/lang/String;)V[3087,3096]::setString->func_74778_a
+Rename method net/minecraft/nbt/NBTTagCompound/setBoolean (Ljava/lang/String;Z)V[3138,3148]::setBoolean->func_74757_a
+Rename field net/minecraft/init/Blocks/AIR[5329,5332]::AIR->field_150350_a
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[6068,6075]::getItem->func_77973_b
 New Key: class net/minecraftforge/fml/common/Mod
 New Key: class slimeknights/tconstruct/library/client/MaterialRenderInfo
 Import: com.google.common.collect.Lists
 Import: com.groupzts.netheriteroad.fluid.FluidMoltenNetherite
 Import: com.groupzts.netheriteroad.fluid.MoltenAncientDebris
 Import: com.groupzts.netheriteroad.init.ModItems
-Import: net.minecraft.entity.EntityLivingBase
-Import: net.minecraft.entity.player.EntityPlayer
 Import: net.minecraft.init.Blocks
 Import: net.minecraft.item.ItemStack
 Import: net.minecraft.nbt.NBTTagCompound
 Import: net.minecraft.util.text.TextFormatting
-Import: net.minecraft.world.World
 Import: net.minecraftforge.fluids.Fluid
 Import: net.minecraftforge.fluids.FluidRegistry
 Import: net.minecraftforge.fluids.FluidStack
@@ -439,30 +501,27 @@ Import: slimeknights.tconstruct.library.smeltery.CastingRecipe
 Import: slimeknights.tconstruct.library.smeltery.MeltingRecipe
 Import: slimeknights.tconstruct.library.tinkering.MaterialItem
 Import: slimeknights.tconstruct.library.tools.IToolPart
-Import: slimeknights.tconstruct.library.traits.AbstractTrait
 Import: slimeknights.tconstruct.library.utils.HarvestLevels
-Import: slimeknights.tconstruct.library.utils.TagUtil
 Import: slimeknights.tconstruct.shared.TinkerFluids
 Import: slimeknights.tconstruct.smeltery.TinkerSmeltery
-Import: slimeknights.tconstruct.tools.TinkerTools
 Import: java.util.List
 End  Processing: com/groupzts/netheriteroad/compat/tinkers/TiCRegister.java
 
 Start Processing: com/groupzts/netheriteroad/event/WorldOreGen.java
-Rename field net/minecraft/world/World/provider[802,810]::provider->field_73011_w
-Rename field net/minecraft/world/World/provider[931,939]::provider->field_73011_w
-Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[1412,1427]::getDefaultState->func_176223_P
-Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[1451,1459]::getBlock->func_177230_c
-Rename field net/minecraft/init/Blocks/NETHERRACK[1477,1487]::NETHERRACK->field_150424_aL
-Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[1493,1508]::getDefaultState->func_176223_P
-Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[1509,1517]::getBlock->func_177230_c
-Rename method net/minecraft/world/gen/feature/WorldGenerator/generate (Lnet/minecraft/world/World;Ljava/util/Random;Lnet/minecraft/util/math/BlockPos;)Z[1527,1535]::generate->func_180709_b
-Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[2048,2063]::getDefaultState->func_176223_P
-Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[2087,2095]::getBlock->func_177230_c
-Rename field net/minecraft/init/Blocks/NETHERRACK[2113,2123]::NETHERRACK->field_150424_aL
-Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[2129,2144]::getDefaultState->func_176223_P
-Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[2145,2153]::getBlock->func_177230_c
-Rename method net/minecraft/world/gen/feature/WorldGenerator/generate (Lnet/minecraft/world/World;Ljava/util/Random;Lnet/minecraft/util/math/BlockPos;)Z[2163,2171]::generate->func_180709_b
+Rename field net/minecraft/world/World/provider[785,793]::provider->field_73011_w
+Rename field net/minecraft/world/World/provider[913,921]::provider->field_73011_w
+Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[1384,1399]::getDefaultState->func_176223_P
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[1423,1431]::getBlock->func_177230_c
+Rename field net/minecraft/init/Blocks/NETHERRACK[1449,1459]::NETHERRACK->field_150424_aL
+Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[1465,1480]::getDefaultState->func_176223_P
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[1481,1489]::getBlock->func_177230_c
+Rename method net/minecraft/world/gen/feature/WorldGenerator/generate (Lnet/minecraft/world/World;Ljava/util/Random;Lnet/minecraft/util/math/BlockPos;)Z[1499,1507]::generate->func_180709_b
+Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[2009,2024]::getDefaultState->func_176223_P
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[2048,2056]::getBlock->func_177230_c
+Rename field net/minecraft/init/Blocks/NETHERRACK[2074,2084]::NETHERRACK->field_150424_aL
+Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[2090,2105]::getDefaultState->func_176223_P
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[2106,2114]::getBlock->func_177230_c
+Rename method net/minecraft/world/gen/feature/WorldGenerator/generate (Lnet/minecraft/world/World;Ljava/util/Random;Lnet/minecraft/util/math/BlockPos;)Z[2124,2132]::generate->func_180709_b
 Import: com.groupzts.netheriteroad.NetheriteRoad
 Import: com.groupzts.netheriteroad.init.ModBlocks
 Import: net.minecraft.init.Blocks
@@ -486,11 +545,13 @@ Import: slimeknights.tconstruct.library.fluid.FluidMolten
 End  Processing: com/groupzts/netheriteroad/fluid/MoltenAncientDebris.java
 
 Start Processing: com/groupzts/netheriteroad/init/ModBlocks.java
-Rename field net/minecraft/block/material/Material/ROCK[448,452]::ROCK->field_151576_e
-Rename field net/minecraft/creativetab/CreativeTabs/DECORATIONS[562,573]::DECORATIONS->field_78031_c
-Rename field net/minecraft/block/material/Material/WOOD[586,590]::WOOD->field_151575_d
-Rename field net/minecraft/block/material/Material/ROCK[680,684]::ROCK->field_151576_e
-Import: com.groupzts.netheriteroad.blocks.common.*
+Rename field net/minecraft/block/material/Material/ROCK[575,579]::ROCK->field_151576_e
+Rename field net/minecraft/creativetab/CreativeTabs/DECORATIONS[688,699]::DECORATIONS->field_78031_c
+Rename field net/minecraft/block/material/Material/WOOD[712,716]::WOOD->field_151575_d
+Rename field net/minecraft/block/material/Material/ROCK[805,809]::ROCK->field_151576_e
+Import: com.groupzts.netheriteroad.blocks.common.AncientDebris
+Import: com.groupzts.netheriteroad.blocks.common.NetheriteBlock
+Import: com.groupzts.netheriteroad.blocks.common.SmithingTable
 Import: net.minecraft.block.Block
 Import: net.minecraft.block.material.Material
 Import: net.minecraft.creativetab.CreativeTabs
@@ -499,8 +560,8 @@ Import: java.util.List
 End  Processing: com/groupzts/netheriteroad/init/ModBlocks.java
 
 Start Processing: com/groupzts/netheriteroad/init/ModItems.java
-Rename field net/minecraft/creativetab/CreativeTabs/MISC[798,802]::MISC->field_78026_f
-Rename field net/minecraft/creativetab/CreativeTabs/MISC[935,939]::MISC->field_78026_f
+Rename field net/minecraft/creativetab/CreativeTabs/MISC[781,785]::MISC->field_78026_f
+Rename field net/minecraft/creativetab/CreativeTabs/MISC[917,921]::MISC->field_78026_f
 Import: com.groupzts.netheriteroad.blocks.BlockItemBase
 Import: com.groupzts.netheriteroad.items.base.FireImmuneItemBase
 Import: com.groupzts.netheriteroad.items.base.armorbase.ArmorBase
@@ -522,40 +583,39 @@ End  Processing: com/groupzts/netheriteroad/init/ModSounds.java
 
 Start Processing: com/groupzts/netheriteroad/items/base/CommonItemBase.java
 FOUND CONSTR method com/groupzts/netheriteroad/items/base/CommonItemBase/CommonItemBase (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/creativetab/CreativeTabs;)V com/groupzts/netheriteroad/items/base/CommonItemBase
-Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[522,539]::setTranslationKey->func_77655_b
-Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[565,579]::setCreativeTab->func_77637_a
+Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[459,476]::setTranslationKey->func_77655_b
+Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[501,515]::setCreativeTab->func_77637_a
 Import: com.groupzts.netheriteroad.NetheriteRoad
 Import: com.groupzts.netheriteroad.init.ModItems
 Import: com.groupzts.netheriteroad.utils.IHasModel
-Import: com.groupzts.netheriteroad.utils.Reference
 Import: net.minecraft.creativetab.CreativeTabs
 Import: net.minecraft.item.Item
 End  Processing: com/groupzts/netheriteroad/items/base/CommonItemBase.java
 
 Start Processing: com/groupzts/netheriteroad/items/base/FireImmune.java
 FOUND CONSTR method com/groupzts/netheriteroad/items/base/FireImmune/FireImmune (Lnet/minecraft/world/World;Lnet/minecraft/entity/Entity;Lnet/minecraft/item/ItemStack;)V com/groupzts/netheriteroad/items/base/FireImmune
-Rename field net/minecraft/entity/Entity/posX[561,565]::posX->field_70165_t
-Rename field net/minecraft/entity/Entity/posY[585,589]::posY->field_70163_u
-Rename field net/minecraft/entity/Entity/posZ[609,613]::posZ->field_70161_v
-Rename method net/minecraft/entity/item/EntityItem/setPickupDelay (I)V[646,660]::setPickupDelay->func_174867_a
-Rename field net/minecraft/entity/Entity/motionX[679,686]::motionX->field_70159_w
-Rename field net/minecraft/entity/Entity/motionX[704,711]::motionX->field_70159_w
-Rename field net/minecraft/entity/Entity/motionY[733,740]::motionY->field_70181_x
-Rename field net/minecraft/entity/Entity/motionY[758,765]::motionY->field_70181_x
-Rename field net/minecraft/entity/Entity/motionZ[787,794]::motionZ->field_70179_y
-Rename field net/minecraft/entity/Entity/motionZ[812,819]::motionZ->field_70179_y
-Rename method net/minecraft/entity/item/EntityItem/setItem (Lnet/minecraft/item/ItemStack;)V[841,848]::setItem->func_92058_a
+Rename field net/minecraft/entity/Entity/posX[547,551]::posX->field_70165_t
+Rename field net/minecraft/entity/Entity/posY[571,575]::posY->field_70163_u
+Rename field net/minecraft/entity/Entity/posZ[595,599]::posZ->field_70161_v
+Rename method net/minecraft/entity/item/EntityItem/setPickupDelay (I)V[631,645]::setPickupDelay->func_174867_a
+Rename field net/minecraft/entity/Entity/motionX[663,670]::motionX->field_70159_w
+Rename field net/minecraft/entity/Entity/motionX[688,695]::motionX->field_70159_w
+Rename field net/minecraft/entity/Entity/motionY[716,723]::motionY->field_70181_x
+Rename field net/minecraft/entity/Entity/motionY[741,748]::motionY->field_70181_x
+Rename field net/minecraft/entity/Entity/motionZ[769,776]::motionZ->field_70179_y
+Rename field net/minecraft/entity/Entity/motionZ[794,801]::motionZ->field_70179_y
+Rename method net/minecraft/entity/item/EntityItem/setItem (Lnet/minecraft/item/ItemStack;)V[822,829]::setItem->func_92058_a
 FOUND CONSTR method com/groupzts/netheriteroad/items/base/FireImmune/FireImmune (Lnet/minecraft/world/World;DDDLnet/minecraft/item/ItemStack;)V com/groupzts/netheriteroad/items/base/FireImmune
-Rename method net/minecraft/entity/item/EntityItem/setItem (Lnet/minecraft/item/ItemStack;)V[1015,1022]::setItem->func_92058_a
+Rename method net/minecraft/entity/item/EntityItem/setItem (Lnet/minecraft/item/ItemStack;)V[992,999]::setItem->func_92058_a
 FOUND CONSTR method com/groupzts/netheriteroad/items/base/FireImmune/FireImmune (Lnet/minecraft/world/World;DDD)V com/groupzts/netheriteroad/items/base/FireImmune
-Rename field net/minecraft/entity/Entity/isImmuneToFire[1163,1177]::isImmuneToFire->field_70178_ae
+Rename field net/minecraft/entity/Entity/isImmuneToFire[1135,1149]::isImmuneToFire->field_70178_ae
 FOUND CONSTR method com/groupzts/netheriteroad/items/base/FireImmune/FireImmune (Lnet/minecraft/world/World;)V com/groupzts/netheriteroad/items/base/FireImmune
-Rename field net/minecraft/entity/Entity/isImmuneToFire[1265,1279]::isImmuneToFire->field_70178_ae
-Rename method net/minecraft/entity/Entity/dealFireDamage (I)V[1319,1333]::dealFireDamage->func_70081_e
-Rename method net/minecraft/entity/Entity/attackEntityFrom (Lnet/minecraft/util/DamageSource;F)Z[1390,1406]::attackEntityFrom->func_70097_a
-Rename method net/minecraft/util/DamageSource/getDamageType ()Ljava/lang/String;[1472,1485]::getDamageType->func_76355_l
-Rename field net/minecraft/util/DamageSource/OUT_OF_WORLD[1507,1519]::OUT_OF_WORLD->field_76380_i
-Rename field net/minecraft/util/DamageSource/damageType[1521,1531]::damageType->field_76373_n
+Rename field net/minecraft/entity/Entity/isImmuneToFire[1232,1246]::isImmuneToFire->field_70178_ae
+Rename method net/minecraft/entity/Entity/dealFireDamage (I)V[1282,1296]::dealFireDamage->func_70081_e
+Rename method net/minecraft/entity/Entity/attackEntityFrom (Lnet/minecraft/util/DamageSource;F)Z[1349,1365]::attackEntityFrom->func_70097_a
+Rename method net/minecraft/util/DamageSource/getDamageType ()Ljava/lang/String;[1430,1443]::getDamageType->func_76355_l
+Rename field net/minecraft/util/DamageSource/OUT_OF_WORLD[1465,1477]::OUT_OF_WORLD->field_76380_i
+Rename field net/minecraft/util/DamageSource/damageType[1479,1489]::damageType->field_76373_n
 FOUND CONSTR method com/groupzts/netheriteroad/items/base/FireImmune/EventHandler/EventHandler ()V com/groupzts/netheriteroad/items/base/FireImmune/EventHandler
 Import: net.minecraft.entity.Entity
 Import: net.minecraft.entity.item.EntityItem
@@ -579,24 +639,23 @@ End  Processing: com/groupzts/netheriteroad/items/base/FireImmuneItemBase.java
 
 Start Processing: com/groupzts/netheriteroad/items/base/armorbase/ArmorBase.java
 FOUND CONSTR method com/groupzts/netheriteroad/items/base/armorbase/ArmorBase/ArmorBase (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/item/ItemArmor$ArmorMaterial;Lnet/minecraft/inventory/EntityEquipmentSlot;)V com/groupzts/netheriteroad/items/base/armorbase/ArmorBase
-Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[1135,1152]::setTranslationKey->func_77655_b
-Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[1178,1192]::setCreativeTab->func_77637_a
-Rename field net/minecraft/creativetab/CreativeTabs/COMBAT[1204,1210]::COMBAT->field_78037_j
-Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[1514,1521]::getItem->func_77973_b
-Rename field net/minecraft/entity/SharedMonsterAttributes/KNOCKBACK_RESISTANCE[1746,1766]::KNOCKBACK_RESISTANCE->field_111266_c
-Rename method net/minecraft/entity/ai/attributes/IAttribute/getName ()Ljava/lang/String;[1761,1768]::getName->func_111108_a
-Rename field net/minecraft/entity/SharedMonsterAttributes/KNOCKBACK_RESISTANCE[2009,2029]::KNOCKBACK_RESISTANCE->field_111266_c
-Rename method net/minecraft/entity/ai/attributes/IAttribute/getName ()Ljava/lang/String;[2024,2031]::getName->func_111108_a
-Rename field net/minecraft/entity/SharedMonsterAttributes/KNOCKBACK_RESISTANCE[2269,2289]::KNOCKBACK_RESISTANCE->field_111266_c
-Rename method net/minecraft/entity/ai/attributes/IAttribute/getName ()Ljava/lang/String;[2284,2291]::getName->func_111108_a
-Rename field net/minecraft/entity/SharedMonsterAttributes/KNOCKBACK_RESISTANCE[2526,2546]::KNOCKBACK_RESISTANCE->field_111266_c
-Rename method net/minecraft/entity/ai/attributes/IAttribute/getName ()Ljava/lang/String;[2541,2548]::getName->func_111108_a
+Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[1058,1075]::setTranslationKey->func_77655_b
+Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[1100,1114]::setCreativeTab->func_77637_a
+Rename field net/minecraft/creativetab/CreativeTabs/COMBAT[1126,1132]::COMBAT->field_78037_j
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[1430,1437]::getItem->func_77973_b
+Rename field net/minecraft/entity/SharedMonsterAttributes/KNOCKBACK_RESISTANCE[1658,1678]::KNOCKBACK_RESISTANCE->field_111266_c
+Rename method net/minecraft/entity/ai/attributes/IAttribute/getName ()Ljava/lang/String;[1673,1680]::getName->func_111108_a
+Rename field net/minecraft/entity/SharedMonsterAttributes/KNOCKBACK_RESISTANCE[1915,1935]::KNOCKBACK_RESISTANCE->field_111266_c
+Rename method net/minecraft/entity/ai/attributes/IAttribute/getName ()Ljava/lang/String;[1930,1937]::getName->func_111108_a
+Rename field net/minecraft/entity/SharedMonsterAttributes/KNOCKBACK_RESISTANCE[2169,2189]::KNOCKBACK_RESISTANCE->field_111266_c
+Rename method net/minecraft/entity/ai/attributes/IAttribute/getName ()Ljava/lang/String;[2184,2191]::getName->func_111108_a
+Rename field net/minecraft/entity/SharedMonsterAttributes/KNOCKBACK_RESISTANCE[2420,2440]::KNOCKBACK_RESISTANCE->field_111266_c
+Rename method net/minecraft/entity/ai/attributes/IAttribute/getName ()Ljava/lang/String;[2435,2442]::getName->func_111108_a
 Import: com.google.common.collect.Multimap
 Import: com.groupzts.netheriteroad.NetheriteRoad
 Import: com.groupzts.netheriteroad.init.ModItems
 Import: com.groupzts.netheriteroad.items.base.FireImmune
 Import: com.groupzts.netheriteroad.utils.IHasModel
-Import: com.groupzts.netheriteroad.utils.Reference
 Import: net.minecraft.creativetab.CreativeTabs
 Import: net.minecraft.entity.Entity
 Import: net.minecraft.entity.SharedMonsterAttributes
@@ -615,14 +674,13 @@ End  Processing: com/groupzts/netheriteroad/items/base/armorbase/ArmorBase.java
 
 Start Processing: com/groupzts/netheriteroad/items/base/toolbase/AxeBase.java
 FOUND CONSTR method com/groupzts/netheriteroad/items/base/toolbase/AxeBase/AxeBase (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/item/Item$ToolMaterial;)V com/groupzts/netheriteroad/items/base/toolbase/AxeBase
-Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[825,842]::setTranslationKey->func_77655_b
-Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[868,882]::setCreativeTab->func_77637_a
-Rename field net/minecraft/creativetab/CreativeTabs/TOOLS[894,899]::TOOLS->field_78040_i
+Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[754,771]::setTranslationKey->func_77655_b
+Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[796,810]::setCreativeTab->func_77637_a
+Rename field net/minecraft/creativetab/CreativeTabs/TOOLS[822,827]::TOOLS->field_78040_i
 Import: com.groupzts.netheriteroad.NetheriteRoad
 Import: com.groupzts.netheriteroad.init.ModItems
 Import: com.groupzts.netheriteroad.items.base.FireImmune
 Import: com.groupzts.netheriteroad.utils.IHasModel
-Import: com.groupzts.netheriteroad.utils.Reference
 Import: net.minecraft.creativetab.CreativeTabs
 Import: net.minecraft.entity.Entity
 Import: net.minecraft.item.ItemAxe
@@ -636,14 +694,13 @@ End  Processing: com/groupzts/netheriteroad/items/base/toolbase/AxeBase.java
 
 Start Processing: com/groupzts/netheriteroad/items/base/toolbase/HoeBase.java
 FOUND CONSTR method com/groupzts/netheriteroad/items/base/toolbase/HoeBase/HoeBase (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/item/Item$ToolMaterial;)V com/groupzts/netheriteroad/items/base/toolbase/HoeBase
-Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[814,831]::setTranslationKey->func_77655_b
-Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[857,871]::setCreativeTab->func_77637_a
-Rename field net/minecraft/creativetab/CreativeTabs/TOOLS[883,888]::TOOLS->field_78040_i
+Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[743,760]::setTranslationKey->func_77655_b
+Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[785,799]::setCreativeTab->func_77637_a
+Rename field net/minecraft/creativetab/CreativeTabs/TOOLS[811,816]::TOOLS->field_78040_i
 Import: com.groupzts.netheriteroad.NetheriteRoad
 Import: com.groupzts.netheriteroad.init.ModItems
 Import: com.groupzts.netheriteroad.items.base.FireImmune
 Import: com.groupzts.netheriteroad.utils.IHasModel
-Import: com.groupzts.netheriteroad.utils.Reference
 Import: net.minecraft.creativetab.CreativeTabs
 Import: net.minecraft.entity.Entity
 Import: net.minecraft.item.ItemHoe
@@ -657,14 +714,13 @@ End  Processing: com/groupzts/netheriteroad/items/base/toolbase/HoeBase.java
 
 Start Processing: com/groupzts/netheriteroad/items/base/toolbase/PickaxeBase.java
 FOUND CONSTR method com/groupzts/netheriteroad/items/base/toolbase/PickaxeBase/PickaxeBase (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/item/Item$ToolMaterial;)V com/groupzts/netheriteroad/items/base/toolbase/PickaxeBase
-Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[831,848]::setTranslationKey->func_77655_b
-Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[874,888]::setCreativeTab->func_77637_a
-Rename field net/minecraft/creativetab/CreativeTabs/TOOLS[900,905]::TOOLS->field_78040_i
+Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[760,777]::setTranslationKey->func_77655_b
+Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[802,816]::setCreativeTab->func_77637_a
+Rename field net/minecraft/creativetab/CreativeTabs/TOOLS[828,833]::TOOLS->field_78040_i
 Import: com.groupzts.netheriteroad.NetheriteRoad
 Import: com.groupzts.netheriteroad.init.ModItems
 Import: com.groupzts.netheriteroad.items.base.FireImmune
 Import: com.groupzts.netheriteroad.utils.IHasModel
-Import: com.groupzts.netheriteroad.utils.Reference
 Import: net.minecraft.creativetab.CreativeTabs
 Import: net.minecraft.entity.Entity
 Import: net.minecraft.item.ItemPickaxe
@@ -678,14 +734,13 @@ End  Processing: com/groupzts/netheriteroad/items/base/toolbase/PickaxeBase.java
 
 Start Processing: com/groupzts/netheriteroad/items/base/toolbase/ShovelBase.java
 FOUND CONSTR method com/groupzts/netheriteroad/items/base/toolbase/ShovelBase/ShovelBase (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/item/Item$ToolMaterial;)V com/groupzts/netheriteroad/items/base/toolbase/ShovelBase
-Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[826,843]::setTranslationKey->func_77655_b
-Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[869,883]::setCreativeTab->func_77637_a
-Rename field net/minecraft/creativetab/CreativeTabs/TOOLS[895,900]::TOOLS->field_78040_i
+Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[755,772]::setTranslationKey->func_77655_b
+Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[797,811]::setCreativeTab->func_77637_a
+Rename field net/minecraft/creativetab/CreativeTabs/TOOLS[823,828]::TOOLS->field_78040_i
 Import: com.groupzts.netheriteroad.NetheriteRoad
 Import: com.groupzts.netheriteroad.init.ModItems
 Import: com.groupzts.netheriteroad.items.base.FireImmune
 Import: com.groupzts.netheriteroad.utils.IHasModel
-Import: com.groupzts.netheriteroad.utils.Reference
 Import: net.minecraft.creativetab.CreativeTabs
 Import: net.minecraft.entity.Entity
 Import: net.minecraft.item.ItemSpade
@@ -699,14 +754,13 @@ End  Processing: com/groupzts/netheriteroad/items/base/toolbase/ShovelBase.java
 
 Start Processing: com/groupzts/netheriteroad/items/base/toolbase/SwordBase.java
 FOUND CONSTR method com/groupzts/netheriteroad/items/base/toolbase/SwordBase/SwordBase (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/item/Item$ToolMaterial;)V com/groupzts/netheriteroad/items/base/toolbase/SwordBase
-Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[823,840]::setTranslationKey->func_77655_b
-Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[866,880]::setCreativeTab->func_77637_a
-Rename field net/minecraft/creativetab/CreativeTabs/COMBAT[892,898]::COMBAT->field_78037_j
+Rename method net/minecraft/item/Item/setTranslationKey (Ljava/lang/String;)Lnet/minecraft/item/Item;[752,769]::setTranslationKey->func_77655_b
+Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[794,808]::setCreativeTab->func_77637_a
+Rename field net/minecraft/creativetab/CreativeTabs/COMBAT[820,826]::COMBAT->field_78037_j
 Import: com.groupzts.netheriteroad.NetheriteRoad
 Import: com.groupzts.netheriteroad.init.ModItems
 Import: com.groupzts.netheriteroad.items.base.FireImmune
 Import: com.groupzts.netheriteroad.utils.IHasModel
-Import: com.groupzts.netheriteroad.utils.Reference
 Import: net.minecraft.creativetab.CreativeTabs
 Import: net.minecraft.entity.Entity
 Import: net.minecraft.item.ItemStack
@@ -719,18 +773,11 @@ Adding 1 imports
 End  Processing: com/groupzts/netheriteroad/items/base/toolbase/SwordBase.java
 
 Start Processing: com/groupzts/netheriteroad/proxy/ClientProxy.java
-Import: com.groupzts.netheriteroad.compat.tinkers.RegistryEvent
-Import: com.groupzts.netheriteroad.utils.Reference
-Import: net.minecraft.block.state.IBlockState
 Import: net.minecraft.client.renderer.block.model.ModelResourceLocation
-Import: net.minecraft.client.renderer.block.statemap.StateMapperBase
 Import: net.minecraft.item.Item
-Import: net.minecraft.util.ResourceLocation
 Import: net.minecraftforge.client.model.ModelLoader
-Import: net.minecraftforge.fml.common.Loader
 Import: net.minecraftforge.fml.common.event.FMLInitializationEvent
 Import: net.minecraftforge.fml.common.event.FMLPreInitializationEvent
-Import: javax.annotation.Nonnull
 Import: java.util.Objects
 End  Processing: com/groupzts/netheriteroad/proxy/ClientProxy.java
 
@@ -751,16 +798,20 @@ Import: com.groupzts.netheriteroad.init.ModItems
 Import: net.minecraftforge.oredict.OreDictionary
 End  Processing: com/groupzts/netheriteroad/utils/ItemOreRegister.java
 
+Start Processing: com/groupzts/netheriteroad/utils/Log.java
+FOUND CONSTR method com/groupzts/netheriteroad/utils/Log/Log ()V com/groupzts/netheriteroad/utils/Log
+Import: org.apache.logging.log4j.LogManager
+Import: org.apache.logging.log4j.Logger
+End  Processing: com/groupzts/netheriteroad/utils/Log.java
+
 Start Processing: com/groupzts/netheriteroad/utils/ModMaterials.java
 New Key: class net/minecraft/item/Item
 New Key: class net/minecraft/item/ItemArmor
 Import: com.groupzts.netheriteroad.init.ModItems
 Import: com.groupzts.netheriteroad.init.ModSounds
-Import: net.minecraft.init.SoundEvents
 Import: net.minecraft.item.Item
 Import: net.minecraft.item.ItemArmor
 Import: net.minecraft.item.ItemStack
-Import: net.minecraft.util.SoundEvent
 Import: net.minecraftforge.common.util.EnumHelper
 Import: java.util.Objects
 End  Processing: com/groupzts/netheriteroad/utils/ModMaterials.java
@@ -769,9 +820,9 @@ Start Processing: com/groupzts/netheriteroad/utils/Reference.java
 End  Processing: com/groupzts/netheriteroad/utils/Reference.java
 
 Start Processing: com/groupzts/netheriteroad/utils/handlers/GuiHandler.java
-Rename field net/minecraft/entity/player/EntityPlayer/inventory[694,703]::inventory->field_71071_by
-Import: com.groupzts.netheriteroad.client.container.ContainerSmithing
+Rename field net/minecraft/entity/player/EntityPlayer/inventory[677,686]::inventory->field_71071_by
 Import: com.groupzts.netheriteroad.client.gui.GuiSmithing
+Import: com.groupzts.netheriteroad.common.container.ContainerSmithing
 Import: net.minecraft.entity.player.EntityPlayer
 Import: net.minecraft.util.math.BlockPos
 Import: net.minecraft.world.World
@@ -784,8 +835,7 @@ New Key: class net/minecraftforge/fml/common/Mod
 New Key: class net/minecraftforge/event/RegistryEvent
 New Key: class net/minecraftforge/event/RegistryEvent
 New Key: class net/minecraftforge/event/RegistryEvent
-Rename method net/minecraft/client/renderer/block/statemap/StateMapperBase/getModelResourceLocation (Lnet/minecraft/block/state/IBlockState;)Lnet/minecraft/client/renderer/block/model/ModelResourceLocation;[2739,2763]::getModelResourceLocation->func_178132_a
-Import: com.groupzts.netheriteroad.compat.tinkers.TiCConfig
+Rename method net/minecraft/client/renderer/block/statemap/StateMapperBase/getModelResourceLocation (Lnet/minecraft/block/state/IBlockState;)Lnet/minecraft/client/renderer/block/model/ModelResourceLocation;[2679,2703]::getModelResourceLocation->func_178132_a
 Import: com.groupzts.netheriteroad.init.ModBlocks
 Import: com.groupzts.netheriteroad.init.ModItems
 Import: com.groupzts.netheriteroad.init.ModSounds

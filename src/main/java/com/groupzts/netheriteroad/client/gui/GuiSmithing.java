@@ -1,6 +1,6 @@
 package com.groupzts.netheriteroad.client.gui;
 
-import com.groupzts.netheriteroad.client.container.ContainerSmithing;
+import com.groupzts.netheriteroad.common.container.ContainerSmithing;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.player.EntityPlayer;
@@ -65,7 +65,7 @@ public class GuiSmithing extends GuiContainer {
 
     @Override
     protected void drawGuiContainerForegroundLayer(int par1, int par2) {
-        this.fontRenderer.drawString(I18n.format("gui.netheriteroad.smithing"), 60, 18, 0);
+        this.fontRenderer.drawString(I18n.format("gui.netheriteroad.smithing"), 60, 18, 4210752);
     }
 
     @Override

@@ -5,7 +5,6 @@ import com.groupzts.netheriteroad.NetheriteRoad;
 import com.groupzts.netheriteroad.init.ModItems;
 import com.groupzts.netheriteroad.items.base.FireImmune;
 import com.groupzts.netheriteroad.utils.IHasModel;
-import com.groupzts.netheriteroad.utils.Reference;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -35,19 +34,19 @@ public class ArmorBase extends ItemArmor implements IHasModel {
         UUID uuid = new UUID(slot.toString().hashCode(), 0);
         if (slot == EntityEquipmentSlot.HEAD) {
             if(item == ModItems.NETHERITE_HELMET) {
-                attrib.put(SharedMonsterAttributes.KNOCKBACK_RESISTANCE.getName(), new AttributeModifier(uuid,"netherite", 0.1, 0));
+                attrib.put(SharedMonsterAttributes.KNOCKBACK_RESISTANCE.getName(), new AttributeModifier(uuid,"netherite", 1, 0));
             }
         } else if (slot == EntityEquipmentSlot.CHEST) {
             if(item == ModItems.NETHERITE_CHESTPLATE) {
-                attrib.put(SharedMonsterAttributes.KNOCKBACK_RESISTANCE.getName(), new AttributeModifier(uuid,"netherite", 0.1, 0));
+                attrib.put(SharedMonsterAttributes.KNOCKBACK_RESISTANCE.getName(), new AttributeModifier(uuid,"netherite", 1, 0));
             }
         } else if (slot == EntityEquipmentSlot.LEGS) {
             if(item == ModItems.NETHERITE_LEGGINGS) {
-                attrib.put(SharedMonsterAttributes.KNOCKBACK_RESISTANCE.getName(), new AttributeModifier(uuid,"netherite", 0.1, 0));
+                attrib.put(SharedMonsterAttributes.KNOCKBACK_RESISTANCE.getName(), new AttributeModifier(uuid,"netherite", 1, 0));
             }
         } else if (slot == EntityEquipmentSlot.FEET) {
             if(item == ModItems.NETHERITE_BOOTS) {
-                attrib.put(SharedMonsterAttributes.KNOCKBACK_RESISTANCE.getName(), new AttributeModifier(uuid,"netherite", 0.1, 0));
+                attrib.put(SharedMonsterAttributes.KNOCKBACK_RESISTANCE.getName(), new AttributeModifier(uuid,"netherite", 1, 0));
             }
         }
         return attrib;

@@ -14,7 +14,7 @@ buildscript {
 apply plugin: "net.minecraftforge.gradle.forge"
 
 group = 'com.groupzts'
-version = '1.0'
+version = '1.1'
 archivesBaseName = 'netheriteroad'
 
 minecraft {
@@ -22,6 +22,7 @@ minecraft {
     runDir = "run"
 
     mappings = project.mcpVersion
+    accessTransformer("src/main/resources/META-INF/netheriteroad_at.cfg")
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 }
 
@@ -29,12 +30,12 @@ repositories {
     maven {
         url "https://cursemaven.com"
     }
-        maven {
+    maven {
             // location of the maven that hosts JEI files
             name = "Progwml6 maven"
             url = "https://dvs1.progwml6.com/files/maven/"
-        }
-        maven {
+    }
+    maven {
             // location of a maven mirror for JEI files, as a fallback
             name = "ModMaven"
             url = "https://modmaven.dev"
@@ -45,8 +46,10 @@ repositories {
 dependencies {
     deobfCompile "curse.maven:mantle-${mantle_build}"
     deobfCompile "curse.maven:tconstruct-${tic_build}"
-    implementation "mezz.jei:jei_${mc_version}:${jei_version}:api"
-    implementation "mezz.jei:jei_${mc_version}:${jei_version}"
+    // compile against the JEI API but do not include it at runtime
+    deobfProvided "mezz.jei:jei_${mc_version}:${jei_version}:api"
+    // at runtime, use the full JEI jar
+    runtime "mezz.jei:jei_${mc_version}:${jei_version}"
 }
 
 processResources {

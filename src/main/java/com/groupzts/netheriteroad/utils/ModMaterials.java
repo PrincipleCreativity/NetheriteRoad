@@ -2,11 +2,9 @@ package com.groupzts.netheriteroad.utils;
 
 import com.groupzts.netheriteroad.init.ModItems;
 import com.groupzts.netheriteroad.init.ModSounds;
-import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.SoundEvent;
 import net.minecraftforge.common.util.EnumHelper;
 
 import java.util.Objects;

@@ -1,7 +1,6 @@
 package com.groupzts.netheriteroad;
 
 import com.groupzts.netheriteroad.event.WorldOreGen;
-import com.groupzts.netheriteroad.init.ModBlocks;
 import com.groupzts.netheriteroad.init.ModItems;
 import com.groupzts.netheriteroad.proxy.ServerProxy;
 import com.groupzts.netheriteroad.utils.Reference;

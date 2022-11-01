@@ -23,3 +23,5 @@ fluid.molten_netherite.name=熔融下界合金
 fluid.molten_ancient.name=熔融远古残骸
 advancements.nether.obtain_ancient_debris.title=深藏不露
 advancements.nether.obtain_ancient_debris.description=获得远古残骸
+netheriteroad.advancements.nether.netherite_armor.title=残骸裹身
+netheriteroad.advancements.nether.netherite_armor.description=获得一整套下界合金盔甲

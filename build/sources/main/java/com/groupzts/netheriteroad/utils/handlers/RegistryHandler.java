@@ -1,6 +1,5 @@
 package com.groupzts.netheriteroad.utils.handlers;
 
-import com.groupzts.netheriteroad.compat.tinkers.TiCConfig;
 import com.groupzts.netheriteroad.init.ModBlocks;
 import com.groupzts.netheriteroad.init.ModItems;
 import com.groupzts.netheriteroad.init.ModSounds;

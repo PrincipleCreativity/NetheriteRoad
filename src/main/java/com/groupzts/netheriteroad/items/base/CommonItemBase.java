@@ -3,7 +3,6 @@ package com.groupzts.netheriteroad.items.base;
 import com.groupzts.netheriteroad.NetheriteRoad;
 import com.groupzts.netheriteroad.init.ModItems;
 import com.groupzts.netheriteroad.utils.IHasModel;
-import com.groupzts.netheriteroad.utils.Reference;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 

@@ -1,7 +1,7 @@
 package com.groupzts.netheriteroad.utils.handlers;
 
-import com.groupzts.netheriteroad.client.container.ContainerSmithing;
 import com.groupzts.netheriteroad.client.gui.GuiSmithing;
+import com.groupzts.netheriteroad.common.container.ContainerSmithing;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;

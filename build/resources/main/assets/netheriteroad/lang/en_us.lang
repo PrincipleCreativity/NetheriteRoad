@@ -23,3 +23,5 @@ fluid.molten_netherite.name=Molten Netherite Alloy
 fluid.molten_ancient.name=Molten Ancient Debris
 advancements.nether.obtain_ancient_debris.title=Hidden in the Depths
 advancements.nether.obtain_ancient_debris.description=Obtain Ancient Debris
+netheriteroad.advancements.nether.netherite_armor.title=Cover Me in Debris
+netheriteroad.advancements.nether.netherite_armor.description=Get a full suit of Netherite armor

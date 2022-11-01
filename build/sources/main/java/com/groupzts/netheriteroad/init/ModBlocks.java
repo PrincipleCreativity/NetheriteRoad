@@ -1,6 +1,8 @@
 package com.groupzts.netheriteroad.init;
 
-import com.groupzts.netheriteroad.blocks.common.*;
+import com.groupzts.netheriteroad.blocks.common.AncientDebris;
+import com.groupzts.netheriteroad.blocks.common.NetheriteBlock;
+import com.groupzts.netheriteroad.blocks.common.SmithingTable;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
