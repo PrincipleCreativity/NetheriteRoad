@@ -19,6 +19,7 @@ netheriteroad.sound.break_netherite_block=方块：被破坏
 netheriteroad.sound.step_netherite_block=脚步声
 material.netherite.name=下界合金
 modifier.superfortified.name=超级强化
+modifier.superfortified.desc=“超级强化”向工具添加多个基础值为 6 的强化槽，具体取决于部件的类型。
 fluid.molten_netherite.name=熔融下界合金
 fluid.molten_ancient.name=熔融远古残骸
 advancements.nether.obtain_ancient_debris.title=深藏不露

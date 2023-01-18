@@ -1,5 +1,5 @@
-Unsupposrted library path: C:\Users\LEFT_Flamelight\Documents\GitHub\NetheriteRoad\build\classes\java\api
-Unsupposrted library path: C:\Users\LEFT_Flamelight\Documents\GitHub\NetheriteRoad\build\resources\api
+Unsupposrted library path: D:\NetheriteRoad\build\classes\java\api
+Unsupposrted library path: D:\NetheriteRoad\build\resources\api
 Symbol range map extraction starting
 Processing 46 files
 startProcessing "com/groupzts/netheriteroad/NetheriteRoad.java" md5: 843ee9def31295c644affbd669ff119a
@@ -128,13 +128,13 @@ endProcessing "com/groupzts/netheriteroad/utils/Log.java"
 startProcessing "com/groupzts/netheriteroad/utils/ModMaterials.java" md5: bb2559581fd60395a7d86644456205fd
 endProcessing "com/groupzts/netheriteroad/utils/ModMaterials.java"
 
-startProcessing "com/groupzts/netheriteroad/utils/Reference.java" md5: 22e4aaba862317409dfb7802854d4f23
+startProcessing "com/groupzts/netheriteroad/utils/Reference.java" md5: 81d425d90342eed68f42bb948a550750
 endProcessing "com/groupzts/netheriteroad/utils/Reference.java"
 
 startProcessing "com/groupzts/netheriteroad/utils/handlers/GuiHandler.java" md5: 284a7dca9274672e4c2003da2dd635ea
 endProcessing "com/groupzts/netheriteroad/utils/handlers/GuiHandler.java"
 
-startProcessing "com/groupzts/netheriteroad/utils/handlers/RegistryHandler.java" md5: b6afb2951d73a894c9040a439dc46af0
+startProcessing "com/groupzts/netheriteroad/utils/handlers/RegistryHandler.java" md5: ca557e0725f396072a04dd8bd772cdf0
 endProcessing "com/groupzts/netheriteroad/utils/handlers/RegistryHandler.java"
 
 startProcessing "com/groupzts/netheriteroad/utils/handlers/TileEntityHandler.java" md5: dd905b964b02cc6b233b952377149e88

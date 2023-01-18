@@ -18,8 +18,8 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fluids.BlockFluidClassic;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-
-import javax.annotation.Nonnull;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 @Mod.EventBusSubscriber
 public class RegistryHandler {
@@ -43,6 +43,7 @@ public class RegistryHandler {
                 , ModSounds.STEP_NETHERITE_BLOCK.setRegistryName(Reference.MOD_ID, "step_netherite_block")
         );
     }
+    @SideOnly(Side.CLIENT)
     @SubscribeEvent
     public static void onModelRegister( ModelRegistryEvent event )
     {
@@ -59,7 +60,7 @@ public class RegistryHandler {
             } else if (block instanceof BlockFluidClassic) {
                 ModelLoader.setCustomStateMapper(block, new StateMapperBase() {
                     @Override
-                    protected ModelResourceLocation getModelResourceLocation(@Nonnull IBlockState state) {
+                    protected ModelResourceLocation getModelResourceLocation(IBlockState state) {
                         return new ModelResourceLocation(new ResourceLocation(Reference.MOD_ID, "molten_ancient"), "molten_ancient");
                     }
                 });
