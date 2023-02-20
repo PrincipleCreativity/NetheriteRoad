@@ -1,6 +1,8 @@
 package com.groupzts.netheriteroad.compat.tinkers;
 
 import com.google.common.collect.Lists;
+import com.groupzts.netheriteroad.compat.tinkers.traits.SuperFortified;
+import com.groupzts.netheriteroad.compat.tinkers.traits.TraitDebrisCover;
 import com.groupzts.netheriteroad.fluid.FluidMoltenNetherite;
 import com.groupzts.netheriteroad.fluid.MoltenAncientDebris;
 import com.groupzts.netheriteroad.init.ModItems;
@@ -29,6 +31,7 @@ import slimeknights.tconstruct.library.tools.IToolPart;
 import slimeknights.tconstruct.library.utils.HarvestLevels;
 import slimeknights.tconstruct.shared.TinkerFluids;
 import slimeknights.tconstruct.smeltery.TinkerSmeltery;
+import slimeknights.tconstruct.tools.TinkerTraits;
 
 import java.util.List;
 
@@ -37,6 +40,9 @@ public class TiCRegister {
     public static Fluid moltenAncient;
     public static final List<Material> materials = Lists.newArrayList();
     public static Material netherite = mat();
+
+    public static final TraitDebrisCover DEBRIS_COVER = new TraitDebrisCover();
+    public static final SuperFortified SUPER_FORTIFIED = new SuperFortified();
     private static Material mat() {
         if (TinkerRegistry.getMaterial("netherite") == TinkerRegistry.getMaterial("unknown")){
             Material mat = new Material("netherite", 3683123);
@@ -53,6 +59,7 @@ public class TiCRegister {
         moltenNetherite = MOLTEN_NETHERITE_FLUID;
         FluidRegistry.registerFluid(MOLTEN_NETHERITE_FLUID);
         FluidRegistry.addBucketForFluid(MOLTEN_NETHERITE_FLUID);
+
         NBTTagCompound tag = new NBTTagCompound();
         tag.setString("molten_netherite", MOLTEN_NETHERITE_FLUID.getName());
         tag.setString("ore", "molten_netherite");
@@ -76,7 +83,9 @@ public class TiCRegister {
         netherite.setFluid(MOLTEN_NETHERITE_FLUID);
         netherite.setCraftable(true);
 
-        netherite.addTrait(new SuperFortified());
+        netherite.addTrait(DEBRIS_COVER,MaterialTypes.HEAD);
+        netherite.addTrait(TinkerTraits.petramor);
+        netherite.addTrait(TinkerTraits.hellish);
         TinkerRegistry.addMaterialStats(netherite,
                 new HeadMaterialStats(1250, 11f, 10.0f, 4),
                 new HandleMaterialStats(1.0f, 100),

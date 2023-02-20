@@ -9,20 +9,33 @@ item.netheriteroad.netherite_helmet.name=Netherite Helmet
 item.netheriteroad.netherite_chestplate.name=Netherite Chestplate
 item.netheriteroad.netherite_leggings.name=Netherite Leggings
 item.netheriteroad.netherite_boots.name=Netherite Boots
-netheriteroad.sound.netherite_armor_sound=Netherite Armor Clanks
-netheriteroad.sound.smithing_table_sound=Smithing Table Used
+
 tile.netheriteroad.ancient_debris.name=Ancient Debris
 tile.netheriteroad.smithing_table.name=Smithing Table
 tile.netheriteroad.netherite_block.name=Netherite Block
+
 gui.netheriteroad.smithing=Upgrade Equipment
+
+netheriteroad.sound.netherite_armor_sound=Netherite Armor Clanks
+netheriteroad.sound.smithing_table_sound=Smithing Table Used
 netheriteroad.sound.break_netherite_block=Block Break
 netheriteroad.sound.step_netherite_block= Footstep
-material.netherite.name=Netherite
-modifier.superfortified.name=Super Reinforced
-modifier.superfortified.desc=Super Reinforced adds several reinforcement slots to the tool with a base value of 6, depending on the type of part.
-fluid.molten_netherite.name=Molten Netherite Alloy
-fluid.molten_ancient.name=Molten Ancient Debris
+
 advancements.nether.obtain_ancient_debris.title=Hidden in the Depths
 advancements.nether.obtain_ancient_debris.description=Obtain Ancient Debris
+
 netheriteroad.advancements.nether.netherite_armor.title=Cover Me in Debris
 netheriteroad.advancements.nether.netherite_armor.description=Get a full suit of Netherite armor
+
+material.netherite.name=Netherite
+
+fluid.molten_netherite.name=Molten Netherite Alloy
+fluid.molten_ancient.name=Molten Ancient Debris
+
+modifier.superfortified.name=Super Reinforced
+modifier.superfortified.desc=Super Reinforced adds several reinforcement slots to the tool with a base value of 6, depending on the type of part.
+modifier.debris_cover.name=Debris Cover
+modifier.debris_cover.desc=§oCovered by debris...§r\nIgnite target, take more damage to target that wasn't burning.And enhance your tool in lava.
+
+modifier.ancient_protect_armor.name=Ancient Flame
+modifier.ancient_protect_armor.desc=§oAspect of the Phoenix!§r\nResist all fire damage,and enhance your defence in lava.
